@@ -1,0 +1,3082 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>メンタルサプリ救世主！？メンタルガチャあげ🤣⤴｜小さな行動 × 大きな承認</title>
+
+<!-- Basic -->
+<meta name="description" content="メンタルサプリ救世主！？ガチャを引くだけでえらい。小さな行動を引いて、大きな承認を受け取ろう。無料・日本語英語対応のメンタルケアアプリ。">
+<meta name="keywords" content="メンタルケア,承認,自己肯定感,ガチャ,メンタルトレーニング,小さな行動,無料アプリ,メンタルヘルス">
+<meta name="author" content="Takechan">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0d0a1a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="メンタルガチャあげ">
+<meta name="application-name" content="メンタルガチャあげ">
+
+<!-- OGP -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="メンタルサプリ救世主！？メンタルガチャあげ🤣⤴｜小さな行動 × 大きな承認">
+<meta property="og:description" content="ガチャを引くだけでえらい。小さな行動を引いて、大きな承認を受け取ろう。無料・日英対応のメンタルケアアプリ。">
+<meta property="og:url" content="https://mentalgachaup.pages.dev/">
+<meta property="og:site_name" content="メンタルガチャあげ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://mentalgachaup.pages.dev/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="メンタルガチャあげ🤣⤴ — 小さな行動 × 大きな承認">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="メンタルサプリ救世主！？メンタルガチャあげ🤣⤴｜小さな行動 × 大きな承認">
+<meta name="twitter:description" content="ガチャを引くだけでえらい。小さな行動を引いて、大きな承認を受け取ろう。無料・日英対応。">
+<meta name="twitter:image" content="https://mentalgachaup.pages.dev/ogp.png">
+<meta name="twitter:image:alt" content="メンタルガチャあげ🤣⤴">
+<meta name="twitter:url" content="https://mentalgachaup.pages.dev/">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://mentalgachaup.pages.dev/">
+
+<!-- ホーム画面アイコン -->
+<!-- iOS -->
+<link rel="apple-touch-icon" href="/180mg.png">
+<meta name="apple-mobile-web-app-title" content="Gachup">
+
+<!-- Android / PWA manifest -->
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" sizes="192x192" href="/192mg.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/512mg.png">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z50F06DECG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Z50F06DECG');
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=DotGothic16&display=swap');
+
+  :root {
+    --bg: #0d0a1a;
+    --card-bg: #1a1530;
+    --accent1: #ff6eb4;
+    --accent2: #ffe066;
+    --accent3: #7efff5;
+    --accent4: #b388ff;
+    --text: #fff8f0;
+    --subtle: #a899c8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    background: var(--bg);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  /* starfield */
+  .stars { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+  .star {
+    position: absolute; border-radius: 50%; background: #fff;
+    animation: twinkle var(--d, 3s) ease-in-out infinite var(--delay, 0s);
+  }
+  @keyframes twinkle {
+    0%,100% { opacity: 0.1; transform: scale(1); }
+    50%      { opacity: 0.9; transform: scale(1.4); }
+  }
+
+  /* floating blobs */
+  .blob {
+    position: fixed; border-radius: 50%; filter: blur(80px);
+    opacity: 0.18; pointer-events: none;
+    animation: drift var(--bd, 14s) ease-in-out infinite alternate; z-index: 0;
+  }
+  @keyframes drift {
+    from { transform: translate(0,0) scale(1); }
+    to   { transform: translate(var(--tx,40px), var(--ty,30px)) scale(1.15); }
+  }
+
+  .wrap {
+    position: relative; z-index: 1;
+    display: flex; flex-direction: column; align-items: center;
+    gap: clamp(14px, 2.5vh, 24px);
+    padding: clamp(64px, 9vh, 80px) 20px clamp(40px, 6vh, 60px);
+    width: 100%; max-width: 480px;
+  }
+
+  .title { text-align: center; line-height: 1.2; }
+  .title-main {
+    font-size: clamp(1.3rem, 5vw, 2rem);
+    font-weight: 900; letter-spacing: -0.01em;
+    filter: drop-shadow(0 0 18px rgba(255,110,180,0.5));
+  }
+  .title-main-text {
+    background: linear-gradient(135deg, var(--accent1), var(--accent2), var(--accent3));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .title-main-emoji {
+    -webkit-text-fill-color: initial;
+    background: none;
+  }
+  .title-main-arrow {
+    -webkit-text-fill-color: #ff2222;
+    color: #ff2222;
+    background: none;
+    font-weight: 900;
+  }
+  .title-sub {
+    font-size: 0.82rem; color: var(--subtle); margin-top: 4px;
+    font-family: 'DotGothic16', monospace; letter-spacing: 0.05em;
+  }
+
+  /* ===== 結果カードエリア ===== */
+  .cards-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .result-card {
+    width: 100%;
+    background: var(--card-bg);
+    border-radius: 20px;
+    border: 1.5px solid rgba(255,255,255,0.08);
+    padding: 18px 22px;
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.06);
+    /* 初期状態：非表示 */
+    opacity: 0; transform: translateY(16px) scale(0.96);
+    transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.34,1.56,0.64,1);
+    pointer-events: none;
+    min-height: 80px;
+    justify-content: center;
+  }
+  .result-card.visible {
+    opacity: 1; transform: translateY(0) scale(1); pointer-events: auto;
+  }
+  .result-card.delay { transition-delay: 0.14s; }
+
+  /* カード内：プレースホルダー（まだ引いてない） */
+  .card-placeholder {
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.72rem;
+    color: var(--subtle);
+    letter-spacing: 0.12em;
+    opacity: 1;
+    /* カードが visible になったら消える */
+    transition: opacity 0.2s;
+  }
+  .result-card.visible .card-placeholder { display: none; }
+
+  .card-inner {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .result-card.visible .card-inner { display: flex; }
+
+  .card-label {
+    font-size: 0.68rem;
+    font-family: 'DotGothic16', monospace;
+    color: var(--subtle);
+    letter-spacing: 0.15em;
+  }
+
+  /* 小さな行動カード */
+  .card-action-box {
+    background: linear-gradient(135deg, rgba(255,110,180,0.12), rgba(179,136,255,0.12));
+    border: 1px solid rgba(255,110,180,0.25);
+    border-radius: 14px;
+    padding: 12px 18px;
+    width: 100%; text-align: center;
+  }
+  .card-action-text {
+    font-size: clamp(0.78rem, 4vw, 1.25rem);
+    font-weight: 700; color: var(--text); line-height: 1.4;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* ===== 橋渡しテキスト ===== */
+  .bridge {
+    text-align: center;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transform: scale(0.8) rotate(-3deg);
+    transition: opacity 0.4s ease 0.1s, transform 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.1s, max-height 0.4s ease 0.05s, padding 0.3s ease;
+    pointer-events: none;
+    line-height: 1.4;
+  }
+  .bridge.visible {
+    opacity: 1;
+    max-height: 180px;
+    padding: 6px 0;
+    transform: scale(1) rotate(0deg);
+  }
+  .bridge-main {
+    font-size: clamp(0.85rem, 4vw, 1.3rem);
+    font-weight: 900;
+    color: var(--accent3);
+    text-shadow: 0 0 16px rgba(126,255,245,0.6), 0 0 32px rgba(126,255,245,0.3);
+    letter-spacing: 0.02em;
+    display: block;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .bridge-sub {
+    font-size: clamp(0.72rem, 3vw, 0.85rem);
+    font-family: 'DotGothic16', monospace;
+    color: var(--subtle);
+    letter-spacing: 0.12em;
+    display: block;
+    margin-top: 3px;
+  }
+
+  /* 大きな承認カード */
+  .card-praise-box {
+    background: linear-gradient(135deg, rgba(255,224,102,0.12), rgba(126,255,245,0.1));
+    border: 1px solid rgba(255,224,102,0.28);
+    border-radius: 14px;
+    padding: 12px 18px;
+    width: 100%; text-align: center;
+  }
+  .card-praise-text {
+    font-size: clamp(0.72rem, 4.5vw, 2rem);
+    font-weight: 900; color: var(--accent2); line-height: 1.3;
+    text-shadow: 0 0 28px rgba(255,224,102,0.7), 0 0 60px rgba(255,224,102,0.3);
+    letter-spacing: 0.02em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* ===== ボタン ===== */
+  .btn-gacha {
+    display: flex; align-items: center; gap: 10px;
+    background: linear-gradient(135deg, var(--accent1), var(--accent4));
+    color: #fff; border: none; border-radius: 100px;
+    padding: clamp(10px, 1.8vh, 16px) 36px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 1.05rem; font-weight: 900; cursor: pointer;
+    box-shadow: 0 4px 24px rgba(255,110,180,0.45);
+    transition: transform 0.15s, box-shadow 0.15s, background 0.3s;
+    letter-spacing: 0.05em;
+    position: relative; overflow: hidden;
+  }
+  .btn-gacha::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.25), transparent);
+    border-radius: inherit;
+  }
+  /* step2（承認待ち）は黄色グラデに */
+  .btn-gacha.step2 {
+    background: linear-gradient(135deg, var(--accent2), var(--accent3));
+    color: #1a1530;
+    box-shadow: 0 4px 24px rgba(255,224,102,0.5);
+  }
+  .btn-gacha.step2 .btn-emoji { filter: none; }
+
+  .btn-gacha:hover  { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(255,110,180,0.55); }
+  .btn-gacha.step2:hover { box-shadow: 0 8px 32px rgba(255,224,102,0.6); }
+  .btn-gacha:active { transform: translateY(1px) scale(0.97); }
+  .btn-gacha.shake  { animation: shake 0.45s ease; }
+  @keyframes shake {
+    0%  { transform: rotate(0deg); }
+    15% { transform: rotate(-6deg) scale(1.05); }
+    35% { transform: rotate(5deg) scale(1.07); }
+    55% { transform: rotate(-4deg) scale(1.04); }
+    75% { transform: rotate(3deg) scale(1.02); }
+    100%{ transform: rotate(0deg) scale(1); }
+  }
+
+  /* counter */
+  .counter {
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.75rem; color: var(--subtle); letter-spacing: 0.1em;
+  }
+
+  /* confetti */
+  .confetti-container {
+    position: fixed; inset: 0; pointer-events: none; z-index: 100; overflow: hidden;
+  }
+  .conf {
+    position: absolute; width: 8px; height: 8px; border-radius: 2px;
+    animation: conffall var(--dur, 1.4s) ease-in forwards; opacity: 0;
+  }
+  @keyframes conffall {
+    0%   { opacity: 1; transform: translateY(-20px) rotate(0deg); }
+    100% { opacity: 0; transform: translateY(110vh) rotate(var(--rot, 540deg)); }
+  }
+
+  .hint {
+    font-size: 0.72rem; color: var(--subtle);
+    text-align: center; line-height: 1.6; max-width: 300px;
+  }
+
+  /* ===== シェアエリア ===== */
+  .share-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.5s ease;
+    pointer-events: none;
+  }
+  .share-area.visible {
+    opacity: 1;
+    max-height: 300px;
+    pointer-events: auto;
+  }
+  .share-label {
+    font-size: 0.72rem;
+    font-family: 'DotGothic16', monospace;
+    color: var(--subtle);
+    letter-spacing: 0.12em;
+  }
+  .sns-btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .sns-btn {
+    width: 48px; height: 48px;
+    border: none; border-radius: 12px;
+    font-size: 1.1rem; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 900;
+  }
+  .sns-btn:hover { transform: translateY(-3px) scale(1.08); }
+  .sns-btn:active { transform: scale(0.9); }
+  .x-btn       { background: #000; color: #fff; font-size: 1.2rem; }
+  .threads-btn { background: #000; color: #fff; font-size: 1.3rem; }
+  .fb-btn      { background: #1877F2; color: #fff; font-size: 1.3rem; }
+  .line-btn    { background: #06C755; color: #fff; font-size: 0.7rem; letter-spacing: -0.5px; }
+  .kakao-btn   { background: #FEE500; color: #3C1E1E; font-size: 0.68rem; font-weight: 900; letter-spacing: -0.5px; }
+  .wa-btn      { background: #25D366; color: #fff; font-size: 1.3rem; }
+  .ig-share-btn {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #fff; font-size: 1.1rem;
+  }
+  .copy-btn {
+    background: rgba(179,136,255,0.12);
+    color: var(--accent4);
+    border: 1.5px solid rgba(179,136,255,0.35);
+    border-radius: 12px;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 320px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .copy-btn:hover { background: rgba(179,136,255,0.22); transform: translateY(-1px); }
+
+  .btn-screenshot {
+    background: linear-gradient(135deg, rgba(126,255,245,0.12), rgba(126,255,245,0.05));
+    color: var(--accent3);
+    border: 1.5px solid rgba(126,255,245,0.35);
+    font-size: 0.88rem;
+    padding: 10px 22px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    letter-spacing: 0.04em;
+  }
+  .btn-screenshot:hover { transform: translateY(-2px); border-color: rgba(126,255,245,0.7); }
+
+  /* ===== スクショオーバーレイ ===== */
+  .screenshot-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    z-index: 9999;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 16px 32px;
+    gap: 14px;
+  }
+  .ss-card {
+    background: var(--card-bg);
+    border: 2px solid var(--accent1);
+    border-radius: 20px;
+    padding: 20px 18px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 0 40px rgba(255,110,180,0.25), inset 0 0 30px rgba(255,110,180,0.06);
+    text-align: center;
+  }
+  .ss-title {
+    font-size: 1rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .ss-title-text {
+    background: linear-gradient(135deg, var(--accent1), var(--accent2), var(--accent3));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .ss-title-emoji {
+    -webkit-text-fill-color: initial;
+    background: none;
+  }
+  .ss-title-arrow {
+    -webkit-text-fill-color: #ff2222;
+    color: #ff2222;
+    background: none;
+    font-weight: 900;
+  }
+  .ss-action-label {
+    font-size: 0.65rem;
+    font-family: 'DotGothic16', monospace;
+    color: var(--subtle);
+    letter-spacing: 0.15em;
+    margin-bottom: 6px;
+  }
+  .ss-action-text {
+    font-size: clamp(0.78rem, 3.5vw, 1.2rem);
+    font-weight: 700;
+    color: var(--text);
+    background: linear-gradient(135deg, rgba(255,110,180,0.12), rgba(179,136,255,0.12));
+    border: 1px solid rgba(255,110,180,0.25);
+    border-radius: 12px;
+    padding: 10px 16px;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  .ss-bridge {
+    font-size: clamp(0.75rem, 3.5vw, 0.9rem);
+    font-weight: 900;
+    color: var(--accent3);
+    text-shadow: 0 0 12px rgba(126,255,245,0.5);
+    display: block;
+    margin: 4px 0;
+    letter-spacing: 0.02em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .ss-praise-label {
+    font-size: 0.65rem;
+    font-family: 'DotGothic16', monospace;
+    color: var(--subtle);
+    letter-spacing: 0.15em;
+    margin-bottom: 6px;
+    margin-top: 6px;
+  }
+  .ss-praise-text {
+    font-size: clamp(0.7rem, 4.5vw, 1.9rem);
+    font-weight: 900;
+    color: var(--accent2);
+    text-shadow: 0 0 24px rgba(255,224,102,0.6);
+    display: block;
+    background: linear-gradient(135deg, rgba(255,224,102,0.12), rgba(126,255,245,0.1));
+    border: 1px solid rgba(255,224,102,0.28);
+    border-radius: 12px;
+    padding: 12px 16px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  .ss-tag {
+    font-size: 0.68rem;
+    font-family: 'DotGothic16', monospace;
+    color: var(--subtle);
+    margin-top: 10px;
+    display: block;
+    letter-spacing: 0.1em;
+  }
+  .ss-hint {
+    font-size: 0.88rem;
+    color: var(--accent3);
+    background: rgba(126,255,245,0.07);
+    border: 2px dashed rgba(126,255,245,0.3);
+    border-radius: 12px;
+    padding: 10px 16px;
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+    animation: blink 1.5s infinite alternate;
+  }
+  @keyframes blink {
+    from { opacity: 0.6; }
+    to   { opacity: 1; }
+  }
+  .ss-sns-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 320px;
+  }
+  .ss-sns-row { display: flex; gap: 10px; justify-content: center; }
+  .btn-close-ss {
+    background: rgba(107,95,138,0.2);
+    color: var(--accent4);
+    border: 1.5px solid var(--subtle);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 12px 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-close-ss:hover { background: rgba(107,95,138,0.35); }
+  .ig-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white; border: none; border-radius: 20px;
+    padding: 10px 22px; width: 100%;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700; font-size: 0.9rem; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .ig-btn:hover { transform: scale(1.03); }
+  .ig-btn:active { transform: scale(0.96); }
+
+  /* ── PWA Install Accordion ── */
+  .install-section {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .install-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    border-top: 1px solid rgba(126,255,245,0.1);
+    border-bottom: 1px solid rgba(126,255,245,0.1);
+    color: rgba(180,165,210,0.95);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    padding: 12px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: color 0.3s;
+  }
+  .install-toggle:hover { color: var(--accent3); }
+  .install-toggle-arrow {
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    font-size: 9px;
+    opacity: 0.8;
+  }
+  .install-toggle.open .install-toggle-arrow { transform: rotate(180deg); }
+  .install-body {
+    display: none;
+    padding: 16px 0 8px;
+  }
+  .install-body.open { display: block; }
+  .install-os-section { margin-bottom: 20px; }
+  .install-os-title {
+    font-family: 'DotGothic16', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--subtle);
+    text-align: center;
+    margin-bottom: 12px;
+    opacity: 1;
+  }
+  .install-add-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(126,255,245,0.08), rgba(126,255,245,0.04));
+    border: 1px solid rgba(126,255,245,0.3);
+    color: var(--accent3);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    padding: 14px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+  .install-add-btn:hover {
+    background: linear-gradient(135deg, rgba(126,255,245,0.15), rgba(126,255,245,0.08));
+    border-color: rgba(126,255,245,0.55);
+  }
+  .install-add-btn:disabled,
+  .install-add-btn.installed {
+    opacity: 0.45;
+    cursor: default;
+    border-color: rgba(126,255,245,0.15);
+  }
+  .install-manual {
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(126,255,245,0.08);
+    border-radius: 12px;
+    padding: 12px 14px;
+  }
+  .install-manual-label {
+    font-family: 'DotGothic16', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: rgba(180,165,210,0.95);
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .install-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: step;
+  }
+  .install-steps li {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 12px;
+    color: rgba(180,165,210,0.95);
+    line-height: 1.7;
+    padding: 4px 0 4px 20px;
+    position: relative;
+    counter-increment: step;
+  }
+  .install-steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    color: var(--subtle);
+    font-family: 'DotGothic16', monospace;
+    font-size: 11px;
+  }
+
+  /* ─── 他のアプリ アコーディオン ─── */
+  .other-apps-section {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .other-apps-section::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(126,255,245,0.2), transparent);
+    margin-bottom: 0;
+  }
+  .other-apps-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    border-top: 1px solid rgba(126,255,245,0.12);
+    border-bottom: 1px solid rgba(126,255,245,0.12);
+    color: var(--subtle);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    padding: 13px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: color 0.3s;
+  }
+  .other-apps-toggle:hover { color: var(--accent3); }
+  .other-apps-toggle-arrow {
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    font-style: normal;
+    font-size: 10px;
+    opacity: 0.85;
+  }
+  .other-apps-toggle.open .other-apps-toggle-arrow { transform: rotate(180deg); }
+  .other-apps-body { display: none; padding: 20px 0 4px; }
+  .other-apps-body.open { display: block; }
+  .app-card-grid { display: flex; flex-direction: column; gap: 10px; }
+  .app-card {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 16px; border-radius: 14px;
+    text-decoration: none; transition: all 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .app-card::before {
+    content: ''; position: absolute; inset: 0;
+    opacity: 0; transition: opacity 0.3s;
+    background: rgba(255,255,255,0.04);
+  }
+  .app-card:hover::before { opacity: 1; }
+  .app-card:hover { transform: translateX(3px); }
+  .app-card-emoji { font-size: 1.4rem; flex-shrink: 0; line-height: 1; }
+  .app-card-text { flex: 1; min-width: 0; }
+  .app-card-name {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 0.82rem; font-weight: 700;
+    letter-spacing: 0.04em; margin-bottom: 2px;
+    white-space: normal; line-height: 1.4;
+  }
+  .app-card-desc {
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.7rem; opacity: 0.9;
+    letter-spacing: 0.04em; white-space: normal; line-height: 1.4;
+  }
+  .app-card-arrow { font-size: 0.7rem; opacity: 0.7; flex-shrink: 0; transition: opacity 0.3s; }
+  .app-card:hover .app-card-arrow { opacity: 1; }
+
+  /* ── Instagram フォローセクション ── */
+  .ig-follow-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .ig-follow-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(45deg, rgba(240,148,51,0.18), rgba(220,39,67,0.15), rgba(188,24,136,0.18));
+    color: rgba(255,180,160,0.85);
+    border: 1px solid rgba(220,39,67,0.25);
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 13px 28px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 0.88rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    box-shadow: 0 4px 14px rgba(220,39,67,0.1);
+  }
+  .ig-follow-btn:hover {
+    background: linear-gradient(45deg, rgba(240,148,51,0.28), rgba(220,39,67,0.24), rgba(188,24,136,0.28));
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 22px rgba(220,39,67,0.2);
+  }
+  .ig-follow-btn:active { transform: scale(0.96); }
+
+  /* ===== ヒストリーエリア ===== */
+  .history-section {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  .history-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    border-top: 1px solid rgba(255,110,180,0.1);
+    border-bottom: 1px solid rgba(255,110,180,0.1);
+    color: var(--subtle);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    padding: 13px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: color 0.3s;
+  }
+  .history-toggle:hover { color: var(--accent1); }
+  .history-toggle-arrow {
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    font-style: normal;
+    font-size: 10px;
+    opacity: 0.85;
+  }
+  .history-toggle.open .history-toggle-arrow { transform: rotate(180deg); }
+  .history-body { display: none; padding: 14px 0 6px; }
+  .history-body.open { display: block; }
+  .history-clear-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  .history-clear-btn {
+    background: none;
+    border: 1px solid rgba(107,95,138,0.4);
+    color: var(--subtle);
+    font-family: 'DotGothic16', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .history-clear-btn:hover { color: var(--accent1); border-color: var(--accent1); }
+  .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 320px;
+    overflow-y: auto;
+    padding-right: 2px;
+  }
+  .history-list::-webkit-scrollbar { width: 3px; }
+  .history-list::-webkit-scrollbar-thumb { background: rgba(255,110,180,0.3); border-radius: 4px; }
+  /* ヒストリー タブ */
+  .history-tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .history-tab {
+    flex: 1;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--subtle);
+    font-family: 'DotGothic16', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 7px 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .history-tab.active {
+    background: rgba(255,110,180,0.15);
+    border-color: var(--accent1);
+    color: var(--accent1);
+  }
+  .history-tab.tab-hall.active {
+    background: rgba(255,224,102,0.15);
+    border-color: var(--accent2);
+    color: var(--accent2);
+  }
+  .history-tab:hover:not(.active) { border-color: rgba(255,255,255,0.3); color: var(--text); }
+
+  .history-item {
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+  }
+  .history-item.hall-of-fame {
+    background: rgba(255,224,102,0.06);
+    border-color: rgba(255,224,102,0.25);
+  }
+  .history-item-date {
+    font-family: 'DotGothic16', monospace;
+    font-size: 9px;
+    color: var(--subtle);
+    opacity: 0.9;
+    letter-spacing: 0.08em;
+  }
+  .history-item-action {
+    font-size: 0.8rem;
+    color: var(--accent1);
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .history-item-praise {
+    font-size: 0.78rem;
+    color: var(--accent2);
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  /* アクションボタン行 */
+  .history-item-btns {
+    display: flex;
+    gap: 6px;
+    margin-top: 4px;
+    justify-content: flex-end;
+  }
+  .history-btn {
+    background: none;
+    border: none;
+    font-family: 'DotGothic16', monospace;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    padding: 3px 9px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.18s;
+  }
+  .history-btn-hall {
+    border: 1px solid rgba(255,224,102,0.35);
+    color: rgba(255,224,102,0.7);
+  }
+  .history-btn-hall:hover { background: rgba(255,224,102,0.12); color: var(--accent2); border-color: var(--accent2); }
+  .history-btn-hall.hof-active {
+    background: rgba(255,224,102,0.18);
+    border-color: var(--accent2);
+    color: var(--accent2);
+  }
+  .history-btn-del {
+    border: 1px solid rgba(107,95,138,0.3);
+    color: rgba(180,165,210,0.85);
+  }
+  .history-btn-del:hover { background: rgba(255,80,80,0.1); color: #ff8888; border-color: rgba(255,80,80,0.4); }
+
+  .history-empty {
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.72rem;
+    color: var(--subtle);
+    text-align: center;
+    opacity: 0.85;
+    padding: 16px 0;
+    letter-spacing: 0.1em;
+  }
+
+  /* 確認ダイアログ */
+  .confirm-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(13,10,26,0.85);
+    backdrop-filter: blur(4px);
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .confirm-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .confirm-box {
+    background: var(--card-bg);
+    border: 1.5px solid rgba(255,80,80,0.35);
+    border-radius: 20px;
+    padding: 28px 24px 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+    transform: scale(0.9);
+    transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1);
+  }
+  .confirm-overlay.open .confirm-box { transform: scale(1); }
+  .confirm-title {
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .confirm-desc {
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.72rem;
+    color: var(--subtle);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+  }
+  .confirm-btns {
+    display: flex;
+    gap: 10px;
+  }
+  .confirm-btn {
+    flex: 1;
+    border: none;
+    border-radius: 50px;
+    padding: 11px 8px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: transform 0.15s, opacity 0.15s;
+  }
+  .confirm-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+  .confirm-btn:active { transform: scale(0.96); }
+  .confirm-btn-cancel {
+    background: rgba(107,95,138,0.2);
+    color: var(--subtle);
+    border: 1px solid rgba(107,95,138,0.35);
+  }
+  .confirm-btn-ok {
+    background: linear-gradient(135deg, #ff5555, #cc2244);
+    color: #fff;
+  }
+
+  /* ===== 言語切替ボタン ===== */
+  .lang-switcher {
+    position: relative;
+    z-index: 200;
+  }
+  .lang-trigger {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(26,21,48,0.85);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50px;
+    padding: 5px 12px 5px 10px;
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    color: var(--text);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    transition: border-color 0.2s;
+    white-space: nowrap;
+  }
+  .lang-trigger:hover { border-color: rgba(255,110,180,0.4); }
+  .lang-trigger-arrow {
+    font-size: 0.55rem;
+    opacity: 0.85;
+    transition: transform 0.25s ease;
+  }
+  .lang-switcher.open .lang-trigger-arrow { transform: rotate(180deg); }
+  .lang-dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    background: rgba(26,21,48,0.97);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 14px;
+    padding: 4px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    backdrop-filter: blur(12px);
+    min-width: 110px;
+    opacity: 0;
+    transform: translateY(-6px) scale(0.96);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  }
+  .lang-switcher.open .lang-dropdown {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+  .lang-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    color: var(--subtle);
+    transition: background 0.15s, color 0.15s;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .lang-option:hover { background: rgba(255,255,255,0.06); color: var(--text); }
+  .lang-option.active {
+    background: linear-gradient(135deg, rgba(255,110,180,0.2), rgba(179,136,255,0.2));
+    color: #fff;
+  }
+  .lang-option-check { font-size: 0.65rem; opacity: 0; margin-left: auto; }
+  .lang-option.active .lang-option-check { opacity: 1; }
+
+  /* 各カード固有の色 */
+  .app-card-fire {
+    background: linear-gradient(135deg,rgba(255,110,50,0.12),rgba(255,80,20,0.08));
+    border: 1px solid rgba(255,110,50,0.3); color: #ffb090;
+  }
+  .app-card-omikuji {
+    background: linear-gradient(135deg,rgba(30,120,255,0.1),rgba(20,80,200,0.08));
+    border: 1px solid rgba(80,150,255,0.25); color: #90c0ff;
+  }
+  .app-card-open {
+    background: linear-gradient(135deg,rgba(30,200,80,0.1),rgba(20,150,50,0.08));
+    border: 1px solid rgba(60,200,80,0.25); color: #90e8a0;
+  }
+  .app-card-zange {
+    background: linear-gradient(135deg,rgba(179,136,255,0.12),rgba(120,80,220,0.08));
+    border: 1px solid rgba(179,136,255,0.3); color: #c8a0ff;
+  }
+  .app-card-senryu {
+    background: linear-gradient(135deg,rgba(255,224,102,0.1),rgba(220,180,20,0.08));
+    border: 1px solid rgba(255,224,102,0.28); color: #f0d870;
+  }
+  .app-card-gacha {
+    background: linear-gradient(135deg,rgba(126,255,245,0.1),rgba(80,220,210,0.08));
+    border: 1px solid rgba(126,255,245,0.25); color: #7efff5;
+  }
+</style>
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+<div id="blobs"></div>
+<div class="confetti-container" id="confetti"></div>
+
+<!-- 言語切替ドロップダウン（右上固定） -->
+<div class="lang-switcher" id="langSwitcher" style="position:fixed;top:14px;right:16px;z-index:1000;">
+  <button class="lang-trigger" id="langTrigger" onclick="toggleLangDropdown()">
+    <span id="langTriggerLabel">🇯🇵 JP</span>
+    <span class="lang-trigger-arrow">▼</span>
+  </button>
+  <div class="lang-dropdown" id="langDropdown">
+    <button class="lang-option active" id="btnJA" onclick="setLang('ja')">
+      🇯🇵 JP <span class="lang-option-check">✓</span>
+    </button>
+    <button class="lang-option" id="btnEN" onclick="setLang('en')">
+      🌍 EN <span class="lang-option-check">✓</span>
+    </button>
+    <button class="lang-option" id="btnKO" onclick="setLang('ko')">
+      🇰🇷 KO <span class="lang-option-check">✓</span>
+    </button>
+    <button class="lang-option" id="btnTW" onclick="setLang('tw')">
+      🇹🇼 繁中 <span class="lang-option-check">✓</span>
+    </button>
+    <button class="lang-option" id="btnID" onclick="setLang('id')">
+      🇮🇩 ID <span class="lang-option-check">✓</span>
+    </button>
+    <button class="lang-option" id="btnPT" onclick="setLang('pt')">
+      🇧🇷 PT <span class="lang-option-check">✓</span>
+    </button>
+    <button class="lang-option" id="btnFR" onclick="setLang('fr')">
+      🇫🇷 FR <span class="lang-option-check">✓</span>
+    </button>
+    <button class="lang-option" id="btnDE" onclick="setLang('de')">
+      🇩🇪 DE <span class="lang-option-check">✓</span>
+    </button>
+    <button class="lang-option" id="btnES" onclick="setLang('es')">
+      🇪🇸 ES <span class="lang-option-check">✓</span>
+    </button>
+    <button class="lang-option" id="btnTH" onclick="setLang('th')">
+      🇹🇭 TH <span class="lang-option-check">✓</span>
+    </button>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="title">
+    <div class="title-main"><span class="title-main-text">メンタル ガチャあげ</span><span class="title-main-emoji">🤣</span><span class="title-main-arrow">⤴</span></div>
+    <div class="title-sub">小さな行動 × 大きな承認</div>
+  </div>
+
+  <!-- ボタンの上に2つのカード -->
+  <div class="cards-area">
+
+    <!-- カード1：小さな行動 -->
+    <div class="result-card" id="cardAction">
+      <span class="card-placeholder">… 1回目を引こう</span>
+      <div class="card-inner">
+        <div class="card-label">✦ 小さな行動 ✦</div>
+        <div class="card-action-box">
+          <div class="card-action-text" id="actionResult">—</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 橋渡し -->
+    <div class="bridge" id="bridge">
+      <span class="bridge-main">いよっ！そんなあなたは！</span>
+      <span class="bridge-sub">↓ 大きな承認をどうぞ ↓</span>
+    </div>
+
+    <!-- カード2：大きな承認 -->
+    <div class="result-card delay" id="cardPraise">
+      <span class="card-placeholder">… 2回目を引こう</span>
+      <div class="card-inner">
+        <div class="card-label">★ 大きな承認 ★</div>
+        <div class="card-praise-box">
+          <div class="card-praise-text" id="praiseResult">—</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ガチャボタン -->
+  <button class="btn-gacha" id="btnGacha" onclick="pullGacha()">
+    <span class="btn-emoji" id="btnEmoji">🎲</span>
+    <span id="btnLabel">ガチャを引く</span>
+  </button>
+
+  <div class="counter" id="counter">まだ引いてないよ〜</div>
+
+  <div class="hint">ボタンを押すだけ。<br>ガチャを引くだけでえらい。</div>
+
+  <!-- シェアエリア（両方引いた後に表示） -->
+  <div class="share-area" id="shareArea">
+    <button class="btn-screenshot" onclick="enterScreenshot()">📸 スクショ用画面を開く</button>
+    <div class="share-label">📣 テキストでシェアする</div>
+    <div class="sns-btns" id="snsBtns">
+      <button class="sns-btn x-btn"       onclick="shareX()"        title="X">𝕏</button>
+      <button class="sns-btn threads-btn"  onclick="shareThreads()"  title="Threads">𝕋</button>
+      <button class="sns-btn line-btn"     onclick="shareLINE()"     title="LINE">LINE</button>
+      <button class="sns-btn ig-share-btn" onclick="openInstagram()" title="Instagram">📷</button>
+    </div>
+    <button class="copy-btn" onclick="copyText()">📋 テキストをコピー</button>
+  </div>
+
+  <!-- ヒストリー -->
+  <div class="history-section" id="historySection">
+    <button class="history-toggle" id="historyToggle">
+      <span>📖 これまでのガチャ履歴</span>
+      <span class="history-toggle-arrow">▼</span>
+    </button>
+    <div class="history-body" id="historyBody">
+      <div class="history-tabs">
+        <button class="history-tab active" id="tabAll" onclick="switchTab('all')">📖 すべて</button>
+        <button class="history-tab tab-hall" id="tabHall" onclick="switchTab('hall')">⭐ 殿堂入り</button>
+      </div>
+      <div class="history-clear-row">
+        <button class="history-clear-btn" onclick="clearHistory()">🗑 履歴をリセット</button>
+      </div>
+      <div class="history-list" id="historyList">
+        <div class="history-empty" id="historyEmpty">まだ履歴がないよ〜</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 他の無料アプリ アコーディオン -->
+  <div class="other-apps-section">
+    <button class="other-apps-toggle" id="otherAppsToggle">
+      <span id="otherAppsLabel">その他の無料アプリを見てみる</span>
+      <span class="other-apps-toggle-arrow">▼</span>
+    </button>
+    <div class="other-apps-body" id="otherAppsBody">
+      <div class="app-card-grid">
+        <a class="app-card app-card-open" href="https://sintaichoseijyuku.pages.dev/" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">💃</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="0">心体調整塾 ホームページ</div>
+            <div class="app-card-desc" data-app-desc="0">Mind &amp; Body Balance Training</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-senryu" href="https://lit.link/aitakeshi" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">🙋</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="1">アプリ全部まとめはこちら</div>
+            <div class="app-card-desc" data-app-desc="1">（日本語）</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-fire" href="https://warainpic.pages.dev" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">ꉂ🤣</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="2">バカウケ５Ｗ１Ｈ</div>
+            <div class="app-card-desc" data-app-desc="2">笑いのオリンピック🏅（日本語）</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-senryu" href="https://bakaukesenryu.pages.dev" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">🎋</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="3">バカウケ川柳</div>
+            <div class="app-card-desc" data-app-desc="3">爆笑575ガチャꉂ🤣𐤔（日本語）</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-omikuji" href="https://kamimikuji.pages.dev" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">🎋</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="4">火水おみくじ</div>
+            <div class="app-card-desc" data-app-desc="4">自分らしく生きやすく👍</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-zange" href="https://zangeforgive.pages.dev" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">🕯️</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="5">ZANGE 懺悔</div>
+            <div class="app-card-desc" data-app-desc="5">自分を許して軽くなる🕯*ﾟ</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-open" href="https://openhearttraining.pages.dev" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">☯️</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="6">素直力トレーニング</div>
+            <div class="app-card-desc" data-app-desc="6">人生を好転させる☯️</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-omikuji" href="https://balancetraning.pages.dev/" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">⚖️</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="7">言葉とメンタルのバランストレーニング</div>
+            <div class="app-card-desc" data-app-desc="7">バランストレーニング⚖️</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-fire" href="https://kamisindan.pages.dev" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">🔥☔</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="8">火水診断</div>
+            <div class="app-card-desc" data-app-desc="8">12タイプ・キャラクター✏💃</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PWA Install Accordion ── -->
+  <div class="install-section" id="installSection">
+    <button class="install-toggle" id="installToggle">
+      <span id="installToggleLabel">📲 アプリをインストールする</span>
+      <span class="install-toggle-arrow">▼</span>
+    </button>
+    <div class="install-body" id="installBody">
+      <!-- Android -->
+      <div class="install-os-section">
+        <div class="install-os-title" id="installAndroidTitle">Android</div>
+        <button class="install-add-btn" id="installAndroidBtn">＋ ホーム画面に追加</button>
+        <div class="install-manual">
+          <div class="install-manual-label" id="installManualLabelAndroid">手動で追加する方法</div>
+          <ol class="install-steps" id="installStepsAndroid">
+            <li>Chrome でこのページを開く</li>
+            <li>右上のメニュー（⋮）をタップ</li>
+            <li>「ホーム画面に追加」を選択</li>
+            <li>「追加」をタップして完了</li>
+          </ol>
+        </div>
+      </div>
+      <!-- iOS -->
+      <div class="install-os-section">
+        <div class="install-os-title" id="installIOSTitle">iPhone / iPad (Safari)</div>
+        <div class="install-manual">
+          <div class="install-manual-label" id="installManualLabelIOS">Safariから追加する方法</div>
+          <ol class="install-steps" id="installStepsIOS">
+            <li>Safari でこのページを開く</li>
+            <li>下部の共有ボタン（□↑）をタップ</li>
+            <li>「ホーム画面に追加」を選択</li>
+            <li>「追加」をタップして完了</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Instagram フォロー ── -->
+  <div class="ig-follow-section">
+    <a class="ig-follow-btn" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="flex-shrink:0"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      Instagramをフォローする
+    </a>
+  </div>
+
+</div>
+
+<!-- スクショ用オーバーレイ -->
+<div class="screenshot-overlay" id="screenshotOverlay" style="display:none">
+  <!-- オーバーレイ内言語切替（右上固定） -->
+  <div class="lang-switcher" id="ssLangSwitcher" style="position:fixed;top:12px;right:16px;z-index:10001;">
+    <button class="lang-trigger" id="ssLangTrigger" onclick="toggleSsLangDropdown()">
+      <span id="ssLangTriggerLabel">🇯🇵 JP</span>
+      <span class="lang-trigger-arrow">▼</span>
+    </button>
+    <div class="lang-dropdown" id="ssLangDropdown">
+      <button class="lang-option" id="ssBtnJA" onclick="setLangFromSS('ja')">
+        🇯🇵 JP <span class="lang-option-check">✓</span>
+      </button>
+      <button class="lang-option" id="ssBtnEN" onclick="setLangFromSS('en')">
+        🌍 EN <span class="lang-option-check">✓</span>
+      </button>
+      <button class="lang-option" id="ssBtnKO" onclick="setLangFromSS('ko')">
+        🇰🇷 KO <span class="lang-option-check">✓</span>
+      </button>
+      <button class="lang-option" id="ssBtnTW" onclick="setLangFromSS('tw')">
+        🇹🇼 繁中 <span class="lang-option-check">✓</span>
+      </button>
+      <button class="lang-option" id="ssBtnID" onclick="setLangFromSS('id')">
+        🇮🇩 ID <span class="lang-option-check">✓</span>
+      </button>
+      <button class="lang-option" id="ssBtnPT" onclick="setLangFromSS('pt')">
+        🇧🇷 PT <span class="lang-option-check">✓</span>
+      </button>
+      <button class="lang-option" id="ssBtnFR" onclick="setLangFromSS('fr')">
+        🇫🇷 FR <span class="lang-option-check">✓</span>
+      </button>
+      <button class="lang-option" id="ssBtnDE" onclick="setLangFromSS('de')">
+        🇩🇪 DE <span class="lang-option-check">✓</span>
+      </button>
+      <button class="lang-option" id="ssBtnES" onclick="setLangFromSS('es')">
+        🇪🇸 ES <span class="lang-option-check">✓</span>
+      </button>
+      <button class="lang-option" id="ssBtnTH" onclick="setLangFromSS('th')">
+        🇹🇭 TH <span class="lang-option-check">✓</span>
+      </button>
+    </div>
+  </div>
+  <div class="ss-card" id="ssCard">
+    <span class="ss-title"><span class="ss-title-text">メンタル ガチャあげ</span><span class="ss-title-emoji">🤣</span><span class="ss-title-arrow">⤴</span></span>
+    <div class="ss-action-label">✦ 小さな行動 ✦</div>
+    <span class="ss-action-text" id="ssActionText">—</span>
+    <span class="ss-bridge">いよっ！そんなあなたは！</span>
+    <div class="ss-praise-label">★ 大きな承認 ★</div>
+    <span class="ss-praise-text" id="ssPraiseText">—</span>
+    <span class="ss-tag">#メンタルガチャあげ</span>
+  </div>
+  <div class="ss-hint">↑ この画面をスクショしてね！📸</div>
+  <div class="ss-sns-btns">
+    <div class="ss-sns-row" id="ssSnsRow">
+      <button class="sns-btn x-btn"       onclick="shareX()"        title="X">𝕏</button>
+      <button class="sns-btn threads-btn"  onclick="shareThreads()"  title="Threads">𝕋</button>
+      <button class="sns-btn line-btn"     onclick="shareLINE()"     title="LINE">LINE</button>
+      <button class="sns-btn ig-share-btn" onclick="openInstagram()" title="Instagram">📷</button>
+    </div>
+    <button class="ig-btn" onclick="openInstagram()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="white" style="vertical-align:middle;margin-right:6px"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      Instagramで自慢する
+    </button>
+  </div>
+  <button class="btn-close-ss" onclick="exitScreenshot()">✕ 閉じる</button>
+</div>
+
+<!-- 確認ダイアログ -->
+<div class="confirm-overlay" id="confirmOverlay">
+  <div class="confirm-box">
+    <div class="confirm-title" id="confirmTitle">本当に削除しますか？</div>
+    <div class="confirm-desc" id="confirmDesc">この操作は元に戻せません</div>
+    <div class="confirm-btns">
+      <button class="confirm-btn confirm-btn-cancel" id="confirmCancelBtn" onclick="closeConfirm()">やめる</button>
+      <button class="confirm-btn confirm-btn-ok" id="confirmOkBtn" onclick="doConfirm()">消す</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// --- SNSボタン言語別切替 ---
+const SNS_CONFIG = {
+  // JA: X / Threads / LINE / Instagram
+  ja: [
+    { cls: 'x-btn',       fn: 'shareX()',        label: '𝕏',    title: 'X' },
+    { cls: 'threads-btn', fn: 'shareThreads()',  label: '𝕋',    title: 'Threads' },
+    { cls: 'line-btn',    fn: 'shareLINE()',     label: 'LINE', title: 'LINE' },
+    { cls: 'ig-share-btn',fn: 'openInstagram()', label: '📷',   title: 'Instagram' },
+  ],
+  // KO: X / Threads / KakaoTalk / Facebook
+  ko: [
+    { cls: 'x-btn',       fn: 'shareX()',        label: '𝕏',    title: 'X' },
+    { cls: 'threads-btn', fn: 'shareThreads()',  label: '𝕋',    title: 'Threads' },
+    { cls: 'kakao-btn',   fn: 'shareKakao()',    label: 'KAKAO',title: 'KakaoTalk' },
+    { cls: 'fb-btn',      fn: 'shareFacebook()', label: 'f',    title: 'Facebook' },
+  ],
+  // TW: X / Threads / LINE / Facebook
+  tw: [
+    { cls: 'x-btn',       fn: 'shareX()',        label: '𝕏',    title: 'X' },
+    { cls: 'threads-btn', fn: 'shareThreads()',  label: '𝕋',    title: 'Threads' },
+    { cls: 'line-btn',    fn: 'shareLINE()',     label: 'LINE', title: 'LINE' },
+    { cls: 'fb-btn',      fn: 'shareFacebook()', label: 'f',    title: 'Facebook' },
+  ],
+  // ID: X / Threads / WhatsApp / Facebook
+  id: [
+    { cls: 'x-btn',       fn: 'shareX()',        label: '𝕏',    title: 'X' },
+    { cls: 'threads-btn', fn: 'shareThreads()',  label: '𝕋',    title: 'Threads' },
+    { cls: 'wa-btn',      fn: 'shareWhatsApp()', label: '💬',   title: 'WhatsApp' },
+    { cls: 'fb-btn',      fn: 'shareFacebook()', label: 'f',    title: 'Facebook' },
+  ],
+  // PT: X / Threads / WhatsApp / Facebook
+  pt: [
+    { cls: 'x-btn',       fn: 'shareX()',        label: '𝕏',    title: 'X' },
+    { cls: 'threads-btn', fn: 'shareThreads()',  label: '𝕋',    title: 'Threads' },
+    { cls: 'wa-btn',      fn: 'shareWhatsApp()', label: '💬',   title: 'WhatsApp' },
+    { cls: 'fb-btn',      fn: 'shareFacebook()', label: 'f',    title: 'Facebook' },
+  ],
+  // FR: X / Threads / Facebook / Instagram
+  fr: [
+    { cls: 'x-btn',       fn: 'shareX()',        label: '𝕏',    title: 'X' },
+    { cls: 'threads-btn', fn: 'shareThreads()',  label: '𝕋',    title: 'Threads' },
+    { cls: 'fb-btn',      fn: 'shareFacebook()', label: 'f',    title: 'Facebook' },
+    { cls: 'ig-share-btn',fn: 'openInstagram()', label: '📷',   title: 'Instagram' },
+  ],
+  // DE: X / Threads / WhatsApp / Facebook
+  de: [
+    { cls: 'x-btn',       fn: 'shareX()',        label: '𝕏',    title: 'X' },
+    { cls: 'threads-btn', fn: 'shareThreads()',  label: '𝕋',    title: 'Threads' },
+    { cls: 'wa-btn',      fn: 'shareWhatsApp()', label: '💬',   title: 'WhatsApp' },
+    { cls: 'fb-btn',      fn: 'shareFacebook()', label: 'f',    title: 'Facebook' },
+  ],
+  // ES: X / Threads / WhatsApp / Facebook
+  es: [
+    { cls: 'x-btn',       fn: 'shareX()',        label: '𝕏',    title: 'X' },
+    { cls: 'threads-btn', fn: 'shareThreads()',  label: '𝕋',    title: 'Threads' },
+    { cls: 'wa-btn',      fn: 'shareWhatsApp()', label: '💬',   title: 'WhatsApp' },
+    { cls: 'fb-btn',      fn: 'shareFacebook()', label: 'f',    title: 'Facebook' },
+  ],
+  // TH: X / Threads / LINE / Facebook
+  th: [
+    { cls: 'x-btn',       fn: 'shareX()',        label: '𝕏',    title: 'X' },
+    { cls: 'threads-btn', fn: 'shareThreads()',  label: '𝕋',    title: 'Threads' },
+    { cls: 'line-btn',    fn: 'shareLINE()',     label: 'LINE', title: 'LINE' },
+    { cls: 'fb-btn',      fn: 'shareFacebook()', label: 'f',    title: 'Facebook' },
+  ],
+  // EN: X / Threads / Facebook / Instagram
+  en: [
+    { cls: 'x-btn',       fn: 'shareX()',        label: '𝕏',    title: 'X' },
+    { cls: 'threads-btn', fn: 'shareThreads()',  label: '𝕋',    title: 'Threads' },
+    { cls: 'fb-btn',      fn: 'shareFacebook()', label: 'f',    title: 'Facebook' },
+    { cls: 'ig-share-btn',fn: 'openInstagram()', label: '📷',   title: 'Instagram' },
+  ],
+};
+
+function renderSnsButtons(lang) {
+  const cfg = SNS_CONFIG[lang] || SNS_CONFIG.en;
+  ['snsBtns', 'ssSnsRow'].forEach(function(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.innerHTML = cfg.map(function(b) {
+      return '<button class="sns-btn ' + b.cls + '" onclick="' + b.fn + '" title="' + b.title + '">' + b.label + '</button>';
+    }).join('');
+  });
+}
+
+// ===== 言語データ =====
+const LANG_KEY = 'mengacha_lang';
+let currentLang = 'ja';
+
+const i18n = {
+  ja: {
+    title: 'メンタル ガチャあげ🤣⤴',
+    subtitle: '小さな行動 × 大きな承認',
+    placeholder1: '… 1回目を引こう',
+    placeholder2: '… 2回目を引こう',
+    cardLabel1: '✦ 小さな行動 ✦',
+    cardLabel2: '★ 大きな承認 ★',
+    bridgeMain: 'いよっ！そんなあなたは！',
+    bridgeSub: '↓ 大きな承認をどうぞ ↓',
+    btnPull: 'ガチャを引く',
+    btnPraise: '承認を受け取る',
+    btnAgain: 'もう一回引く',
+    counterInit: 'まだ引いてないよ〜',
+    counterWait: '承認も受け取ってね〜！',
+    counterMsgs: ['1セット！えらい！','2セット！すごい！','3回！天才！','何回引いてもえらい','もう優勝確定','止まらんね〜','あなた強すぎる','記録更新中','伝説ガチャ師','無限に大丈夫'],
+    counterMany: function(n) { return n + 'セット引いた！もはや神'; },
+    hint: 'ボタンを押すだけ。<br>ガチャを引くだけでえらい。',
+    shareLabel: '📣 テキストでシェアする',
+    btnScreenshot: '📸 スクショ用画面を開く',
+    btnCopy: '📋 テキストをコピー',
+    historyToggle: '📖 これまでのガチャ履歴',
+    tabAll: '📖 すべて',
+    tabHall: '⭐ 殿堂入り',
+    btnClear: '🗑 履歴をリセット',
+    emptyAll: 'まだ履歴がないよ〜',
+    emptyHall: '⭐ 殿堂入りがまだないよ〜',
+    hallOn: '⭐ 殿堂入り中',
+    hallOff: '☆ 殿堂入り',
+    btnDel: '🗑 削除',
+    confirmDelTitle: '本当に消しますか？',
+    confirmDelDesc: 'この履歴は元に戻せません',
+    confirmDelOk: '消す',
+    confirmClearTitle: '全履歴を消しますか？',
+    confirmClearDesc: function(n) { return n + '件すべて削除されます\n（殿堂入りも含む）'; },
+    confirmClearOk: '全部消す',
+    confirmCancel: 'やめる',
+    otherAppsLabel: 'その他の無料アプリを見てみる',
+    installLabel: '📲 アプリをインストールする',
+    installAndroid: '＋ ホーム画面に追加',
+    installDone: '✓ インストール済み',
+    installAndroidTitle: 'Android',
+    installIOSTitle: 'iPhone / iPad (Safari)',
+    installManualLabelAndroid: '手動で追加する方法',
+    installManualLabelIOS: 'Safariから追加する方法',
+    installStepsAndroid: ['Chrome でこのページを開く','右上のメニュー（⋮）をタップ','「ホーム画面に追加」を選択','「追加」をタップして完了'],
+    installStepsIOS: ['Safari でこのページを開く','下部の共有ボタン（□↑）をタップ','「ホーム画面に追加」を選択','「追加」をタップして完了'],
+    ssTitle: 'メンタル ガチャあげ🤣⤴',
+    ssLabel1: '✦ 小さな行動 ✦',
+    ssBridge: 'いよっ！そんなあなたは！',
+    ssLabel2: '★ 大きな承認 ★',
+    ssTag: '#メンタルガチャあげ',
+    ssHint: '↑ この画面をスクショしてね！📸',
+    ssClose: '✕ 閉じる',
+    igFollow: 'Instagramをフォローする',
+    igShare: 'Instagramで自慢する',
+    fbAlert: 'Facebookシェアはリンクのみ対応です。',
+    igAlert: '📋 テキストをコピーしました！Instagramに貼り付けて投稿してね📸',
+    copyOk: '📋 コピーしました！どこでも貼り付けて自慢しよう！',
+    shareText: function(a, p) { return '🎲 メンタル ガチャあげ🤣⤴\n\n✦ 小さな行動 ✦\n' + a + '\n\n★ 大きな承認 ★\n' + p + '\n\n#メンタルガチャあげ'; },
+    recentKeyA: 'mengacha_recent_actions',
+    recentKeyP: 'mengacha_recent_praises',
+    historyKey: 'mengacha_history',
+    appCards: [
+      { name: '心体調整塾 ホームページ', desc: 'Mind &amp; Body Balance Training' },
+      { name: 'アプリ全部まとめはこちら', desc: '（日本語）' },
+      { name: 'バカウケ５Ｗ１Ｈ', desc: '笑いのオリンピック🏅（日本語）' },
+      { name: 'バカウケ川柳', desc: '爆笑575ガチャꉂ🤣𐤔（日本語）' },
+      { name: '火水おみくじ', desc: '自分らしく生きやすく👍' },
+      { name: 'ZANGE 懺悔', desc: '自分を許して軽くなる🕯*ﾟ' },
+      { name: '素直力トレーニング', desc: '人生を好転させる☯️' },
+      { name: '言葉とメンタルのバランストレーニング', desc: 'バランストレーニング⚖️' },
+      { name: '火水診断', desc: '12タイプ・キャラクター✏💃' },
+    ],
+  },
+  en: {
+    title: 'Mental Gacha Up ⤴',
+    subtitle: 'Small Actions × Big Praise',
+    placeholder1: '… Pull round 1',
+    placeholder2: '… Pull round 2',
+    cardLabel1: '✦ Small Action ✦',
+    cardLabel2: '★ Big Praise ★',
+    bridgeMain: 'Hey! That means you are!',
+    bridgeSub: '↓ Receive your Big Praise ↓',
+    btnPull: 'Pull the Gacha',
+    btnPraise: 'Receive Your Praise',
+    btnAgain: 'Pull Again',
+    counterInit: "You haven't pulled yet~",
+    counterWait: 'Receive your praise too~!',
+    counterMsgs: ['1 set! Amazing!','2 sets! Incredible!','3 times! Genius!','However many — you\'re great','Victory is yours','You can\'t stop~','You\'re too powerful','Breaking records','Legendary Gacha Master','Infinitely okay'],
+    counterMany: function(n) { return n + ' sets pulled! You\'re basically a god'; },
+    hint: 'Just press the button.<br>Pulling the gacha already makes you amazing.',
+    shareLabel: '📣 Share as Text',
+    btnScreenshot: '📸 Open Screenshot View',
+    btnCopy: '📋 Copy Text',
+    historyToggle: '📖 Gacha History',
+    tabAll: '📖 All',
+    tabHall: '⭐ Hall of Fame',
+    btnClear: '🗑 Clear History',
+    emptyAll: 'No history yet~',
+    emptyHall: '⭐ No Hall of Fame entries yet~',
+    hallOn: '⭐ In Hall of Fame',
+    hallOff: '☆ Add to Hall of Fame',
+    btnDel: '🗑 Delete',
+    confirmDelTitle: 'Are you sure?',
+    confirmDelDesc: 'This history entry cannot be restored',
+    confirmDelOk: 'Delete',
+    confirmClearTitle: 'Clear all history?',
+    confirmClearDesc: function(n) { return 'All ' + n + ' entries will be deleted\n(including Hall of Fame)'; },
+    confirmClearOk: 'Clear All',
+    confirmCancel: 'Cancel',
+    otherAppsLabel: 'See Other Free Apps',
+    installLabel: '📲 Install the App',
+    installAndroid: '＋ Add to Home Screen',
+    installDone: '✓ Installed',
+    installAndroidTitle: 'Android',
+    installIOSTitle: 'iPhone / iPad (Safari)',
+    installManualLabelAndroid: 'How to add manually',
+    installManualLabelIOS: 'How to add from Safari',
+    installStepsAndroid: ['Open this page in Chrome','Tap the menu (⋮) in the top right','Select "Add to Home screen"','Tap "Add" to finish'],
+    installStepsIOS: ['Open this page in Safari','Tap the Share button (□↑) at the bottom','Select "Add to Home Screen"','Tap "Add" to finish'],
+    ssTitle: 'Mental Gacha Up ⤴',
+    ssLabel1: '✦ Small Action ✦',
+    ssBridge: 'Hey! That means you are!',
+    ssLabel2: '★ Big Praise ★',
+    ssTag: '#MentalGachaUp',
+    ssHint: '↑ Take a screenshot of this! 📸',
+    ssClose: '✕ Close',
+    igFollow: 'Follow on Instagram',
+    igShare: 'Brag on Instagram',
+    fbAlert: 'Facebook sharing supports links only.',
+    igAlert: '📋 Text copied! Paste it into Instagram to post 📸',
+    copyOk: '📋 Copied! Paste it anywhere to share!',
+    shareText: function(a, p) { return '🎲 Mental Gacha Up ⤴\n\n✦ Small Action ✦\n' + a + '\n\n★ Big Praise ★\n' + p + '\n\n#MentalGachaUp'; },
+    recentKeyA: 'mengacha_en_recent_actions',
+    recentKeyP: 'mengacha_en_recent_praises',
+    historyKey: 'mengacha_en_history',
+    appCards: [
+      { name: 'Mind &amp; Body Balance Training — Website', desc: 'sintaichouseijuku.pages.dev' },
+      { name: 'All Apps List', desc: '(Japanese) lit.link/aitakeshi' },
+      { name: 'Hilarious 5W1H', desc: 'Comedy Olympics 🏅 (Japanese)' },
+      { name: 'Hilarious Senryu', desc: 'Laugh-out-loud 5-7-5 Gacha 🤣 (Japanese)' },
+      { name: 'Fire-Water Omikuji', desc: 'Live more like yourself 👍' },
+      { name: 'ZANGE — Confession', desc: 'Forgive yourself &amp; feel lighter 🕯' },
+      { name: 'Honesty Training', desc: 'Turn your life around ☯️' },
+      { name: 'Words &amp; Mental Balance Training', desc: 'Balance Training ⚖️' },
+      { name: 'Fire-Water Diagnosis', desc: '12 personality types ✏💃' },
+    ],
+  },
+  ko: {
+    title: '멘탈 가챠 업 🤣⤴',
+    subtitle: '작은 행동 × 큰 인정',
+    placeholder1: '… 1번째를 뽑아보자',
+    placeholder2: '… 2번째를 뽑아보자',
+    cardLabel1: '✦ 작은 행동 ✦',
+    cardLabel2: '★ 큰 인정 ★',
+    bridgeMain: '이야! 그런 당신은!',
+    bridgeSub: '↓ 큰 인정을 받아보세요 ↓',
+    btnPull: '가챠 뽑기',
+    btnPraise: '인정 받기',
+    btnAgain: '한 번 더 뽑기',
+    counterInit: '아직 안 뽑았어요~',
+    counterWait: '인정도 받아요~!',
+    counterMsgs: ['1세트! 대단해!','2세트! 굉장해!','3번! 천재!','몇 번이든 대단해','이미 우승 확정','멈출 수 없네~','당신 너무 강해','기록 경신 중','전설의 가챠 마스터','무한히 괜찮아'],
+    counterMany: function(n) { return n + '세트 뽑았어! 이제 신이나 마찬가지'; },
+    hint: '버튼만 누르면 돼.<br>가챠를 뽑는 것만으로도 대단해.',
+    shareLabel: '📣 텍스트로 공유하기',
+    btnScreenshot: '📸 스크린샷 화면 열기',
+    btnCopy: '📋 텍스트 복사',
+    historyToggle: '📖 지금까지의 가챠 기록',
+    tabAll: '📖 전체',
+    tabHall: '⭐ 명예의 전당',
+    btnClear: '🗑 기록 초기화',
+    emptyAll: '아직 기록이 없어요~',
+    emptyHall: '⭐ 명예의 전당에 아직 없어요~',
+    hallOn: '⭐ 명예의 전당 등록 중',
+    hallOff: '☆ 명예의 전당에 추가',
+    btnDel: '🗑 삭제',
+    confirmDelTitle: '정말로 삭제할까요?',
+    confirmDelDesc: '이 기록은 되돌릴 수 없어요',
+    confirmDelOk: '삭제',
+    confirmClearTitle: '전체 기록을 삭제할까요?',
+    confirmClearDesc: function(n) { return n + '건 모두 삭제됩니다\n(명예의 전당 포함)'; },
+    confirmClearOk: '전부 삭제',
+    confirmCancel: '취소',
+    otherAppsLabel: '다른 무료 앱 보기',
+    installLabel: '📲 앱 설치하기',
+    installAndroid: '＋ 홈 화면에 추가',
+    installDone: '✓ 설치 완료',
+    installAndroidTitle: 'Android',
+    installIOSTitle: 'iPhone / iPad (Safari)',
+    installManualLabelAndroid: '수동으로 추가하는 방법',
+    installManualLabelIOS: 'Safari에서 추가하는 방법',
+    installStepsAndroid: ['Chrome에서 이 페이지 열기','오른쪽 위 메뉴(⋮) 탭하기','「홈 화면에 추가」 선택','「추가」 탭하여 완료'],
+    installStepsIOS: ['Safari에서 이 페이지 열기','하단 공유 버튼(□↑) 탭하기','「홈 화면에 추가」 선택','「추가」 탭하여 완료'],
+    ssTitle: '멘탈 가챠 업 🤣⤴',
+    ssLabel1: '✦ 작은 행동 ✦',
+    ssBridge: '이야! 그런 당신은!',
+    ssLabel2: '★ 큰 인정 ★',
+    ssTag: '#멘탈가챠업',
+    ssHint: '↑ 이 화면을 스크린샷 찍어요! 📸',
+    ssClose: '✕ 닫기',
+    igFollow: 'Instagram 팔로우하기',
+    igShare: 'Instagram에서 자랑하기',
+    fbAlert: 'Facebook 공유는 링크만 지원됩니다.',
+    igAlert: '📋 텍스트가 복사되었습니다! Instagram에 붙여넣어 공유하세요 📸',
+    copyOk: '📋 복사했어요! 어디든 붙여넣어서 자랑해요!',
+    shareText: function(a, p) { return '🎲 멘탈 가챠 업 🤣⤴\n\n✦ 작은 행동 ✦\n' + a + '\n\n★ 큰 인정 ★\n' + p + '\n\n#멘탈가챠업'; },
+    recentKeyA: 'mengacha_ko_recent_actions',
+    recentKeyP: 'mengacha_ko_recent_praises',
+    historyKey: 'mengacha_history',
+    appCards: [
+      { name: '심신조정학교 홈페이지', desc: 'Mind &amp; Body Balance Training' },
+      { name: '앱 전체 목록 보기', desc: '(일본어) lit.link/aitakeshi' },
+      { name: '웃긴 5W1H', desc: '웃음 올림픽 🏅 (일본어)' },
+      { name: '웃긴 센류', desc: '폭소 5-7-5 가챠 🤣 (일본어)' },
+      { name: '불물 오미쿠지', desc: '나답게 살기 쉽게 👍' },
+      { name: 'ZANGE 참회', desc: '자신을 용서하고 가벼워지기 🕯' },
+      { name: '솔직함 트레이닝', desc: '인생을 바꾸다 ☯️' },
+      { name: '말과 멘탈 밸런스 트레이닝', desc: '밸런스 트레이닝 ⚖️' },
+      { name: '불물 진단', desc: '12가지 타입·캐릭터 ✏💃' },
+    ],
+  },
+  tw: {
+    title: '心靈扭蛋大放送 🤣⤴',
+    subtitle: '微小行動 × 大大認可',
+    placeholder1: '… 來抽第1次吧',
+    placeholder2: '… 來抽第2次吧',
+    cardLabel1: '✦ 微小行動 ✦',
+    cardLabel2: '★ 大大認可 ★',
+    bridgeMain: '就是這樣的你！',
+    bridgeSub: '↓ 請接收大大認可 ↓',
+    btnPull: '抽扭蛋',
+    btnPraise: '接收認可',
+    btnAgain: '再抽一次',
+    counterInit: '還沒抽喔～',
+    counterWait: '也要接收認可喔～！',
+    counterMsgs: ['1組！好棒！','2組！厲害！','3次！天才！','抽幾次都很棒','已確定奪冠','停不下來～','你也太強了','正在破紀錄','傳說扭蛋師','無限OK'],
+    counterMany: function(n) { return '抽了' + n + '組！根本是神'; },
+    hint: '只要按下按鈕就好。<br>光是抽扭蛋就很棒了。',
+    shareLabel: '📣 以文字分享',
+    btnScreenshot: '📸 開啟截圖畫面',
+    btnCopy: '📋 複製文字',
+    historyToggle: '📖 到目前為止的扭蛋紀錄',
+    tabAll: '📖 全部',
+    tabHall: '⭐ 名人堂',
+    btnClear: '🗑 重置紀錄',
+    emptyAll: '還沒有紀錄喔～',
+    emptyHall: '⭐ 名人堂還是空的喔～',
+    hallOn: '⭐ 名人堂登錄中',
+    hallOff: '☆ 加入名人堂',
+    btnDel: '🗑 刪除',
+    confirmDelTitle: '真的要刪除嗎？',
+    confirmDelDesc: '這筆紀錄無法還原',
+    confirmDelOk: '刪除',
+    confirmClearTitle: '刪除全部紀錄？',
+    confirmClearDesc: function(n) { return '共' + n + '筆將全部刪除\n（包含名人堂）'; },
+    confirmClearOk: '全部刪除',
+    confirmCancel: '取消',
+    otherAppsLabel: '看看其他免費應用程式',
+    installLabel: '📲 安裝應用程式',
+    installAndroid: '＋ 加到主畫面',
+    installDone: '✓ 已安裝',
+    installAndroidTitle: 'Android',
+    installIOSTitle: 'iPhone / iPad (Safari)',
+    installManualLabelAndroid: '手動新增的方法',
+    installManualLabelIOS: '從 Safari 新增的方法',
+    installStepsAndroid: ['用 Chrome 開啟此頁面','點選右上角選單（⋮）','選擇「加到主畫面」','點選「新增」即完成'],
+    installStepsIOS: ['用 Safari 開啟此頁面','點選下方分享按鈕（□↑）','選擇「加到主畫面」','點選「新增」即完成'],
+    ssTitle: '心靈扭蛋大放送 🤣⤴',
+    ssLabel1: '✦ 微小行動 ✦',
+    ssBridge: '就是這樣的你！',
+    ssLabel2: '★ 大大認可 ★',
+    ssTag: '#心靈扭蛋大放送',
+    ssHint: '↑ 請截圖這個畫面！📸',
+    ssClose: '✕ 關閉',
+    igFollow: '追蹤 Instagram',
+    igShare: '在 Instagram 炫耀',
+    fbAlert: 'Facebook 分享僅支援連結。',
+    igAlert: '📋 文字已複製！貼到 Instagram 發佈吧 📸',
+    copyOk: '📋 已複製！貼到任何地方去炫耀吧！',
+    shareText: function(a, p) { return '🎲 心靈扭蛋大放送 🤣⤴\n\n✦ 微小行動 ✦\n' + a + '\n\n★ 大大認可 ★\n' + p + '\n\n#心靈扭蛋大放送'; },
+    recentKeyA: 'mengacha_tw_recent_actions',
+    recentKeyP: 'mengacha_tw_recent_praises',
+    historyKey: 'mengacha_history',
+    appCards: [
+      { name: '心體調整塾 官網', desc: 'Mind &amp; Body Balance Training' },
+      { name: '所有應用程式一覽', desc: '（日文）lit.link/aitakeshi' },
+      { name: '爆笑５Ｗ１Ｈ', desc: '歡笑奧林匹克 🏅（日文）' },
+      { name: '爆笑川柳', desc: '爆笑5-7-5扭蛋 🤣（日文）' },
+      { name: '火水御神籤', desc: '活出自我 👍' },
+      { name: 'ZANGE 懺悔', desc: '原諒自己變輕鬆 🕯' },
+      { name: '坦誠力訓練', desc: '讓人生好轉 ☯️' },
+      { name: '語言與心靈平衡訓練', desc: '平衡訓練 ⚖️' },
+      { name: '火水診斷', desc: '12種類型・個性 ✏💃' },
+    ],
+  },
+  pt: {
+    title: 'Gacha Mental Para Cima 🤣⤴',
+    subtitle: 'Pequenas Ações × Grande Reconhecimento',
+    placeholder1: '… Tente a 1ª rodada',
+    placeholder2: '… Tente a 2ª rodada',
+    cardLabel1: '✦ Pequena Ação ✦',
+    cardLabel2: '★ Grande Reconhecimento ★',
+    bridgeMain: 'Ei! Isso significa que você é!',
+    bridgeSub: '↓ Receba seu Grande Reconhecimento ↓',
+    btnPull: 'Puxar o Gacha',
+    btnPraise: 'Receber Reconhecimento',
+    btnAgain: 'Puxar de Novo',
+    counterInit: 'Você ainda não puxou~',
+    counterWait: 'Receba seu reconhecimento também~!',
+    counterMsgs: ['1 set! Incrível!','2 sets! Sensacional!','3 vezes! Gênio!','Quantas vezes for, você arrasa','Vitória garantida','Você não consegue parar~','Você é forte demais','Quebrando recordes','Mestre Lendário do Gacha','Infinitamente bem'],
+    counterMany: function(n) { return n + ' sets puxados! Você é praticamente um deus'; },
+    hint: 'Só aperte o botão.<br>Puxar o gacha já faz de você incrível.',
+    shareLabel: '📣 Compartilhar como Texto',
+    btnScreenshot: '📸 Abrir Tela de Print',
+    btnCopy: '📋 Copiar Texto',
+    historyToggle: '📖 Histórico do Gacha',
+    tabAll: '📖 Tudo',
+    tabHall: '⭐ Hall da Fama',
+    btnClear: '🗑 Limpar Histórico',
+    emptyAll: 'Ainda sem histórico~',
+    emptyHall: '⭐ Ainda sem entradas no Hall da Fama~',
+    hallOn: '⭐ No Hall da Fama',
+    hallOff: '☆ Adicionar ao Hall da Fama',
+    btnDel: '🗑 Deletar',
+    confirmDelTitle: 'Tem certeza?',
+    confirmDelDesc: 'Esta entrada não pode ser restaurada',
+    confirmDelOk: 'Deletar',
+    confirmClearTitle: 'Limpar todo o histórico?',
+    confirmClearDesc: function(n) { return 'Todas as ' + n + ' entradas serão deletadas\n(incluindo o Hall da Fama)'; },
+    confirmClearOk: 'Limpar Tudo',
+    confirmCancel: 'Cancelar',
+    otherAppsLabel: 'Ver Outros Apps Gratuitos',
+    installLabel: '📲 Instalar o App',
+    installAndroid: '＋ Adicionar à Tela Inicial',
+    installDone: '✓ Instalado',
+    installAndroidTitle: 'Android',
+    installIOSTitle: 'iPhone / iPad (Safari)',
+    installManualLabelAndroid: 'Como adicionar manualmente',
+    installManualLabelIOS: 'Como adicionar pelo Safari',
+    installStepsAndroid: ['Abra esta página no Chrome','Toque no menu (⋮) no canto superior direito','Selecione "Adicionar à tela inicial"','Toque em "Adicionar" para concluir'],
+    installStepsIOS: ['Abra esta página no Safari','Toque no botão Compartilhar (□↑) abaixo','Selecione "Adicionar à Tela de Início"','Toque em "Adicionar" para concluir'],
+    ssTitle: 'Gacha Mental Para Cima 🤣⤴',
+    ssLabel1: '✦ Pequena Ação ✦',
+    ssBridge: 'Ei! Isso significa que você é!',
+    ssLabel2: '★ Grande Reconhecimento ★',
+    ssTag: '#GachaMentalParaCima',
+    ssHint: '↑ Tire um print desta tela! 📸',
+    ssClose: '✕ Fechar',
+    igFollow: 'Seguir no Instagram',
+    igShare: 'Se gabar no Instagram',
+    fbAlert: 'O compartilhamento do Facebook suporta apenas links.',
+    igAlert: '📋 Texto copiado! Cole no Instagram para compartilhar 📸',
+    copyOk: '📋 Copiado! Cole em qualquer lugar para compartilhar!',
+    shareText: function(a, p) { return '🎲 Gacha Mental Para Cima 🤣⤴\n\n✦ Pequena Ação ✦\n' + a + '\n\n★ Grande Reconhecimento ★\n' + p + '\n\n#GachaMentalParaCima'; },
+    recentKeyA: 'mengacha_pt_recent_actions',
+    recentKeyP: 'mengacha_pt_recent_praises',
+    historyKey: 'mengacha_history',
+    appCards: [
+      { name: 'Site Sintai Chouseijuku', desc: 'Treinamento de Equilíbrio Mente &amp; Corpo' },
+      { name: 'Lista de todos os apps', desc: '(Japonês) lit.link/aitakeshi' },
+      { name: '5W1H Hilariante', desc: 'Olimpíadas da Risada 🏅 (Japonês)' },
+      { name: 'Senryu Engraçado', desc: 'Gacha de poesia 5-7-5 🤣 (Japonês)' },
+      { name: 'Omikuji Fogo-Água', desc: 'Viva mais como você mesmo 👍' },
+      { name: 'ZANGE — Confissão', desc: 'Perdoe-se &amp; sinta-se mais leve 🕯' },
+      { name: 'Treinamento de Honestidade', desc: 'Transforme sua vida ☯️' },
+      { name: 'Treinamento de Equilíbrio Palavras &amp; Mental', desc: 'Treinamento de Equilíbrio ⚖️' },
+      { name: 'Diagnóstico Fogo-Água', desc: '12 tipos de personalidade ✏💃' },
+    ],
+  },
+  id: {
+    title: 'Mental Gacha Naik 🤣⤴',
+    subtitle: 'Aksi Kecil × Pengakuan Besar',
+    placeholder1: '… Yuk tarik putaran ke-1',
+    placeholder2: '… Yuk tarik putaran ke-2',
+    cardLabel1: '✦ Aksi Kecil ✦',
+    cardLabel2: '★ Pengakuan Besar ★',
+    bridgeMain: 'Hei! Kamu yang seperti itu!',
+    bridgeSub: '↓ Terima Pengakuan Besarmu ↓',
+    btnPull: 'Tarik Gacha',
+    btnPraise: 'Terima Pengakuan',
+    btnAgain: 'Tarik Lagi',
+    counterInit: 'Belum tarik sama sekali~',
+    counterWait: 'Terima juga pengakuannya~!',
+    counterMsgs: ['1 set! Hebat!','2 set! Luar biasa!','3 kali! Jenius!','Berapa pun hebat','Sudah pasti menang','Nggak bisa berhenti~','Kamu terlalu kuat','Terus cetak rekor','Legenda master gacha','Oke tanpa batas'],
+    counterMany: function(n) { return 'Sudah tarik ' + n + ' set! Udah kayak dewa'; },
+    hint: 'Tinggal pencet tombolnya.<br>Sudah menarik gacha saja sudah hebat.',
+    shareLabel: '📣 Bagikan sebagai teks',
+    btnScreenshot: '📸 Buka tampilan screenshot',
+    btnCopy: '📋 Salin teks',
+    historyToggle: '📖 Riwayat gacha selama ini',
+    tabAll: '📖 Semua',
+    tabHall: '⭐ Hall of Fame',
+    btnClear: '🗑 Reset riwayat',
+    emptyAll: 'Belum ada riwayat~',
+    emptyHall: '⭐ Hall of Fame masih kosong~',
+    hallOn: '⭐ Terdaftar di Hall of Fame',
+    hallOff: '☆ Masukkan ke Hall of Fame',
+    btnDel: '🗑 Hapus',
+    confirmDelTitle: 'Yakin mau hapus?',
+    confirmDelDesc: 'Riwayat ini tidak bisa dikembalikan',
+    confirmDelOk: 'Hapus',
+    confirmClearTitle: 'Hapus semua riwayat?',
+    confirmClearDesc: function(n) { return 'Semua ' + n + ' entri akan dihapus\n(termasuk Hall of Fame)'; },
+    confirmClearOk: 'Hapus Semua',
+    confirmCancel: 'Batal',
+    otherAppsLabel: 'Lihat aplikasi gratis lainnya',
+    installLabel: '📲 Pasang aplikasi',
+    installAndroid: '＋ Tambahkan ke layar utama',
+    installDone: '✓ Sudah terpasang',
+    installAndroidTitle: 'Android',
+    installIOSTitle: 'iPhone / iPad (Safari)',
+    installManualLabelAndroid: 'Cara menambahkan secara manual',
+    installManualLabelIOS: 'Cara menambahkan dari Safari',
+    installStepsAndroid: ['Buka halaman ini di Chrome','Ketuk menu (⋮) di kanan atas','Pilih "Tambahkan ke layar utama"','Ketuk "Tambah" untuk selesai'],
+    installStepsIOS: ['Buka halaman ini di Safari','Ketuk tombol Bagikan (□↑) di bawah','Pilih "Tambahkan ke Layar Utama"','Ketuk "Tambah" untuk selesai'],
+    ssTitle: 'Mental Gacha Naik 🤣⤴',
+    ssLabel1: '✦ Aksi Kecil ✦',
+    ssBridge: 'Hei! Kamu yang seperti itu!',
+    ssLabel2: '★ Pengakuan Besar ★',
+    ssTag: '#MentalGachaNaik',
+    ssHint: '↑ Screenshot layar ini ya! 📸',
+    ssClose: '✕ Tutup',
+    igFollow: 'Ikuti di Instagram',
+    igShare: 'Pamer di Instagram',
+    fbAlert: 'Facebook hanya mendukung berbagi tautan.',
+    igAlert: '📋 Teks disalin! Tempel di Instagram untuk berbagi 📸',
+    copyOk: '📋 Disalin! Tempel di mana saja untuk pamer!',
+    shareText: function(a, p) { return '🎲 Mental Gacha Naik 🤣⤴\n\n✦ Aksi Kecil ✦\n' + a + '\n\n★ Pengakuan Besar ★\n' + p + '\n\n#MentalGachaNaik'; },
+    recentKeyA: 'mengacha_id_recent_actions',
+    recentKeyP: 'mengacha_id_recent_praises',
+    historyKey: 'mengacha_history',
+    appCards: [
+      { name: 'Website Sintai Chouseijuku', desc: 'Mind &amp; Body Balance Training' },
+      { name: 'Daftar semua aplikasi', desc: '(Jepang) lit.link/aitakeshi' },
+      { name: 'Lucu Banget 5W1H', desc: 'Olimpiade Tawa 🏅 (Jepang)' },
+      { name: 'Senryu Kocak', desc: 'Gacha puisi 5-7-5 🤣 (Jepang)' },
+      { name: 'Omikuji Api-Air', desc: 'Hidup lebih sesuai dirimu 👍' },
+      { name: 'ZANGE — Pengakuan Dosa', desc: 'Maafkan dirimu &amp; jadi lebih ringan 🕯' },
+      { name: 'Latihan Kejujuran', desc: 'Ubah hidupmu ☯️' },
+      { name: 'Latihan Keseimbangan Kata &amp; Mental', desc: 'Balance Training ⚖️' },
+      { name: 'Diagnosa Api-Air', desc: '12 tipe kepribadian ✏💃' },
+    ],
+  },
+  fr: {
+    title: 'Mental Gacha Up 🤣⤴',
+    subtitle: 'Petites actions × Grande reconnaissance',
+    placeholder1: '… Tire le 1er tour',
+    placeholder2: '… Tire le 2e tour',
+    cardLabel1: '✦ Petite action ✦',
+    cardLabel2: '★ Grande reconnaissance ★',
+    bridgeMain: 'Hé ! Toi qui fais ça !',
+    bridgeSub: '↓ Reçois ta Grande reconnaissance ↓',
+    btnPull: 'Tirer le Gacha',
+    btnPraise: 'Recevoir ta reconnaissance',
+    btnAgain: 'Tirer encore',
+    counterInit: "Tu n'as pas encore tiré~",
+    counterWait: 'Reçois aussi ta reconnaissance~!',
+    counterMsgs: ['1 set ! Bravo !','2 sets ! Incroyable !','3 fois ! Génie !','Peu importe combien — tu es super','La victoire est à toi','Tu ne peux plus t\'arrêter~','Tu es trop fort·e','Battant des records','Maître légendaire du Gacha','Infiniment bien'],
+    counterMany: function(n) { return n + ' sets tirés ! Tu es pratiquement un dieu'; },
+    hint: 'Appuie juste sur le bouton.<br>Tirer le gacha te rend déjà incroyable.',
+    shareLabel: '📣 Partager en texte',
+    btnScreenshot: '📸 Ouvrir la vue capture',
+    btnCopy: '📋 Copier le texte',
+    historyToggle: '📖 Historique Gacha',
+    tabAll: '📖 Tout',
+    tabHall: '⭐ Hall of Fame',
+    btnClear: '🗑 Effacer l\'historique',
+    emptyAll: 'Pas encore d\'historique~',
+    emptyHall: '⭐ Pas encore d\'entrées au Hall of Fame~',
+    hallOn: '⭐ Au Hall of Fame',
+    hallOff: '☆ Ajouter au Hall of Fame',
+    btnDel: '🗑 Supprimer',
+    confirmDelTitle: 'Es-tu sûr·e ?',
+    confirmDelDesc: 'Cette entrée ne peut pas être restaurée',
+    confirmDelOk: 'Supprimer',
+    confirmClearTitle: 'Effacer tout l\'historique ?',
+    confirmClearDesc: function(n) { return 'Les ' + n + ' entrées seront supprimées\n(y compris le Hall of Fame)'; },
+    confirmClearOk: 'Tout effacer',
+    confirmCancel: 'Annuler',
+    otherAppsLabel: 'Voir d\'autres applis gratuites',
+    installLabel: '📲 Installer l\'appli',
+    installAndroid: '＋ Ajouter à l\'écran d\'accueil',
+    installDone: '✓ Installé',
+    installAndroidTitle: 'Android',
+    installIOSTitle: 'iPhone / iPad (Safari)',
+    installManualLabelAndroid: 'Comment ajouter manuellement',
+    installManualLabelIOS: 'Comment ajouter depuis Safari',
+    installStepsAndroid: ['Ouvre cette page dans Chrome','Appuie sur le menu (⋮) en haut à droite','Sélectionne « Ajouter à l\'écran d\'accueil »','Appuie sur « Ajouter » pour terminer'],
+    installStepsIOS: ['Ouvre cette page dans Safari','Appuie sur le bouton Partager (□↑) en bas','Sélectionne « Sur l\'écran d\'accueil »','Appuie sur « Ajouter » pour terminer'],
+    ssTitle: 'Mental Gacha Up 🤣⤴',
+    ssLabel1: '✦ Petite action ✦',
+    ssBridge: 'Hé ! Toi qui fais ça !',
+    ssLabel2: '★ Grande reconnaissance ★',
+    ssTag: '#MentalGachaUp',
+    ssHint: '↑ Fais une capture de cet écran ! 📸',
+    ssClose: '✕ Fermer',
+    igFollow: 'Suivre sur Instagram',
+    igShare: 'Se vanter sur Instagram',
+    fbAlert: 'Le partage Facebook ne supporte que les liens.',
+    igAlert: '📋 Texte copié ! Collez-le sur Instagram pour partager 📸',
+    copyOk: '📋 Copié ! Colle-le où tu veux pour partager !',
+    shareText: function(a, p) { return '🎲 Mental Gacha Up 🤣⤴\n\n✦ Petite action ✦\n' + a + '\n\n★ Grande reconnaissance ★\n' + p + '\n\n#MentalGachaUp'; },
+    recentKeyA: 'mengacha_fr_recent_actions',
+    recentKeyP: 'mengacha_fr_recent_praises',
+    historyKey: 'mengacha_fr_history',
+    appCards: [
+      { name: 'Site Sintai Chouseijuku', desc: 'Entraînement équilibre corps &amp; esprit' },
+      { name: 'Liste de toutes les applis', desc: '(Japonais) lit.link/aitakeshi' },
+      { name: '5W1H Hilarant', desc: 'Olympiques du rire 🏅 (Japonais)' },
+      { name: 'Senryu Rigolo', desc: 'Gacha poème 5-7-5 🤣 (Japonais)' },
+      { name: 'Omikuji Feu-Eau', desc: 'Vis plus selon toi-même 👍' },
+      { name: 'ZANGE — Confession', desc: 'Pardonne-toi &amp; allège-toi 🕯' },
+      { name: 'Entraînement à la sincérité', desc: 'Transforme ta vie ☯️' },
+      { name: 'Entraînement équilibre mots &amp; mental', desc: 'Balance Training ⚖️' },
+      { name: 'Diagnostic Feu-Eau', desc: '12 types de personnalité ✏💃' },
+    ],
+  },
+  de: {
+    title: 'Mental Gacha Hoch 🤣⤴',
+    subtitle: 'Kleine Aktionen × Große Anerkennung',
+    placeholder1: '… Ziehe Runde 1',
+    placeholder2: '… Ziehe Runde 2',
+    cardLabel1: '✦ Kleine Aktion ✦',
+    cardLabel2: '★ Große Anerkennung ★',
+    bridgeMain: 'Hey! Das macht dich zu!',
+    bridgeSub: '↓ Empfange deine Große Anerkennung ↓',
+    btnPull: 'Gacha ziehen',
+    btnPraise: 'Anerkennung erhalten',
+    btnAgain: 'Nochmal ziehen',
+    counterInit: 'Du hast noch nicht gezogen~',
+    counterWait: 'Empfange auch deine Anerkennung~!',
+    counterMsgs: ['1 Set! Toll!','2 Sets! Unglaublich!','3 Mal! Genie!','Egal wie oft — du bist super','Der Sieg gehört dir','Du kannst nicht aufhören~','Du bist zu stark','Rekorde werden gebrochen','Legendärer Gacha-Meister','Unendlich okay'],
+    counterMany: function(n) { return n + ' Sets gezogen! Du bist quasi ein Gott'; },
+    hint: 'Drück einfach den Knopf.<br>Allein das Gacha-Ziehen macht dich schon großartig.',
+    shareLabel: '📣 Als Text teilen',
+    btnScreenshot: '📸 Screenshot-Ansicht öffnen',
+    btnCopy: '📋 Text kopieren',
+    historyToggle: '📖 Gacha-Verlauf',
+    tabAll: '📖 Alle',
+    tabHall: '⭐ Hall of Fame',
+    btnClear: '🗑 Verlauf löschen',
+    emptyAll: 'Noch kein Verlauf~',
+    emptyHall: '⭐ Noch keine Hall-of-Fame-Einträge~',
+    hallOn: '⭐ Im Hall of Fame',
+    hallOff: '☆ Zum Hall of Fame hinzufügen',
+    btnDel: '🗑 Löschen',
+    confirmDelTitle: 'Bist du sicher?',
+    confirmDelDesc: 'Dieser Eintrag kann nicht wiederhergestellt werden',
+    confirmDelOk: 'Löschen',
+    confirmClearTitle: 'Gesamten Verlauf löschen?',
+    confirmClearDesc: function(n) { return 'Alle ' + n + ' Einträge werden gelöscht\n(einschließlich Hall of Fame)'; },
+    confirmClearOk: 'Alles löschen',
+    confirmCancel: 'Abbrechen',
+    otherAppsLabel: 'Weitere kostenlose Apps ansehen',
+    installLabel: '📲 App installieren',
+    installAndroid: '＋ Zum Startbildschirm hinzufügen',
+    installDone: '✓ Installiert',
+    installAndroidTitle: 'Android',
+    installIOSTitle: 'iPhone / iPad (Safari)',
+    installManualLabelAndroid: 'Manuell hinzufügen',
+    installManualLabelIOS: 'Über Safari hinzufügen',
+    installStepsAndroid: ['Öffne diese Seite in Chrome','Tippe auf das Menü (⋮) oben rechts','Wähle „Zum Startbildschirm hinzufügen"','Tippe auf „Hinzufügen" zum Abschluss'],
+    installStepsIOS: ['Öffne diese Seite in Safari','Tippe auf den Teilen-Button (□↑) unten','Wähle „Zum Home-Bildschirm"','Tippe auf „Hinzufügen" zum Abschluss'],
+    ssTitle: 'Mental Gacha Hoch 🤣⤴',
+    ssLabel1: '✦ Kleine Aktion ✦',
+    ssBridge: 'Hey! Das macht dich zu!',
+    ssLabel2: '★ Große Anerkennung ★',
+    ssTag: '#MentalGachaHoch',
+    ssHint: '↑ Mach einen Screenshot davon! 📸',
+    ssClose: '✕ Schließen',
+    igFollow: 'Auf Instagram folgen',
+    igShare: 'Auf Instagram angeben',
+    fbAlert: 'Facebook-Teilen unterstützt nur Links.',
+    igAlert: '📋 Text kopiert! Füge ihn auf Instagram ein 📸',
+    copyOk: '📋 Kopiert! Füge es irgendwo ein und teile es!',
+    shareText: function(a, p) { return '🎲 Mental Gacha Hoch 🤣⤴\n\n✦ Kleine Aktion ✦\n' + a + '\n\n★ Große Anerkennung ★\n' + p + '\n\n#MentalGachaHoch'; },
+    recentKeyA: 'mengacha_de_recent_actions',
+    recentKeyP: 'mengacha_de_recent_praises',
+    historyKey: 'mengacha_de_history',
+    appCards: [
+      { name: 'Sintai Chouseijuku Website', desc: 'Geist &amp; Körper Balance Training' },
+      { name: 'Alle Apps auf einen Blick', desc: '(Japanisch) lit.link/aitakeshi' },
+      { name: 'Witziges 5W1H', desc: 'Olympiade des Lachens 🏅 (Japanisch)' },
+      { name: 'Witziges Senryu', desc: 'Gacha-Gedicht 5-7-5 🤣 (Japanisch)' },
+      { name: 'Feuer-Wasser Omikuji', desc: 'Lebe mehr wie du selbst 👍' },
+      { name: 'ZANGE — Geständnis', desc: 'Vergib dir &amp; fühle dich leichter 🕯' },
+      { name: 'Ehrlichkeits-Training', desc: 'Verändere dein Leben ☯️' },
+      { name: 'Wort- &amp; Mental-Balance-Training', desc: 'Balance Training ⚖️' },
+      { name: 'Feuer-Wasser Diagnose', desc: '12 Persönlichkeitstypen ✏💃' },
+    ],
+  },
+  es: {
+    title: 'Mental Gacha Arriba 🤣⤴',
+    subtitle: 'Pequeñas acciones × Gran reconocimiento',
+    placeholder1: '… Tira la 1ª ronda',
+    placeholder2: '… Tira la 2ª ronda',
+    cardLabel1: '✦ Pequeña acción ✦',
+    cardLabel2: '★ Gran reconocimiento ★',
+    bridgeMain: '¡Oye! ¡Eso significa que tú eres!',
+    bridgeSub: '↓ Recibe tu Gran reconocimiento ↓',
+    btnPull: 'Tirar el Gacha',
+    btnPraise: 'Recibir reconocimiento',
+    btnAgain: 'Tirar de nuevo',
+    counterInit: 'Todavía no has tirado~',
+    counterWait: '¡Recibe también tu reconocimiento~!',
+    counterMsgs: ['¡1 set! ¡Increíble!','¡2 sets! ¡Asombroso!','¡3 veces! ¡Genio!','Sea cuantas veces, eres genial','La victoria es tuya','Ya no puedes parar~','Eres demasiado poderoso/a','Rompiendo récords','Maestro/a legendario/a del Gacha','Infinitamente bien'],
+    counterMany: function(n) { return '¡' + n + ' sets tirados! Prácticamente eres un dios'; },
+    hint: 'Solo pulsa el botón.<br>Con solo tirar el gacha ya eres increíble.',
+    shareLabel: '📣 Compartir como texto',
+    btnScreenshot: '📸 Abrir vista de captura',
+    btnCopy: '📋 Copiar texto',
+    historyToggle: '📖 Historial del Gacha',
+    tabAll: '📖 Todo',
+    tabHall: '⭐ Hall of Fame',
+    btnClear: '🗑 Borrar historial',
+    emptyAll: 'Todavía sin historial~',
+    emptyHall: '⭐ Todavía sin entradas en el Hall of Fame~',
+    hallOn: '⭐ En el Hall of Fame',
+    hallOff: '☆ Añadir al Hall of Fame',
+    btnDel: '🗑 Eliminar',
+    confirmDelTitle: '¿Estás seguro/a?',
+    confirmDelDesc: 'Esta entrada no se puede restaurar',
+    confirmDelOk: 'Eliminar',
+    confirmClearTitle: '¿Borrar todo el historial?',
+    confirmClearDesc: function(n) { return 'Se eliminarán las ' + n + ' entradas\n(incluido el Hall of Fame)'; },
+    confirmClearOk: 'Borrar todo',
+    confirmCancel: 'Cancelar',
+    otherAppsLabel: 'Ver otras apps gratuitas',
+    installLabel: '📲 Instalar la app',
+    installAndroid: '＋ Añadir a la pantalla de inicio',
+    installDone: '✓ Instalado',
+    installAndroidTitle: 'Android',
+    installIOSTitle: 'iPhone / iPad (Safari)',
+    installManualLabelAndroid: 'Cómo añadir manualmente',
+    installManualLabelIOS: 'Cómo añadir desde Safari',
+    installStepsAndroid: ['Abre esta página en Chrome','Toca el menú (⋮) arriba a la derecha','Selecciona «Añadir a pantalla de inicio»','Toca «Añadir» para finalizar'],
+    installStepsIOS: ['Abre esta página en Safari','Toca el botón Compartir (□↑) abajo','Selecciona «En pantalla de inicio»','Toca «Añadir» para finalizar'],
+    ssTitle: 'Mental Gacha Arriba 🤣⤴',
+    ssLabel1: '✦ Pequeña acción ✦',
+    ssBridge: '¡Oye! ¡Eso significa que tú eres!',
+    ssLabel2: '★ Gran reconocimiento ★',
+    ssTag: '#MentalGachaArriba',
+    ssHint: '↑ ¡Haz una captura de esta pantalla! 📸',
+    ssClose: '✕ Cerrar',
+    igFollow: 'Seguir en Instagram',
+    igShare: 'Presumir en Instagram',
+    fbAlert: 'El uso compartido de Facebook solo admite enlaces.',
+    igAlert: '📋 ¡Texto copiado! Pégalo en Instagram para compartir 📸',
+    copyOk: '📋 ¡Copiado! ¡Pégalo donde quieras para compartir!',
+    shareText: function(a, p) { return '🎲 Mental Gacha Arriba 🤣⤴\n\n✦ Pequeña acción ✦\n' + a + '\n\n★ Gran reconocimiento ★\n' + p + '\n\n#MentalGachaArriba'; },
+    recentKeyA: 'mengacha_es_recent_actions',
+    recentKeyP: 'mengacha_es_recent_praises',
+    historyKey: 'mengacha_es_history',
+    appCards: [
+      { name: 'Web de Sintai Chouseijuku', desc: 'Entrenamiento equilibrio mente &amp; cuerpo' },
+      { name: 'Lista de todas las apps', desc: '(Japonés) lit.link/aitakeshi' },
+      { name: '5W1H Hilarante', desc: 'Olimpiadas de la risa 🏅 (Japonés)' },
+      { name: 'Senryu Gracioso', desc: 'Gacha poema 5-7-5 🤣 (Japonés)' },
+      { name: 'Omikuji Fuego-Agua', desc: 'Vive más como tú mismo/a 👍' },
+      { name: 'ZANGE — Confesión', desc: 'Perdónate &amp; siéntete más ligero/a 🕯' },
+      { name: 'Entrenamiento de honestidad', desc: 'Transforma tu vida ☯️' },
+      { name: 'Entrenamiento equilibrio palabras &amp; mental', desc: 'Balance Training ⚖️' },
+      { name: 'Diagnóstico Fuego-Agua', desc: '12 tipos de personalidad ✏💃' },
+    ],
+  },
+
+  th: {
+    title: 'Mental Gacha ขึ้น 🤣⤴',
+    subtitle: 'การกระทำเล็กน้อย × การยอมรับอย่างยิ่งใหญ่',
+    placeholder1: '… จั่วรอบที่ 1',
+    placeholder2: '… จั่วรอบที่ 2',
+    cardLabel1: '✦ การกระทำเล็กน้อย ✦',
+    cardLabel2: '★ การยอมรับอย่างยิ่งใหญ่ ★',
+    bridgeMain: 'เฮ้! นั่นแปลว่าคุณคือ!',
+    bridgeSub: '↓ รับการยอมรับอย่างยิ่งใหญ่ของคุณ ↓',
+    btnPull: 'จั่วกาชา',
+    btnPraise: 'รับการยอมรับ',
+    btnAgain: 'จั่วอีกครั้ง',
+    counterInit: 'ยังไม่ได้จั่วเลยนะ~',
+    counterWait: 'รับการยอมรับด้วยนะ~!',
+    counterMsgs: ['1 เซต! เก่งมาก!','2 เซต! ยอดเยี่ยม!','3 ครั้ง! อัจฉริยะ!','กี่ครั้งก็เก่งทั้งนั้น','ชนะแน่นอนแล้ว','หยุดไม่ได้เลย~','คุณแข็งแกร่งเกินไปแล้ว','กำลังทำลายสถิติ','ปรมาจารย์กาชาในตำนาน','โอเคไม่มีที่สิ้นสุด'],
+    counterMany: function(n) { return n + ' เซต! แทบจะเป็นเทพแล้ว'; },
+    hint: 'แค่กดปุ่มเดียว<br>แค่จั่วกาชาก็เก่งแล้ว',
+    shareLabel: '📣 แชร์เป็นข้อความ',
+    btnScreenshot: '📸 เปิดหน้าจับภาพหน้าจอ',
+    btnCopy: '📋 คัดลอกข้อความ',
+    historyToggle: '📖 ประวัติกาชาที่ผ่านมา',
+    tabAll: '📖 ทั้งหมด',
+    tabHall: '⭐ หอเกียรติยศ',
+    btnClear: '🗑 รีเซ็ตประวัติ',
+    emptyAll: 'ยังไม่มีประวัติเลย~',
+    emptyHall: '⭐ ยังไม่มีรายการในหอเกียรติยศ~',
+    hallOn: '⭐ อยู่ในหอเกียรติยศ',
+    hallOff: '☆ เพิ่มในหอเกียรติยศ',
+    btnDel: '🗑 ลบ',
+    confirmDelTitle: 'แน่ใจแล้วหรือ?',
+    confirmDelDesc: 'รายการนี้ไม่สามารถกู้คืนได้',
+    confirmDelOk: 'ลบ',
+    confirmClearTitle: 'ลบประวัติทั้งหมด?',
+    confirmClearDesc: function(n) { return 'รายการทั้งหมด ' + n + ' รายการจะถูกลบ\n(รวมถึงหอเกียรติยศ)'; },
+    confirmClearOk: 'ลบทั้งหมด',
+    confirmCancel: 'ยกเลิก',
+    otherAppsLabel: 'ดูแอปฟรีอื่นๆ',
+    installLabel: '📲 ติดตั้งแอป',
+    installAndroid: '＋ เพิ่มในหน้าจอหลัก',
+    installDone: '✓ ติดตั้งแล้ว',
+    installAndroidTitle: 'Android',
+    installIOSTitle: 'iPhone / iPad (Safari)',
+    installManualLabelAndroid: 'วิธีเพิ่มด้วยตนเอง',
+    installManualLabelIOS: 'วิธีเพิ่มจาก Safari',
+    installStepsAndroid: ['เปิดหน้านี้ใน Chrome','แตะเมนู (⋮) ที่มุมบนขวา','เลือก "เพิ่มในหน้าจอหลัก"','แตะ "เพิ่ม" เพื่อเสร็จสิ้น'],
+    installStepsIOS: ['เปิดหน้านี้ใน Safari','แตะปุ่มแชร์ (□↑) ด้านล่าง','เลือก "เพิ่มในหน้าจอหลัก"','แตะ "เพิ่ม" เพื่อเสร็จสิ้น'],
+    ssTitle: 'Mental Gacha ขึ้น 🤣⤴',
+    ssLabel1: '✦ การกระทำเล็กน้อย ✦',
+    ssBridge: 'เฮ้! นั่นแปลว่าคุณคือ!',
+    ssLabel2: '★ การยอมรับอย่างยิ่งใหญ่ ★',
+    ssTag: '#MentalGachaขึ้น',
+    ssHint: '↑ จับภาพหน้าจอนี้นะ! 📸',
+    ssClose: '✕ ปิด',
+    igFollow: 'ติดตามบน Instagram',
+    igShare: 'อวดบน Instagram',
+    fbAlert: 'การแชร์ Facebook รองรับเฉพาะลิงก์เท่านั้น',
+    igAlert: '📋 คัดลอกข้อความแล้ว! วางใน Instagram เพื่อแชร์ 📸',
+    copyOk: '📋 คัดลอกแล้ว! วางที่ไหนก็ได้เพื่อแชร์!',
+    shareText: function(a, p) { return '🎲 Mental Gacha ขึ้น 🤣⤴\n\n✦ การกระทำเล็กน้อย ✦\n' + a + '\n\n★ การยอมรับอย่างยิ่งใหญ่ ★\n' + p + '\n\n#MentalGachaขึ้น'; },
+    recentKeyA: 'mengacha_th_recent_actions',
+    recentKeyP: 'mengacha_th_recent_praises',
+    historyKey: 'mengacha_history',
+    appCards: [
+      { name: 'เว็บไซต์ Sintai Chouseijuku', desc: 'การฝึกสมดุลจิตใจและร่างกาย' },
+      { name: 'รายการแอปทั้งหมด', desc: '(ภาษาญี่ปุ่น) lit.link/aitakeshi' },
+      { name: '5W1H ฮาสุดๆ', desc: 'โอลิมปิกแห่งเสียงหัวเราะ 🏅 (ญี่ปุ่น)' },
+      { name: 'เซ็นริว ฮาๆ', desc: 'กาชากวี 5-7-5 🤣 (ญี่ปุ่น)' },
+      { name: 'โอมิกุจิ ไฟ-น้ำ', desc: 'ใช้ชีวิตในแบบของคุณ 👍' },
+      { name: 'ZANGE — สารภาพ', desc: 'ให้อภัยตัวเอง &amp; รู้สึกเบาขึ้น 🕯' },
+      { name: 'ฝึกความซื่อสัตย์', desc: 'เปลี่ยนแปลงชีวิตคุณ ☯️' },
+      { name: 'ฝึกสมดุลคำพูดและจิตใจ', desc: 'Balance Training ⚖️' },
+      { name: 'วินิจฉัย ไฟ-น้ำ', desc: '12 ประเภทบุคลิกภาพ ✏💃' },
+    ],
+  }
+
+};
+
+const actionsZH = ["喝到水了","從被窩出來了","打開窗簾了","深呼吸了","洗臉了","刷牙了","穿上鞋了","看了看外面","抬頭看了天空","起床了","躺下了","吃飯了","泡茶了","洗澡了","洗頭了","換衣服了","洗衣服了","倒垃圾了","去便利商店了","去超市了","回覆訊息了","傳貼圖回了","接電話了","打開信箱了","看了通知","關掉社群媒體了","刪掉APP了","稍微休息了","動了5分鐘","坐下了","站起來了","走路了","做伸展了","笑了","哭了","察覺到煩躁了","睡過頭了","今天活下來了","今天到這裡了","迎接早晨了","撐到晚上了","感受到天氣了","聽了音樂","開窗了","開燈了","充電了","去廁所了","把飯加熱了","打開冰箱了","整理床鋪了","排好鞋子了","扔掉衛生紙了","梳頭髮了","看了看指甲","看了行程","看了時鐘","確認了錢包","打開水龍頭了","洗了杯子","移動了碗盤","開門了","說了一句話","打了哈欠","眨了眼","放鬆了","有想到要休息","沒有強迫自己笑","拒絕了","選了喜歡的","感覺到討厭","悠閒過著","放空了","坐在椅子上了","靜靜待著","睡著了","重新起來了","曬到太陽了","用了熱水","正在呼吸","感覺肚子餓","吃了甜的","整理了一件事","關掉螢幕了","讓眼睛休息了","不知怎地撐過來了","來到這裡了","按下按鈕了","讀了","找到了","想起了","忘了","放棄了","求助了","想到了某個人","注意到自己了","稍微安心了","今天好像能結束了","現在在這裡","存在著","不知怎地還活著"];
+
+const praisesZH = ["被任命為納豆大臣","香菇界的希望","本月主角級雞蛋","終於成為傳說的被窩使用者","國家級的了不起","世界貓咪會議鼓掌了","那個動作，國家來守護","人類，採用你了","今日的水獺代表","來自宇宙的感謝狀","發現了野生魅力","今日生存S級","情緒奧林匹克冠軍","放鬆界的四皇","超級安心時間突入","被窩界的傳說","心說著「得救了～」","世界靜靜地點頭了","傳說的補水師","深呼吸之王現身","飯糰界騷動起來了","那則回覆是文化遺產","畢業於取消洗澡的世界","今日了不起的武士","你被列為保護對象了","剛才積了不少德","空氣按了「讚」","成功從被窩獨立","世界稍微變亮了","相當高級的人類","你是含稅價格","今日的情緒獲金獎","全國觀葉植物為你加油","終於展現真本事了","你的存在有BGM在放","現在可以打倒最終魔王","在神明的會議上成為話題","關東煮界的王子","心靈保護區","本月負責安心感","世界線，笑嘻嘻","親切感偏差值很高","今日的天空向著你","認定為睡意大師","那一步是文明等級","連龍神們也休息了","情緒有獎金進來了","人類的治癒位置","超級被窩冠軍","那個感覺，相當合法","療癒系角色國家代表","世界得到滋潤了","你今天運氣很強","全台灣不知為何安心了","太善用生命了","生存演出太精彩了","今日的你是SSR","空間的治安變好了","那個行動會被寫入教科書","情緒正在拍手","相當時髦","今日的拉麵也很開心","銀河了不起協會認定","世界稍微變甜了","被窩稅免除","那個休息是專業規格","連接上宇宙的Wi-Fi了","安心感滿格","國家預算等級的價值","你的存在超越規格","你是今日的維他命","現場騷動起來了","心靈界的秘寶","深夜情緒神認定","人類的隱藏技","相當不錯的生物","超級好人時間","今日的和平獎","那個空氣像剛煮好的米飯","從所有方向都很了不起","心變得鬆鬆軟軟的","現在的你是光屬性","活法有留白","放鬆力太高要注意","喜歡你這個概念","那個感覺正在缺貨","世界悄悄保存了","今日的安心素材","沒動力卻很了不起","相當擅長當人類","今日的味噌湯獎","觀葉植物剛才哭了","你是空氣清淨機嗎","你的存在毛茸茸的","心裡裝著加濕器","今日的暖心位置","適合當太空船船長","今天也是勉強維持的天才","剛好適合這個世界","你的味道太濃了"];
+
+const actionsID = ["Sudah minum air","Keluar dari kasur","Buka tirai","Tarik napas dalam","Cuci muka","Sikat gigi","Pakai sepatu","Lihat ke luar","Lihat langit","Bangun tidur","Berbaring","Makan","Buat teh","Mandi","Keramas","Ganti baju","Cuci baju","Buang sampah","Pergi ke minimarket","Pergi ke supermarket","Balas pesan","Kirim stiker balasan","Angkat telepon","Buka email","Cek notifikasi","Tutup media sosial","Hapus aplikasi","Istirahat sebentar","Bergerak 5 menit","Duduk","Berdiri","Jalan-jalan","Stretching","Tertawa","Menangis","Sadar lagi kesal","Kesiangan","Bertahan hidup hari ini","Sampai hari ini","Menyambut pagi","Bertahan sampai malam","Merasakan cuaca","Dengarkan musik","Buka jendela","Nyalakan lampu","Cas hp","Ke toilet","Panaskan makanan","Buka kulkas","Rapikan tempat tidur","Rapikan sepatu","Buang tisu","Sisir rambut","Lihat kuku","Cek jadwal","Lihat jam","Cek dompet","Buka keran air","Cuci gelas","Pindahkan piring","Buka pintu","Bicara satu kalimat","Menguap","Berkedip","Relaksasi","Kepikiran untuk istirahat","Nggak maksa senyum","Berhasil menolak","Pilih yang kusuka","Sadar tidak suka sesuatu","Santai-santai","Melamun","Duduk di kursi","Diam tenang","Tertidur","Bangkit lagi","Kena sinar matahari","Pakai air hangat","Masih bernapas","Merasa lapar","Makan yang manis","Bereskan satu hal","Tutup layar","Istirahatkan mata","Entah gimana bisa lewati","Sampai di sini","Tekan tombol","Baca sesuatu","Temukan sesuatu","Ingat sesuatu","Lupa sesuatu","Menyerah pada sesuatu","Minta bantuan","Teringat seseorang","Sadar akan diri sendiri","Sedikit lega","Kayaknya hari ini bisa selesai","Aku ada di sini sekarang","Aku ada","Entah bagaimana masih hidup"];
+
+const praisesID = ["Diangkat jadi Menteri Tempe","Harapan dunia jamur","Telur pemeran utama bulan ini","Akhirnya jadi legenda pengguna kasur","Hebat level nasional","Kongres kucing dunia bertepuk tangan","Gerakan itu dilindungi negara","Umat manusia merekrutmu","Wakil berang-berang hari ini","Surat terima kasih dari luar angkasa","Karisma liar terdeteksi","Survival hari ini: rank S","Juara olimpiade emosi","Kaisar relaksasi","Mode kenyamanan super aktif","Legenda dunia kasur","Hatimu bilang 'terselamatkan~'","Dunia mengangguk pelan","Master hidrasi legendaris","Raja napas dalam muncul","Dunia onigiri jadi heboh","Balasan itu warisan budaya","Lulus dari dunia batal mandi","Samurai hebat hari ini","Kamu ditetapkan sebagai objek perlindungan","Tadi, banyak dapat keberuntungan","Udara pencet 'suka'","Berhasil merdeka dari kasur","Dunia jadi sedikit lebih cerah","Manusia level atas","Harga kamu sudah termasuk pajak","Emosi hari ini raih medali emas","Tanaman hias seluruh negeri mendukungmu","Akhirnya serius nih","Keberadaanmu punya musik latar","Sekarang bisa kalahkan bos terakhir","Jadi bahan obrolan di rapat para dewa","Pangeran dunia oden","Kawasan perlindungan mental","Penanggung jawab ketenangan bulan ini","Linimasa: senyum lebar","Level kebaikan overpowered","Langit hari ini berpihak padamu","Dinobatkan master kantuk","Satu langkah itu level peradaban","Bahkan naga pun ikut istirahat","Bonus emosi masuk","Posisi penyembuh umat manusia","Juara kasur super","Vibe itu cukup legal","Maskot nasional mode relaksasi","Dunia jadi lembab","Kamu sedang beruntung hari ini","Seluruh Indonesia entah kenapa lega","Terlalu pintar pakai hidup","Penampilan survival terlalu bagus","Kamu hari ini SSR","Keamanan ruangan membaik","Aksi itu masuk buku teks","Emosimu lagi bertepuk tangan","Cukup keren","Ramen hari ini pun ikut senang","Disertifikasi Asosiasi Kehebatan Galaksi","Dunia jadi sedikit lebih manis","Bebas pajak kasur","Istirahat itu level profesional","Wi-Fi kosmik tersambung","Level kenyamanan penuh","Nilainya setara anggaran negara","Keberadaanmu melampaui aturan","Kamu vitamin hari ini","Penonton jadi heboh","Harta langka dunia mental","Dewa energi tengah malam disertifikasi","Teknik tersembunyi umat manusia","Makhluk hidup yang cukup keren","Mode orang super baik","Penghargaan perdamaian hari ini","Udara itu seperti nasi baru matang","Hebat dari segala arah","Hatimu jadi kenyal-kenyal","Kamu sekarang atribut cahaya","Cara hidup punya ruang kosong","Peringatan: kekuatan santai terlalu tinggi","Kami suka konsep dirimu","Vibe itu sedang kehabisan stok","Dunia menyimpannya diam-diam","Bahan ketenangan hari ini","Nggak semangat tapi tetap hebat","Jago banget jadi manusia","Penghargaan sup miso hari ini","Tanaman hias barusan nangis","Kamu pembersih udara?","Keberadaanmu terasa fluffy","Hatimu punya humidifier","Posisi kehangatan hari ini","Cocok jadi kapten pesawat luar angkasa","Hari ini pun hampir-hampir jenius","Pas banget untuk dunia ini","Rasamu terlalu kuat. Luar biasa"];
+const actionsPT = ["Bebi água","Saí da cama","Abri as cortinas","Respirei fundo","Lavei o rosto","Escovei os dentes","Coloquei os sapatos","Olhei para fora","Olhei para o céu","Acordei","Deitei","Comi","Fiz chá","Tomei banho","Lavei o cabelo","Troquei de roupa","Lavei a roupa","Tirei o lixo","Fui à loja","Fui ao mercado","Respondi uma mensagem","Mandei um sticker de resposta","Atendi o telefone","Abri um e-mail","Chequei as notificações","Fechei as redes sociais","Deletei um app","Descansеi um pouco","Me mexi por 5 minutos","Sentei","Fiquei em pé","Caminhei","Fiz alongamento","Ri","Chorei","Percebi minha irritação","Dormi demais","Sobrevivi hoje","Cheguei até hoje","Vi a manhã","Cheguei à noite","Senti o clima","Ouvi música","Abri a janela","Acendi a luz","Carreguei o celular","Fui ao banheiro","Aqueci a comida","Abri a geladeira","Arruмei a cama","Organizei os sapatos","Joguei os lenços fora","Escovei o cabelo","Olhei as unhas","Chequei minha agenda","Olhei o relógio","Chequei minha carteira","Abri a torneira","Lavei um copo","Movi os pratos","Abri a porta","Falei uma frase","Bocejei","Pisquei","Relaxei um pouco","Pensei em descansar","Não forcei um sorriso","Disse não","Escolhi o que gosto","Percebi que não gosto de algo","Levei na tranquilidade","Fiquei à toa","Sentei numa cadeira","Curtei um silêncio","Dormi","Levantei de novo","Peguei um sol","Usei água quente","Ainda estou respirando","Senti fome","Comi algo doce","Organizei uma coisa","Fechei a tela","Descansei os olhos","De algum jeito me virei","Cheguei até aqui","Apertei o botão","Li algo","Encontrei algo","Lembrei de algo","Esqueci de algo","Desisti de algo","Pedi ajuda","Pensei em alguém","Me percebi","Senti um pequeno alívio","Talvez eu consiga terminar hoje","Estou aqui agora","Eu existo","De algum jeito ainda estou vivo"];
+
+const praisesPT = ["HUMANO LEGALMENTE IMPORTANTE","ESCOLHIDO PELO CONSELHO DOS COGUMELOS","ENERGIA DE PERSONAGEM PRINCIPAL","MAGO DA CAMA ASCENDIDO","LENDA CERTIFICADA NACIONALMENTE","O CONSELHO DOS GATOS APROVA","COMPORTAMENTO PROTEGIDO PELO GOVERNO","A HUMANIDADE TE ACEITA","REPRESENTANTE OFICIAL DA LONTRA DO DIA","O UNIVERSO ENVIOU UM E-MAIL DE AGRADECIMENTO","CARISMA SELVAGEM DETECTADO","RANK DE SOBREVIVÊNCIA: S","CAMPEÃO DAS OLIMPÍADAS EMOCIONAIS","IMPERADOR DO RELAXAMENTO","MODO CONFORTO MÁXIMO ATIVADO","LENDA DO REINO DA CAMA","SEU CORAÇÃO SE SENTE SALVO","O MUNDO CONCORDOU SILENCIOSAMENTE","MESTRE DA HIDRATAÇÃO DESBLOQUEADO","REI DAS RESPIRAÇÕES PROFUNDAS","A COMUNIDADE DO BOLINHO DE ARROZ ESTÁ VIBRANDO","AQUELA RESPOSTA PERTENCE A UM MUSEU","ARCO DE EVITAR O BANHO ENCERRADO","HUMANO HONROSO DO DIA","STATUS DE ESPÉCIE PROTEGIDA CONCEDIDO","KARMA POSITIVO MASSIVO GANHO","O AR EM SI CURTIU","ESCAPOU COM SUCESSO DA CAMA","O MUNDO FICOU UM POUCO MAIS BRILHANTE","HUMANO DE NÍVEL AVANÇADO","O PREÇO JÁ INCLUI IMPOSTOS E GRANDEZA","MEDALHA DE OURO NAS EMOÇÕES","AS PLANTAS DE CASA ESTÃO TORCENDO POR VOCÊ","VOCÊ FINALMENTE USOU 1% DO SEU PODER","SUA EXISTÊNCIA TEM MÚSICA DE FUNDO","POSSÍVEL DERROTAR O CHEFÃO FINAL HOJE","OS DEUSES ESTÃO TE DISCUTINDO","PRÍNCIPE DA ENERGIA DO CALDINHO","ZONA DE SEGURANÇA MENTAL ATIVADA","CAMPEÃO MENSAL DO CONFORTO","STATUS DA TIMELINE: FELIZ","NÍVEL DE GENTILEZA SOBRECARREGADO","O CÉU DE HOJE TE APOIA","MESTRE DO SONO CERTIFICADO","AQUELE PASSO MUDOU A CIVILIZAÇÃO","ATÉ OS DRAGÕES DESCANSARAM","EMOÇÕES BÔNUS ADQUIRIDAS","PERSONAGEM DE CONFORTO DA HUMANIDADE","CAMPEÃO SUPREMO DA CAMA","AQUELA VIBE É LEGALMENTE SEGURA","ENERGIA DE MASCOTE NACIONAL","O MUNDO SE SENTE HIDRATADO","VOCÊ ESTÁ ESTRANHAMENTE PODEROSO HOJE","O BRASIL SENTE UM ALÍVIO INEXPLICÁVEL","USO MASTERFUL DA VIDA","APRESENTAÇÃO DE SOBREVIVÊNCIA: 10/10","HOJE VOCÊ É NÍVEL SSR","A SALA ESTÁ MAIS SEGURA AGORA","AQUELA AÇÃO PERTENCE AOS LIVROS DIDÁTICOS","SUAS EMOÇÕES ESTÃO APLAUDINDO","MUITO ESTILOSO","ATÉ O RAMEN ESTÁ FELIZ HOJE","CERTIFICADO PELA ASSOCIAÇÃO GALÁCTICA DE ELOGIOS","O MUNDO ESTÁ MAIS DOCE AGORA","ISENÇÃO DE IMPOSTO DA CAMA CONCEDIDA","DESCANSO DE NÍVEL PROFISSIONAL","WI-FI CÓSMICO CONECTADO","NÍVEL DE CONFORTO MAXIMIZADO","VALE DINHEIRO DE TESOURO NACIONAL","SUA EXISTÊNCIA É QUEBRADA DEMAIS","VOCÊ É A VITAMINA DE HOJE","A PLATEIA ESTÁ ENLOUQUECENDO","TESOURO RARO DO REINO MENTAL","DEUS DA ENERGIA DE MADRUGADA APROVADO","A HUMANIDADE ENCONTROU UM GLITCH","FORMA DE VIDA DE ALTA QUALIDADE","MODO HUMANO SUPER BOM","VENCEDOR DO PRÊMIO DA PAZ DO DIA","SUA VIBE PARECE RECÉM-COZIDA","ELOGIADO DE TODAS AS DIREÇÕES","SEU CORAÇÃO ESTÁ EXTRA GELATINOSO","ATRIBUTO DE LUZ ATIVADO","SUA VIDA TEM UM ESPAÇAMENTO AGRADÁVEL","AVISO: PODER DE RELAXAMENTO MUITO ALTO","AMAMOS TODO O SEU CONCEITO","AQUELA VIBE ESTÁ ESGOTADA","O UNIVERSO SALVOU SEU PROGRESSO","MATERIAL PREMIUM DE CONFORTO DO DIA","SEM MOTIVAÇÃO MAS AINDA LENDÁRIO","PERFORMANCE HUMANA DE ELITE","VENCEDOR DO PRÊMIO MISSÔ","UMA PLANTA ACABOU DE CHORAR DE ALEGRIA","VOCÊ É UM PURIFICADOR DE AR?","SUA EXISTÊNCIA PARECE FOFA","SEU CORAÇÃO TEM UM UMIDIFICADOR","PESSOA ACONCHEGANTE OFICIAL DO DIA","QUALIFICADO PARA CAPITANEAR UMA NAVE ESPACIAL","GÊNIO MAL-FUNCIONANDO","PERFEITAMENTE MOLDADO PARA ESTE MUNDO","SABOR DEMAIS. ABSOLUTAMENTE INCRÍVEL"];
+
+const actionsJA = ["水飲めた","布団から出れた","カーテン開けた","深呼吸した","顔洗えた","歯みがきした","靴はけた","外みれた","空みた","起きれた","横になれた","ご飯食べた","お茶いれた","お風呂はいれた","シャンプーした","着替えた","洗濯まわせた","ゴミ捨てれた","コンビニ行けた","スーパー行けた","返信できた","スタンプ返せた","電話でれた","メール開けた","通知みれた","SNS閉じれた","アプリ消せた","ちょっと休めた","5分だけ動けた","座れた","立てた","歩けた","ストレッチした","笑えた","泣けた","イライラ気づけた","寝坊した","生き延びた","今日きた","朝むかえた","夜までこれた","天気感じた","音楽きいた","窓あけた","電気つけた","充電できた","トイレ行けた","ごはん温めた","冷蔵庫あけた","ベッド整えた","靴そろえた","ティッシュ捨てた","髪とかせた","爪みた","予定みれた","時計みた","財布確認した","水道ひねった","コップ洗えた","皿うごかせた","ドア開けた","一言しゃべれた","あくびした","まばたきした","力ぬけた","休もうと思えた","無理に笑わんかった","断れた","好き選べた","嫌って思えた","のんびりした","ぼーっとできた","イス座れた","静かにできた","眠れた","起きなおせた","日光あびた","お湯つかえた","呼吸しとる","お腹すいた","甘いもの食べた","片づけ1個した","画面閉じた","目休めた","なんとかした","ここ来れた","ボタン押せた","読めた","見つけれた","思い出せた","忘れれた","あきらめれた","助け求めれた","誰か思い出した","自分気づけた","ちょっと安心した","今日終われそう","今ここおる","存在しとる","なんか生きとる"];
+const actionsEN = ["Drank water","Got out of bed","Opened the curtains","Took a deep breath","Washed my face","Brushed my teeth","Put on shoes","Looked outside","Looked at the sky","Woke up","Laid down","Ate food","Made tea","Took a shower","Washed my hair","Changed clothes","Did laundry","Took out trash","Went to the store","Went grocery shopping","Replied to a message","Sent a sticker reply","Answered the phone","Opened an email","Checked notifications","Closed social media","Deleted an app","Took a little break","Moved for 5 minutes","Sat down","Stood up","Walked around","Did stretching","Laughed","Cried","Noticed my irritation","Overslept","Survived today","Made it to today","Saw the morning","Reached the night","Felt the weather","Listened to music","Opened the window","Turned on the lights","Charged my device","Went to the bathroom","Heated up food","Opened the fridge","Fixed the bed","Organized shoes","Threw away tissues","Brushed my hair","Looked at my nails","Checked my schedule","Looked at the clock","Checked my wallet","Turned on the faucet","Washed a cup","Moved the dishes","Opened the door","Said one sentence","Yawned","Blinked","Relaxed a little","Thought about resting","Didn't force a smile","Said no","Chose what I like","Realized I dislike something","Took it easy","Zoned out","Sat in a chair","Enjoyed some quiet","Slept","Got back up again","Got some sunlight","Used warm water","Still breathing","Felt hungry","Ate something sweet","Cleaned one thing","Closed the screen","Rested my eyes","Somehow managed","Made it here","Pressed the button","Read something","Found something","Remembered something","Forgot something","Gave up on something","Asked for help","Thought about someone","Noticed myself","Felt a little relieved","Might finish today okay","I am here right now","I exist","Somehow still alive"];
+
+const actionsKO = ["물 마셨어","이불에서 나왔어","커튼 열었어","심호흡 했어","세수했어","양치했어","신발 신었어","밖을 봤어","하늘 봤어","일어났어","누웠어","밥 먹었어","차 끓였어","샤워했어","머리 감았어","옷 갈아입었어","빨래 돌렸어","쓰레기 버렸어","편의점 다녀왔어","마트 다녀왔어","답장했어","스티커 보냈어","전화 받았어","메일 열었어","알림 확인했어","SNS 닫았어","앱 지웠어","잠깐 쉬었어","5분 움직였어","앉았어","일어섰어","걸었어","스트레칭 했어","웃었어","울었어","짜증 알아챘어","늦잠 잤어","오늘 살아남았어","오늘 왔어","아침 맞이했어","밤까지 버텼어","날씨 느꼈어","음악 들었어","창문 열었어","불 켰어","충전했어","화장실 다녀왔어","밥 데웠어","냉장고 열었어","침대 정리했어","신발 정리했어","휴지 버렸어","머리 빗었어","손톱 봤어","일정 확인했어","시계 봤어","지갑 확인했어","수도꼭지 틀었어","컵 씻었어","그릇 옮겼어","문 열었어","한 마디 했어","하품했어","눈 깜빡였어","힘 뺐어","쉬어야겠다고 생각했어","억지로 안 웃었어","거절했어","좋아하는 거 골랐어","싫다고 느꼈어","느긋하게 있었어","멍 때렸어","의자에 앉았어","조용히 있었어","잠들었어","다시 일어났어","햇볕 쬐었어","따뜻한 물 썼어","숨 쉬고 있어","배고프다 느꼈어","달콤한 거 먹었어","하나 정리했어","화면 껐어","눈 쉬었어","어떻게든 했어","여기 왔어","버튼 눌렀어","읽었어","찾았어","떠올렸어","잊었어","포기했어","도움 요청했어","누군가 생각했어","나를 알아챘어","조금 안심했어","오늘 끝낼 수 있을 것 같아","지금 여기 있어","존재하고 있어","어떻게든 살아있어"];
+
+const praisesKO = ["콩나물 대신 국보 지정","표고버섯계의 희망","이달의 주인공급 달걀","마침내 전설의 이불 사용자","국가 레벨로 대단해","세계 고양이 회의가 박수쳐","그 행동 나라가 보호할게","인류, 당신을 채용합니다","오늘의 수달 대표","우주에서 감사장 도착","야생의 카리스마 발견","오늘의 생존, S랭크","감정 올림픽 우승","느긋함계의 사황","슈퍼 안심 타임 돌입","이불계의 레전드","마음이 '살았다~' 하고 있어","세계가 조용히 고개 끄덕였어","전설의 수분 보충사","심호흡의 왕 등장","주먹밥계가 술렁이고 있어","그 답장, 문화유산이야","목욕 취소계를 졸업했어","오늘의 대단한 사무라이","당신 보호 지정입니다","지금 꽤 덕 쌓았어","공기가 '좋아요' 눌렀어","이불에서의 독립 성공","세계가 조금 밝아졌어","꽤 상급 인류야","당신 세금 포함 가격이에요","오늘의 감정, 금상 수상","전국의 관엽식물이 응원 중","드디어 본기 냈네","존재에 BGM 흐르고 있어","지금이라면 최종 보스도 이겨","신들의 회의에서 화제가 됐어","어묵계의 왕자","멘탈 보호구역입니다","이달의 안심감 담당","세계선, 활짝 웃음","다정함 편차치 높아","오늘의 하늘, 당신 편이야","졸음 마스터 인정","그 한 걸음, 문명 레벨","용신들도 쉬었어","감정에 보너스 들어왔어","인류의 힐링 포지션","슈퍼 이불 챔피언","그 느낌, 꽤 합법적이야","느긋캐 국가 대표","세계가 촉촉해졌어","당신, 오늘 운 강해","전 미국이 왠지 안심했어","목숨 사용 너무 잘해","생존 연출 너무 잘해","오늘의 당신, SSR","공간의 치안이 좋아졌어","그 행동, 교과서에 실려","감정이 박수치고 있어","꽤 세련됐어","오늘의 라면도 기뻐해","은하 대단함 협회 인정","세계가 조금 달콤해졌어","이불세 면제입니다","그 휴식, 프로급이야","우주의 Wi-Fi 연결됐어","안심감, 만렙","국가 예산급 가치","그 존재, 반칙급이야","당신, 오늘의 비타민","회장이 술렁이고 있어요","멘탈계의 비보","심야 텐션 신 인정","인류의 버그 기술","꽤 좋은 느낌의 생물","슈퍼 좋은 사람 타임","오늘의 평화상","그 공기, 갓 지은 밥처럼","전 방향에서 대단해","마음이 쫄깃해지고 있어","지금의 당신, 빛 속성","사는 방식에 여백이 있어","느긋함 능력, 너무 높아 주의","당신이라는 개념, 좋아","그 느낌, 품절 중","세계가 조용히 저장했어","오늘의 안심 소재","의욕 없는데 대단해","꽤 인간 잘해","오늘의 된장국 상","지금 관엽식물이 울었어","당신, 공기청정기야?","존재가 폭신폭신해","마음에 가습기 달려 있어","오늘의 따뜻함 포지션","우주선 선장 적성 있어","오늘도 겨우 천재","세상에 딱 맞아","당신 맛, 너무 진해"];
+
+
+const praisesJA = ["納豆大臣に任命","エリンギ界の希望","今月の主役級たまご","ついに伝説の布団使い","国家レベルでえらい","世界ねこ会議が拍手","その動き、国が守る","人類、あなたを採用","本日のラッコ代表","宇宙から感謝状届いた","野生のカリスマ発見","今日の生存、Sランク","情緒オリンピック優勝","ゆるみ界の四皇","スーパー安心タイム突入","布団界のレジェンド","心が「助かる〜」言うとる","世界が静かにうなずいた","伝説の水分補給士","深呼吸の王あらわる","おにぎり界がざわついとる","その返信、文化遺産","風呂キャンセル界を卒業","本日のえらい侍","あなた保護指定です","今の、かなり徳積んだ","空気が「いいね」押した","布団からの独立成功","世界がちょっと明るくなった","かなり上級人類","あなた税込価格です","今日の情緒、金賞受賞","全国の観葉植物が応援中","ついに本気出したな","存在にBGM流れとる","今ならラスボス倒せる","神々の会議で話題に","おでん界のプリンス","メンタル保護区域です","今月の安心感担当","世界線、ニッコニコ","やさしさ偏差値たかい","今日の空、あなた寄り","眠気マスター認定","その一歩、文明レベル","龍神たちも休憩した","情緒にボーナス入った","人類の癒し枠","スーパー布団チャンピオン","その感じ、かなり合法","ゆるキャラ国家代表","世界が保湿された","あなた、今日あたり強い","全米がなんか安心した","いのち使いうますぎ","生存演出うますぎる","今日のあなた、SSR","空間の治安よくなった","その行動、教科書載る","情緒が拍手しよる","かなりナウい","今日のラーメンも喜ぶ","銀河えらい協会認定","世界がちょっと甘くなった","布団税免除です","その休憩、プロ仕様","宇宙のWi-Fiつながった","安心感、カンスト","国家予算級の価値","その存在、反則級","あなた、今日のビタミン","会場がざわついてます","メンタル界の秘宝","深夜テンション神認定","人類のバグ技","かなりいい感じの生物","スーパーよか人タイム","本日の平和賞","その空気、炊きたて","全方向からえらい","心がもちもちしとる","今のあなた、光属性","生き方に余白がある","ゆるみ力、高すぎ注意","あなた概念、好き","その感じ、売り切れ中","世界がそっと保存した","本日の安心素材","やる気ないのにえらい","かなり人間うまい","今日のMISO SOUP賞","いま観葉植物が泣いた","あなた、空気清浄機？","存在がふわふわしとる","心に加湿器ついとる","本日のほっこり枠","宇宙船の船長向き","今日もギリ天才","世界にちょうどいい","あなた味、出すぎとる"];
+const praisesEN = ["LEGALLY IMPORTANT HUMAN","CHOSEN BY THE MUSHROOM COUNCIL","MAIN CHARACTER ENERGY","BED WIZARD ASCENDED","NATIONALLY CERTIFIED LEGEND","THE CAT COUNCIL APPROVES","GOVERNMENT PROTECTED BEHAVIOR","HUMANITY ACCEPTS YOU","OFFICIAL OTTER REPRESENTATIVE","THE UNIVERSE SENT THANK YOU MAIL","WILD CHARISMA DETECTED","SURVIVAL RANK: S","EMOTIONAL OLYMPICS CHAMPION","EMPEROR OF CHILLING","MAXIMUM COMFORT MODE ACTIVATED","BED REALM LEGEND","YOUR HEART FEELS SAVED","THE WORLD NODDED QUIETLY","HYDRATION MASTER UNLOCKED","KING OF DEEP BREATHS","THE RICE BALL COMMUNITY IS SHAKING","THAT REPLY BELONGS IN A MUSEUM","SHOWER AVOIDANCE ARC ENDED","HONORABLE HUMAN OF THE DAY","PROTECTED SPECIES STATUS GRANTED","MASSIVE GOOD KARMA GAINED","THE AIR ITSELF HIT LIKE","SUCCESSFULLY ESCAPED THE BED","THE WORLD GOT SLIGHTLY BRIGHTER","ADVANCED LEVEL HUMAN","PRICE INCLUDES TAX AND GREATNESS","GOLD MEDAL IN EMOTIONS","HOUSEPLANTS ARE ROOTING FOR YOU","YOU FINALLY USED 1% OF YOUR POWER","YOUR EXISTENCE HAS BACKGROUND MUSIC","FINAL BOSS DEFEAT POSSIBLE TODAY","THE GODS ARE DISCUSSING YOU","PRINCE OF HOT POT ENERGY","MENTAL SAFETY ZONE ACTIVATED","MONTHLY COMFORT CHAMPION","TIMELINE STATUS: HAPPY","KINDNESS LEVEL OVERPOWERED","TODAY'S SKY SUPPORTS YOU","CERTIFIED SLEEPINESS MASTER","THAT STEP CHANGED CIVILIZATION","EVEN THE DRAGONS TOOK A BREAK","BONUS EMOTIONS ACQUIRED","HUMANITY'S COMFORT CHARACTER","SUPREME BED CHAMPION","THAT VIBE IS LEGALLY SAFE","NATIONAL MASCOT ENERGY","THE WORLD FEELS MOISTURIZED","YOU FEEL STRANGELY POWERFUL TODAY","AMERICA SOMEHOW FEELS RELIEVED","MASTERFUL LIFE USAGE","SURVIVAL PRESENTATION: 10/10","TODAY YOU ARE SSR TIER","THE ROOM FEELS SAFER NOW","THAT ACTION BELONGS IN TEXTBOOKS","YOUR EMOTIONS ARE APPLAUDING","EXTREMELY 2000s COOL","EVEN THE RAMEN IS HAPPY TODAY","CERTIFIED BY THE GALAXY PRAISE ASSOCIATION","THE WORLD TASTES SWEETER NOW","BED TAX EXEMPTION GRANTED","PROFESSIONAL LEVEL RESTING","COSMIC WIFI CONNECTED","COMFORT LEVEL MAXED OUT","WORTH NATIONAL TREASURE MONEY","YOUR EXISTENCE IS OVERPOWERED","YOU ARE TODAY'S VITAMIN","THE CROWD IS LOSING IT","RARE TREASURE OF THE MENTAL REALM","LATE NIGHT ENERGY GOD APPROVED","HUMANITY FOUND A GLITCH","HIGH QUALITY LIFE FORM","SUPER GOOD HUMAN MODE","PEACE PRIZE WINNER OF THE DAY","YOUR VIBE FEELS FRESHLY COOKED","PRAISED FROM ALL DIRECTIONS","YOUR HEART FEELS EXTRA SQUISHY","LIGHT ATTRIBUTE ACTIVATED","YOUR LIFE HAS NICE SPACING","WARNING: CHILL POWER TOO HIGH","WE LOVE YOUR ENTIRE CONCEPT","THAT VIBE IS SOLD OUT","THE UNIVERSE SAVED YOUR PROGRESS","TODAY'S PREMIUM COMFORT MATERIAL","NO MOTIVATION YET STILL LEGENDARY","ELITE HUMAN PERFORMANCE","MISO SOUP AWARD WINNER","A HOUSEPLANT JUST CRIED WITH JOY","ARE YOU AN AIR PURIFIER?","YOUR EXISTENCE FEELS FLUFFY","YOUR HEART HAS A HUMIDIFIER","OFFICIAL COZY PERSON OF THE DAY","QUALIFIED TO CAPTAIN A SPACESHIP","BARELY FUNCTIONING GENIUS","PERFECTLY SHAPED FOR THIS WORLD","TOO MUCH FLAVOR. ABSOLUTELY INCREDIBLE"];
+
+const actionsFR = ["Bu de l'eau","Me suis levé·e","Ouvert les rideaux","Respiré profondément","Me suis lavé·e le visage","Me suis brossé·e les dents","Mis mes chaussures","Regardé dehors","Regardé le ciel","Me suis réveillé·e","Me suis allongé·e","Mangé","Préparé du thé","Pris une douche","Lavé mes cheveux","Changé de vêtements","Fait la lessive","Sorti les poubelles","Allé·e au magasin","Fait les courses","Répondu à un message","Envoyé un sticker en réponse","Décroché le téléphone","Ouvert un e-mail","Vérifié les notifications","Fermé les réseaux sociaux","Supprimé une appli","Pris une petite pause","Bougé 5 minutes","Me suis assis·e","Me suis levé·e","Marché un peu","Fait des étirements","Souri","Pleuré","Remarqué mon irritation","Fait la grasse mat'","Survécu aujourd'hui","Y suis arrivé·e aujourd'hui","Vu le matin","Tenu jusqu'au soir","Ressenti la météo","Écouté de la musique","Ouvert la fenêtre","Allumé la lumière","Chargé mon appareil","Allé·e aux toilettes","Réchauffé à manger","Ouvert le frigo","Refait le lit","Rangé les chaussures","Jeté les mouchoirs","Brossé mes cheveux","Regardé mes ongles","Vérifié mon agenda","Regardé l'heure","Vérifié mon portefeuille","Ouvert le robinet","Lavé un verre","Déplacé la vaisselle","Ouvert la porte","Dit une phrase","Bâillé","Cligné des yeux","Relâché la pression","Pensé à me reposer","N'ai pas forcé un sourire","Dit non","Choisi ce que j'aime","Réalisé que je n'aime pas quelque chose","Pris les choses calmement","Rêvassé","Assis·e dans une chaise","Profité du silence","Dormi","Me suis relevé·e","Pris le soleil","Utilisé de l'eau chaude","Suis encore en train de respirer","Ressenti la faim","Mangé quelque chose de sucré","Rangé une chose","Fermé l'écran","Reposé mes yeux","M'en suis sorti·e d'une façon ou d'une autre","Suis arrivé·e ici","Appuyé sur le bouton","Lu quelque chose","Trouvé quelque chose","Me suis souvenu·e de quelque chose","Oublié quelque chose","Abandonné quelque chose","Demandé de l'aide","Pensé à quelqu'un","Pris conscience de moi-même","Ressenti un petit soulagement","Je vais peut-être finir la journée","Je suis là maintenant","J'existe","Je suis encore en vie d'une façon ou d'une autre"];
+
+const praisesFR = ["HUMAIN·E LÉGALEMENT IMPORTANT·E","CHOISI·E PAR LE CONSEIL DES CHAMPIGNONS","ÉNERGIE DE PERSONNAGE PRINCIPAL","MAGICIEN·NE DU LIT ASCENDÉ·E","LÉGENDE CERTIFIÉE NATIONALEMENT","LE CONSEIL DES CHATS APPROUVE","COMPORTEMENT PROTÉGÉ PAR L'ÉTAT","L'HUMANITÉ T'ACCEPTE","REPRÉSENTANT·E OFFICIEL·LE DE LA LOUTRE DU JOUR","L'UNIVERS A ENVOYÉ UN E-MAIL DE REMERCIEMENT","CHARISME SAUVAGE DÉTECTÉ","RANG DE SURVIE : S","CHAMPION·NE DES OLYMPIQUES ÉMOTIONNELS","EMPEREU·R·SE DE LA DÉTENTE","MODE CONFORT MAXIMUM ACTIVÉ","LÉGENDE DU ROYAUME DU LIT","TON CŒUR SE SENT SAUVÉ","LE MONDE A HOCHÉ LA TÊTE EN SILENCE","MAÎTRE LÉGENDAIRE DE L'HYDRATATION","ROI·REINE DES RESPIRATIONS PROFONDES","LA COMMUNAUTÉ DES ONIGIRI FRÉMIT","CETTE RÉPONSE APPARTIENT À UN MUSÉE","ARC DU REPORT DE DOUCHE TERMINÉ","HUMAIN·E HONORABLE DU JOUR","STATUT D'ESPÈCE PROTÉGÉE ACCORDÉ","KARMA POSITIF MASSIF ENGRANGÉ","L'AIR LUI-MÊME A AIMÉ","ÉCHAPPÉ·E AVEC SUCCÈS DU LIT","LE MONDE EST UN PEU PLUS LUMINEUX","HUMAIN·E DE NIVEAU AVANCÉ","LE PRIX INCLUT TAXES ET GRANDEUR","MÉDAILLE D'OR AUX ÉMOTIONS","LES PLANTES D'INTÉRIEUR T'ENCOURAGENT","TU AS ENFIN UTILISÉ 1 % DE TON POUVOIR","TON EXISTENCE A UNE MUSIQUE DE FOND","POSSIBLE DE VAINCRE LE BOSS FINAL AUJOURD'HUI","LES DIEUX PARLENT DE TOI","PRINCE·SSE DE L'ÉNERGIE POT-AU-FEU","ZONE DE SÉCURITÉ MENTALE ACTIVÉE","CHAMPION·NE MENSUEL·LE DU CONFORT","STATUT DE LA TIMELINE : HEUREUX·SE","NIVEAU DE GENTILLESSE SURPUISSANT","LE CIEL D'AUJOURD'HUI TE SOUTIENT","MAÎTRE CERTIFIÉ·E DE LA SOMNOLENCE","CE PAS A CHANGÉ LA CIVILISATION","MÊME LES DRAGONS ONT FAIT UNE PAUSE","ÉMOTIONS BONUS ACQUISES","PERSONNAGE RÉCONFORTANT DE L'HUMANITÉ","CHAMPION·NE SUPRÊME DU LIT","CETTE VIBE EST LÉGALEMENT SÛR·E","ÉNERGIE DE MASCOTTE NATIONALE","LE MONDE SE SENT HYDRATÉ","TU TE SENS ÉTRANGEMENT PUISSANT·E AUJOURD'HUI","L'AMÉRIQUE SE SENT BIZARREMENT SOULAGÉE","UTILISATION MAGISTRALE DE LA VIE","PRÉSENTATION DE SURVIE : 10/10","AUJOURD'HUI TU ES NIVEAU SSR","LA PIÈCE SE SENT PLUS EN SÉCURITÉ","CETTE ACTION APPARTIENT AUX MANUELS SCOLAIRES","TES ÉMOTIONS APPLAUDISSENT","EXTRÊMEMENT STYLÉ·E","MÊME LES RAMEN SONT HEUREUX AUJOURD'HUI","CERTIFIÉ·E PAR L'ASSOCIATION GALACTIQUE DES ÉLOGES","LE MONDE EST UN PEU PLUS DOUX","EXEMPTION D'IMPÔT LIT ACCORDÉE","REPOS DE NIVEAU PROFESSIONNEL","WI-FI COSMIQUE CONNECTÉ","NIVEAU DE CONFORT MAXIMISÉ","VAUT UN TRÉSOR NATIONAL","TON EXISTENCE EST SURPUISSANTE","TU ES LA VITAMINE DU JOUR","LA FOULE EST EN DÉLIRE","TRÉSOR RARE DU ROYAUME MENTAL","DIEU·DÉESSE DE L'ÉNERGIE NOCTURNE APPROUVÉ·E","L'HUMANITÉ A TROUVÉ UN GLITCH","FORME DE VIE DE HAUTE QUALITÉ","MODE SUPER GENTIL·LE HUMAIN·E","LAURÉAT·E DU PRIX DE LA PAIX DU JOUR","TA VIBE SEMBLE FRAÎCHEMENT CUISINÉE","FÉLICITÉ DE TOUS CÔTÉS","TON CŒUR SE SENT EXTRA MOELLEUX","ATTRIBUT LUMIÈRE ACTIVÉ","TA VIE A UN BEAU RYTHME","ATTENTION : POUVOIR DE DÉTENTE TROP ÉLEVÉ","ON ADORE TOUT TON CONCEPT","CETTE VIBE EST ÉPUISÉE","L'UNIVERS A SAUVEGARDÉ TA PROGRESSION","MATÉRIAU PREMIUM DE CONFORT DU JOUR","PAS MOTIVÉ·E MAIS TOUJOURS LÉGENDAIRE","PERFORMANCE HUMAINE D'ÉLITE","LAURÉAT·E DU PRIX DE LA SOUPE MISO","UNE PLANTE VIENT DE PLEURER DE JOIE","TU ES UN PURIFICATEUR D'AIR ?","TON EXISTENCE EST TOUTE DOUCE","TON CŒUR A UN HUMIDIFICATEUR","PERSONNE COSY OFFICIELLE DU JOUR","QUALIFIÉ·E POUR PILOTER UN VAISSEAU SPATIAL","GÉNIE QUI FONCTIONNE À PEINE","PARFAITEMENT FAÇONNÉ·E POUR CE MONDE","TROP DE SAVEUR. ABSOLUMENT INCROYABLE"];
+
+const actionsDE = ["Wasser getrunken","Aus dem Bett gekommen","Vorhänge aufgemacht","Tief geatmet","Gesicht gewaschen","Zähne geputzt","Schuhe angezogen","Nach draußen geschaut","Den Himmel angesehen","Aufgewacht","Hingelegt","Gegessen","Tee gekocht","Geduscht","Haare gewaschen","Umgezogen","Wäsche gewaschen","Müll rausgebracht","Zum Laden gegangen","Einkaufen gegangen","Eine Nachricht beantwortet","Einen Sticker-Reply gesendet","Ans Telefon gegangen","Eine E-Mail geöffnet","Benachrichtigungen gecheckt","Social Media geschlossen","Eine App gelöscht","Eine kleine Pause gemacht","5 Minuten bewegt","Hingesetzt","Aufgestanden","Spaziert","Gedehnt","Gelacht","Geweint","Meine Gereiztheit bemerkt","Verschlafen","Heute überlebt","Es bis heute geschafft","Den Morgen gesehen","Die Nacht erreicht","Das Wetter gespürt","Musik gehört","Das Fenster geöffnet","Das Licht angemacht","Gerät aufgeladen","Zur Toilette gegangen","Essen aufgewärmt","Den Kühlschrank geöffnet","Bett gemacht","Schuhe aufgeräumt","Taschentücher weggeworfen","Haare gebürstet","Nägel angeschaut","Terminplan gecheckt","Auf die Uhr geschaut","Geldbörse gecheckt","Den Wasserhahn aufgedreht","Ein Glas gespült","Das Geschirr verschoben","Die Tür geöffnet","Einen Satz gesagt","Gegähnt","Geblinzelt","Entspannt","Ans Ausruhen gedacht","Kein erzwungenes Lächeln","Nein gesagt","Gewählt was mir gefällt","Gemerkt was mir nicht gefällt","Es ruhig angegangen","Gedankenlos dahingedöst","In einem Stuhl gesessen","Stille genossen","Geschlafen","Wieder aufgestanden","Sonnenlicht bekommen","Warmes Wasser benutzt","Atme noch","Hunger gespürt","Etwas Süßes gegessen","Eine Sache aufgeräumt","Den Bildschirm geschlossen","Augen geruht","Irgendwie hinbekommen","Hier angekommen","Den Knopf gedrückt","Etwas gelesen","Etwas gefunden","An etwas erinnert","Etwas vergessen","Etwas aufgegeben","Um Hilfe gebeten","An jemanden gedacht","Mich selbst bemerkt","Etwas Erleichterung gespürt","Schaffe heute vielleicht den Tag","Ich bin jetzt hier","Ich existiere","Irgendwie noch am Leben"];
+
+const praisesDE = ["RECHTLICH WICHTIGER MENSCH","VOM PILZRAT AUSERWÄHLT","HAUPTCHARAKTER-ENERGIE","BETT-ZAUBERER AUFGESTIEGEN","NATIONAL ZERTIFIZIERTE LEGENDE","DER KATZENRAT STIMMT ZU","STAATLICH GESCHÜTZTES VERHALTEN","DIE MENSCHHEIT AKZEPTIERT DICH","OFFIZIELLER OTTER-VERTRETER DES TAGES","DAS UNIVERSUM HAT EINE DANKES-E-MAIL GESCHICKT","WILDE AUSSTRAHLUNG ENTDECKT","ÜBERLEBENSRANG: S","EMOTIONS-OLYMPIA-CHAMPION","KAISER/IN DER ENTSPANNUNG","MAXIMALER KOMFORT-MODUS AKTIVIERT","LEGENDE DES BETT-REICHS","DEIN HERZ FÜHLT SICH GERETTET","DIE WELT HAT STILL GENICKT","HYDRATIONS-MEISTER FREIGESCHALTET","KÖNIG/IN DER TIEFEN ATEMZÜGE","DIE ONIGIRI-GEMEINSCHAFT BEBT","DIESE ANTWORT GEHÖRT INS MUSEUM","DUSCH-AUFSCHIEBE-BOGEN BEENDET","EHRENWÜRDIGER MENSCH DES TAGES","STATUS DER GESCHÜTZTEN ART ERTEILT","MASSIV GUTES KARMA GESAMMELT","DIE LUFT SELBST HAT GELIKED","ERFOLGREICH AUS DEM BETT ENTKOMMEN","DIE WELT WURDE EIN WENIG HELLER","FORTGESCHRITTENER MENSCH","PREIS INKLUSIVE STEUER UND GRÖSSE","GOLDMEDAILLE BEI DEN EMOTIONEN","ZIMMERPFLANZEN DRÜCKEN DIR DIE DAUMEN","DU HAST ENDLICH 1 % DEINER KRAFT GENUTZT","DEINE EXISTENZ HAT HINTERGRUNDMUSIK","ENDGEGNER HEUTE BESIEGBAR","DIE GÖTTER SPRECHEN ÜBER DICH","PRINZ/PRINZESSIN DER EINTOPF-ENERGIE","MENTALE SICHERHEITSZONE AKTIVIERT","MONATLICHER KOMFORT-CHAMPION","TIMELINE-STATUS: GLÜCKLICH","FREUNDLICHKEITSLEVEL ÜBERMÄCHTIG","DER HEUTIGE HIMMEL UNTERSTÜTZT DICH","ZERTIFIZIERTER SCHLAFMEISTER","DIESER SCHRITT HAT DIE ZIVILISATION VERÄNDERT","SOGAR DIE DRACHEN HABEN PAUSE GEMACHT","BONUS-EMOTIONEN ERHALTEN","TROST-FIGUR DER MENSCHHEIT","OBERSTER BETT-CHAMPION","DIESE VIBE IST LEGAL SICHER","NATIONALE MASKOTTCHEN-ENERGIE","DIE WELT FÜHLT SICH BEFEUCHTET","DU FÜHLST DICH SELTSAM MÄCHTIG HEUTE","DEUTSCHLAND FÜHLT SICH IRGENDWIE ERLEICHTERT","MEISTERHAFTE LEBENSNUTZUNG","ÜBERLEBENSPRÄSENTATION: 10/10","HEUTE BIST DU SSR-STUFE","DER RAUM FÜHLT SICH SICHERER AN","DIESE AKTION GEHÖRT IN SCHULBÜCHER","DEINE EMOTIONEN APPLAUDIEREN","EXTREM STILVOLL","SOGAR DER RAMEN IST HEUTE GLÜCKLICH","VON DER GALAKTISCHEN LOB-GESELLSCHAFT ZERTIFIZIERT","DIE WELT SCHMECKT JETZT SÜSSER","BETT-STEUER-BEFREIUNG GEWÄHRT","PROFESSIONELLES RUHESTUFENNIVEAU","KOSMISCHES WLAN VERBUNDEN","KOMFORTLEVEL MAXIMIERT","WERT EINES NATIONALSCHATZES","DEINE EXISTENZ IST ÜBERMÄCHTIG","DU BIST DAS VITAMIN DES TAGES","DAS PUBLIKUM DREHT DURCH","SELTENER SCHATZ DES MENTALEN REICHS","NACHTENERGIE-GOTT GENEHMIGT","DIE MENSCHHEIT HAT EINEN GLITCH GEFUNDEN","HOCHWERTIGE LEBENSFORM","SUPER-GUTER-MENSCH-MODUS","FRIEDENSPREISGEWINNER DES TAGES","DEINE VIBE FÜHLT SICH FRISCH GEKOCHT AN","VON ALLEN SEITEN GELOBT","DEIN HERZ FÜHLT SICH EXTRA WEICH AN","LICHT-ATTRIBUT AKTIVIERT","DEIN LEBEN HAT EINEN SCHÖNEN RHYTHMUS","WARNUNG: CHILL-KRAFT ZU HOCH","WIR LIEBEN DEIN GESAMTES KONZEPT","DIESE VIBE IST AUSVERKAUFT","DAS UNIVERSUM HAT DEINEN FORTSCHRITT GESPEICHERT","PREMIUM-KOMFORT-MATERIAL DES TAGES","KEINE MOTIVATION ABER TROTZDEM LEGENDÄR","ELITE-MENSCHLICHE LEISTUNG","MISO-SUPPEN-PREIS-GEWINNER","EINE PFLANZE HAT GERADE VOR FREUDE GEWEINT","BIST DU EIN LUFTREINIGER?","DEINE EXISTENZ FÜHLT SICH FLAUSCHIG AN","DEIN HERZ HAT EINEN LUFTBEFEUCHTER","OFFIZIELL GEMÜTLICHE PERSON DES TAGES","QUALIFIZIERT UM EIN RAUMSCHIFF ZU FÜHREN","KAUM FUNKTIONIERENDES GENIE","PERFEKT FÜR DIESE WELT GEFORMT","ZU VIEL GESCHMACK. ABSOLUT UNGLAUBLICH"];
+
+const actionsES = ["Tomé agua","Salí de la cama","Abrí las cortinas","Respiré profundo","Me lavé la cara","Me cepillé los dientes","Me puse los zapatos","Miré afuera","Miré el cielo","Me desperté","Me acosté","Comí","Preparé té","Me duché","Me lavé el pelo","Me cambié de ropa","Lavé la ropa","Saqué la basura","Fui a la tienda","Fui al supermercado","Respondí un mensaje","Mandé un sticker de respuesta","Contesté el teléfono","Abrí un correo","Revisé las notificaciones","Cerré las redes sociales","Borré una app","Tomé un pequeño descanso","Me moví 5 minutos","Me senté","Me levanté","Caminé","Hice estiramientos","Me reí","Lloré","Noté mi irritación","Me dormí de más","Sobreviví hoy","Lo logré hoy","Vi la mañana","Llegué a la noche","Sentí el clima","Escuché música","Abrí la ventana","Encendí la luz","Cargué el dispositivo","Fui al baño","Calenté la comida","Abrí la nevera","Tendí la cama","Ordené los zapatos","Tiré los pañuelos","Me cepillé el pelo","Miré mis uñas","Revisé mi agenda","Miré el reloj","Revisé mi cartera","Abrí el grifo","Lavé un vaso","Moví los platos","Abrí la puerta","Dije una frase","Bostecé","Parpadeé","Me relajé un poco","Pensé en descansar","No forcé una sonrisa","Dije que no","Elegí lo que me gusta","Me di cuenta de que no me gusta algo","Lo tomé con calma","Me quedé en blanco","Me senté en una silla","Disfruté el silencio","Dormí","Me volví a levantar","Tomé el sol","Usé agua caliente","Todavía estoy respirando","Sentí hambre","Comí algo dulce","Ordené una cosa","Cerré la pantalla","Descansé los ojos","De alguna manera lo logré","Llegué hasta aquí","Pulsé el botón","Leí algo","Encontré algo","Recordé algo","Olvidé algo","Abandoné algo","Pedí ayuda","Pensé en alguien","Me noté a mí mismo/a","Sentí un pequeño alivio","Quizás acabe el día bien","Estoy aquí ahora","Existo","De alguna manera sigo vivo/a"];
+
+const actionsTH = ["ดื่มน้ำแล้ว","ลุกจากเตียงแล้ว","เปิดม่านแล้ว","หายใจลึกๆ แล้ว","ล้างหน้าแล้ว","แปรงฟันแล้ว","ใส่รองเท้าแล้ว","มองออกไปข้างนอกแล้ว","มองท้องฟ้าแล้ว","ตื่นนอนแล้ว","นอนลงแล้ว","กินข้าวแล้ว","ชงชาแล้ว","อาบน้ำแล้ว","สระผมแล้ว","เปลี่ยนเสื้อผ้าแล้ว","ซักผ้าแล้ว","ทิ้งขยะแล้ว","ไปร้านสะดวกซื้อแล้ว","ไปซูเปอร์มาร์เก็ตแล้ว","ตอบข้อความแล้ว","ส่งสติกเกอร์ตอบกลับแล้ว","รับโทรศัพท์แล้ว","เปิดอีเมลแล้ว","เช็คการแจ้งเตือนแล้ว","ปิดโซเชียลมีเดียแล้ว","ลบแอปแล้ว","พักเล็กน้อยแล้ว","ขยับตัว 5 นาทีแล้ว","นั่งลงแล้ว","ลุกขึ้นแล้ว","เดินแล้ว","ยืดเส้นยืดสายแล้ว","หัวเราะแล้ว","ร้องไห้แล้ว","รู้ตัวว่ารู้สึกหงุดหงิดแล้ว","ตื่นสายแล้ว","รอดชีวิตวันนี้แล้ว","มาถึงวันนี้แล้ว","ต้อนรับเช้าแล้ว","อยู่ถึงกลางคืนแล้ว","รู้สึกถึงอากาศแล้ว","ฟังเพลงแล้ว","เปิดหน้าต่างแล้ว","เปิดไฟแล้ว","ชาร์จอุปกรณ์แล้ว","ไปห้องน้ำแล้ว","อุ่นอาหารแล้ว","เปิดตู้เย็นแล้ว","จัดเตียงแล้ว","เรียงรองเท้าแล้ว","ทิ้งกระดาษทิชชูแล้ว","หวีผมแล้ว","ดูเล็บแล้ว","เช็คตารางนัดแล้ว","ดูนาฬิกาแล้ว","เช็คกระเป๋าสตางค์แล้ว","เปิดก๊อกน้ำแล้ว","ล้างแก้วแล้ว","เคลื่อนย้ายจานแล้ว","เปิดประตูแล้ว","พูดประโยคหนึ่งแล้ว","หาวแล้ว","กะพริบตาแล้ว","ผ่อนคลายแล้ว","คิดจะพักแล้ว","ไม่ฝืนยิ้มแล้ว","ปฏิเสธแล้ว","เลือกสิ่งที่ชอบแล้ว","รู้ว่าไม่ชอบอะไรแล้ว","ผ่อนคลายสบายๆ แล้ว","멍 때렸어","นั่งบนเก้าอี้แล้ว","เพลิดเพลินกับความเงียบแล้ว","หลับแล้ว","ลุกขึ้นอีกครั้งแล้ว","รับแสงแดดแล้ว","ใช้น้ำอุ่นแล้ว","ยังหายใจอยู่","รู้สึกหิวแล้ว","กินของหวานแล้ว","จัดของหนึ่งอย่างแล้ว","ปิดหน้าจอแล้ว","พักสายตาแล้ว","ผ่านมาได้ยังไงก็ไม่รู้","มาถึงที่นี่แล้ว","กดปุ่มแล้ว","อ่านบางอย่างแล้ว","เจอบางอย่างแล้ว","จำบางอย่างได้แล้ว","ลืมบางอย่างแล้ว","ยอมแพ้บางอย่างแล้ว","ขอความช่วยเหลือแล้ว","นึกถึงใครสักคนแล้ว","สังเกตตัวเองแล้ว","รู้สึกโล่งใจนิดหน่อยแล้ว","วันนี้น่าจะเสร็จได้","ฉันอยู่ที่นี่ตอนนี้","ฉันมีอยู่","ยังมีชีวิตอยู่ยังไงก็ไม่รู้"];
+
+const praisesTH = ["มนุษย์ที่สำคัญตามกฎหมาย","ถูกเลือกโดยสภาเห็ด","พลังตัวละครหลัก","พ่อมดเตียงขั้นสูงสุด","ตำนานระดับชาติ","สภาแมวรับรอง","พฤติกรรมที่รัฐคุ้มครอง","มวลมนุษยชาติยอมรับคุณ","ตัวแทนนากแห่งวันนี้","จักรวาลส่งจดหมายขอบคุณ","เสน่ห์ป่าถูกตรวจพบ","ระดับการอยู่รอด: S","แชมป์โอลิมปิกแห่งอารมณ์","จักรพรรดิแห่งการผ่อนคลาย","โหมดสบายสูงสุดเปิดแล้ว","ตำนานอาณาจักรเตียง","หัวใจคุณรู้สึกได้รับการช่วยเหลือ","โลกพยักหน้าเงียบๆ","ปรมาจารย์การดื่มน้ำปลดล็อกแล้ว","ราชาแห่งการหายใจลึก","ชุมชนโอนิงิริสั่นสะเทือน","คำตอบนั้นควรอยู่ในพิพิธภัณฑ์","อาร์คหลีกเลี่ยงการอาบน้ำจบแล้ว","มนุษย์ผู้มีเกียรติแห่งวันนี้","ได้รับสถานะสปีชีส์ที่ได้รับการคุ้มครอง","สะสมกรรมดีมหาศาล","อากาศเองก็กด 'ถูกใจ'","หลบหนีจากเตียงสำเร็จ","โลกสว่างขึ้นนิดหน่อย","มนุษย์ระดับสูง","ราคารวมภาษีและความยิ่งใหญ่แล้ว","เหรียญทองในอารมณ์","ต้นไม้ในบ้านเชียร์คุณอยู่","ในที่สุดก็ใช้พลัง 1% แล้ว","การมีอยู่ของคุณมีเพลงประกอบ","วันนี้เอาชนะบอสสุดท้ายได้","เหล่าทวยเทพกำลังพูดถึงคุณ","เจ้าชายแห่งพลังงานโอเด็ง","เขตปลอดภัยทางจิตใจเปิดแล้ว","แชมป์ความสบายประจำเดือน","สถานะไทม์ไลน์: มีความสุข","ระดับความเมตตาสูงเกินไป","ท้องฟ้าวันนี้อยู่ฝ่ายคุณ","ปรมาจารย์ความง่วงที่ได้รับการรับรอง","ก้าวนั้นเปลี่ยนอารยธรรม","แม้แต่มังกรก็พักผ่อน","ได้รับอารมณ์โบนัส","ตัวละครปลอบใจของมวลมนุษยชาติ","แชมป์เตียงสูงสุด","ไวบ์นั้นถูกกฎหมาย","พลังงานมาสคอตแห่งชาติ","โลกรู้สึกชุ่มชื้น","วันนี้คุณรู้สึกมีพลังลึกลับ","ประเทศไทยรู้สึกโล่งใจอย่างลึกลับ","การใช้ชีวิตอย่างเชี่ยวชาญ","การนำเสนอการอยู่รอด: 10/10","วันนี้คุณระดับ SSR","ห้องรู้สึกปลอดภัยขึ้น","การกระทำนั้นควรอยู่ในตำรา","อารมณ์ของคุณกำลังปรบมือ","มีสไตล์อย่างยิ่ง","แม้แต่ราเม็งก็มีความสุขวันนี้","ได้รับการรับรองจากสมาคมคำชมกาแล็กซี","โลกหวานขึ้นนิดหน่อย","ได้รับการยกเว้นภาษีเตียง","การพักผ่อนระดับมืออาชีพ","Wi-Fi จักรวาลเชื่อมต่อแล้ว","ระดับความสบายสูงสุด","มูลค่าสมบัติแห่งชาติ","การมีอยู่ของคุณทรงพลังเกินไป","คุณคือวิตามินแห่งวันนี้","ผู้ชมกำลังคลั่งไคล้","สมบัติหายากแห่งอาณาจักรจิตใจ","เทพแห่งพลังงานดึกได้รับการอนุมัติ","มวลมนุษยชาติพบบั๊ก","สิ่งมีชีวิตคุณภาพสูง","โหมดมนุษย์ดีงามสุดๆ","ผู้ชนะรางวัลสันติภาพแห่งวันนี้","ไวบ์ของคุณรู้สึกเหมือนเพิ่งปรุง","ได้รับการยกย่องจากทุกทิศทาง","หัวใจของคุณรู้สึกนุ่มเป็นพิเศษ","เปิดใช้งานคุณลักษณะแสงแล้ว","ชีวิตของคุณมีจังหวะที่ดี","คำเตือน: พลังการผ่อนคลายสูงเกินไป","เราชื่นชอบทุกแนวคิดของคุณ","ไวบ์นั้นหมดสต็อกแล้ว","จักรวาลบันทึกความคืบหน้าของคุณแล้ว","วัสดุความสบายพรีเมียมแห่งวันนี้","ไม่มีแรงจูงใจแต่ยังเป็นตำนาน","การแสดงออกของมนุษย์ระดับเอลีท","ผู้ชนะรางวัลซุปมิโซะ","ต้นไม้เพิ่งร้องไห้ด้วยความปีติ","คุณเป็นเครื่องกรองอากาศหรือเปล่า","การมีอยู่ของคุณรู้สึกนุ่มฟู","หัวใจของคุณมีเครื่องเพิ่มความชื้น","บุคคลอบอุ่นอย่างเป็นทางการแห่งวันนี้","มีคุณสมบัตินำยานอวกาศ","อัจฉริยะที่แทบไม่ทำงาน","ถูกหล่อหลอมมาเพื่อโลกนี้พอดี","รสชาติแรงเกินไป ยอดเยี่ยมอย่างยิ่ง"];
+
+
+const praisesES = ["HUMANO/A LEGALMENTE IMPORTANTE","ELEGIDO/A POR EL CONSEJO DE LOS HONGOS","ENERGÍA DE PERSONAJE PRINCIPAL","MAGO/A DE LA CAMA ASCENDIDO/A","LEYENDA CERTIFICADA NACIONAL","EL CONSEJO DE GATOS LO APRUEBA","COMPORTAMIENTO PROTEGIDO POR EL ESTADO","LA HUMANIDAD TE ACEPTA","REPRESENTANTE OFICIAL DE LA NUTRIA DEL DÍA","EL UNIVERSO ENVIÓ UN EMAIL DE AGRADECIMIENTO","CARISMA SALVAJE DETECTADO","RANGO DE SUPERVIVENCIA: S","CAMPEÓN/A DE LAS OLIMPIADAS EMOCIONALES","EMPERADOR/A DE LA RELAJACIÓN","MODO CONFORT MÁXIMO ACTIVADO","LEYENDA DEL REINO DE LA CAMA","TU CORAZÓN SE SIENTE SALVADO","EL MUNDO ASINTIÓ EN SILENCIO","MAESTRO/A DE LA HIDRATACIÓN DESBLOQUEADO/A","REY/REINA DE LAS RESPIRACIONES PROFUNDAS","LA COMUNIDAD DE LOS ONIGIRI TIEMBLA","ESA RESPUESTA PERTENECE A UN MUSEO","ARCO DE POSPONER LA DUCHA TERMINADO","HUMANO/A HONORABLE DEL DÍA","ESTADO DE ESPECIE PROTEGIDA CONCEDIDO","KARMA POSITIVO MASIVO ACUMULADO","EL AIRE EN SÍ LE DIO LIKE","ESCAPADO/A CON ÉXITO DE LA CAMA","EL MUNDO SE VOLVIÓ UN POCO MÁS BRILLANTE","HUMANO/A DE NIVEL AVANZADO","EL PRECIO INCLUYE IMPUESTOS Y GRANDEZA","MEDALLA DE ORO EN EMOCIONES","LAS PLANTAS DE INTERIOR TE ANIMAN","POR FIN USASTE EL 1% DE TU PODER","TU EXISTENCIA TIENE MÚSICA DE FONDO","HOY ES POSIBLE DERROTAR AL JEFE FINAL","LOS DIOSES HABLAN DE TI","PRÍNCIPE/PRINCESA DE LA ENERGÍA DEL COCIDO","ZONA DE SEGURIDAD MENTAL ACTIVADA","CAMPEÓN/A MENSUAL DEL CONFORT","ESTADO DE LA LÍNEA DE TIEMPO: FELIZ","NIVEL DE AMABILIDAD IMPARABLE","EL CIELO DE HOY TE APOYA","MAESTRO/A CERTIFICADO/A DEL SUEÑO","ESE PASO CAMBIÓ LA CIVILIZACIÓN","HASTA LOS DRAGONES DESCANSARON","EMOCIONES BONUS ADQUIRIDAS","PERSONAJE DE CONSUELO DE LA HUMANIDAD","CAMPEÓN/A SUPREMO/A DE LA CAMA","ESE VIBE ES LEGALMENTE SEGURO","ENERGÍA DE MASCOTA NACIONAL","EL MUNDO SE SIENTE HIDRATADO","HOY TE SIENTES EXTRAÑAMENTE PODEROSO/A","ESPAÑA SIENTE UN ALIVIO INEXPLICABLE","USO MAGISTRAL DE LA VIDA","PRESENTACIÓN DE SUPERVIVENCIA: 10/10","HOY ERES NIVEL SSR","LA HABITACIÓN SE SIENTE MÁS SEGURA","ESA ACCIÓN PERTENECE A LOS LIBROS DE TEXTO","TUS EMOCIONES ESTÁN APLAUDIENDO","EXTREMADAMENTE ESTILOSO/A","HASTA LOS RAMEN ESTÁN CONTENTOS HOY","CERTIFICADO/A POR LA ASOCIACIÓN GALÁCTICA DE ELOGIOS","EL MUNDO ESTÁ UN POCO MÁS DULCE","EXENCIÓN DEL IMPUESTO DE CAMA CONCEDIDA","DESCANSO DE NIVEL PROFESIONAL","WI-FI CÓSMICO CONECTADO","NIVEL DE CONFORT MAXIMIZADO","VALE UN TESORO NACIONAL","TU EXISTENCIA ES IMPARABLE","ERES LA VITAMINA DE HOY","EL PÚBLICO ESTÁ ENLOQUECIENDO","TESORO RARO DEL REINO MENTAL","DIOS/DIOSA DE LA ENERGÍA NOCTURNA APROBADO/A","LA HUMANIDAD ENCONTRÓ UN GLITCH","FORMA DE VIDA DE ALTA CALIDAD","MODO SUPER BUENA PERSONA","GANADOR/A DEL PREMIO DE LA PAZ DEL DÍA","TU VIBE PARECE RECIÉN COCINADO","ELOGIADO/A DESDE TODAS DIRECCIONES","TU CORAZÓN SE SIENTE EXTRA ESPONJOSO","ATRIBUTO LUZ ACTIVADO","TU VIDA TIENE UN RITMO AGRADABLE","AVISO: PODER DE RELAJACIÓN DEMASIADO ALTO","AMAMOS TODO TU CONCEPTO","ESE VIBE ESTÁ AGOTADO","EL UNIVERSO GUARDÓ TU PROGRESO","MATERIAL PREMIUM DE CONFORT DEL DÍA","SIN MOTIVACIÓN PERO AÚN LEGENDARIO/A","ACTUACIÓN HUMANA DE ÉLITE","GANADOR/A DEL PREMIO A LA SOPA MISO","UNA PLANTA ACABA DE LLORAR DE ALEGRÍA","¿ERES UN PURIFICADOR DE AIRE?","TU EXISTENCIA SE SIENTE ESPONJOSA","TU CORAZÓN TIENE UN HUMIDIFICADOR","PERSONA ACOGEDORA OFICIAL DEL DÍA","CALIFICADO/A PARA PILOTAR UNA NAVE ESPACIAL","GENIO QUE APENAS FUNCIONA","PERFECTAMENTE FORMADO/A PARA ESTE MUNDO","DEMASIADO SABOR. ABSOLUTAMENTE INCREÍBLE"];
+
+// 現在の言語のデータを返す
+function getActions() { return currentLang === 'ja' ? actionsJA : currentLang === 'ko' ? actionsKO : currentLang === 'tw' ? actionsZH : currentLang === 'id' ? actionsID : currentLang === 'pt' ? actionsPT : currentLang === 'fr' ? actionsFR : currentLang === 'de' ? actionsDE : currentLang === 'es' ? actionsES : currentLang === 'th' ? actionsTH : actionsEN; }
+function getPraises() { return currentLang === 'ja' ? praisesJA : currentLang === 'ko' ? praisesKO : currentLang === 'tw' ? praisesZH : currentLang === 'id' ? praisesID : currentLang === 'pt' ? praisesPT : currentLang === 'fr' ? praisesFR : currentLang === 'de' ? praisesDE : currentLang === 'es' ? praisesES : currentLang === 'th' ? praisesTH : praisesEN; }
+function t() { return i18n[currentLang] || i18n['ja']; }
+
+// ===== 言語切替 =====
+function toggleLangDropdown() {
+  document.getElementById('langSwitcher').classList.toggle('open');
+}
+// ドロップダウン外クリックで閉じる
+document.addEventListener('click', function(e) {
+  const sw = document.getElementById('langSwitcher');
+  if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+});
+
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem(LANG_KEY, lang);
+  document.getElementById('btnJA').classList.toggle('active', lang === 'ja');
+  document.getElementById('btnEN').classList.toggle('active', lang === 'en');
+  document.getElementById('btnKO').classList.toggle('active', lang === 'ko');
+  document.getElementById('btnTW').classList.toggle('active', lang === 'tw');
+  document.getElementById('btnID').classList.toggle('active', lang === 'id');
+  document.getElementById('btnPT').classList.toggle('active', lang === 'pt');
+  document.getElementById('btnFR').classList.toggle('active', lang === 'fr');
+  document.getElementById('btnDE').classList.toggle('active', lang === 'de');
+  document.getElementById('btnES').classList.toggle('active', lang === 'es');
+  document.getElementById('btnTH').classList.toggle('active', lang === 'th');
+  // トリガーラベル更新
+  document.getElementById('langTriggerLabel').textContent = lang === 'ja' ? '🇯🇵 JP' : lang === 'ko' ? '🇰🇷 KO' : lang === 'tw' ? '🇹🇼 繁中' : lang === 'id' ? '🇮🇩 ID' : lang === 'pt' ? '🇧🇷 PT' : lang === 'fr' ? '🇫🇷 FR' : lang === 'de' ? '🇩🇪 DE' : lang === 'es' ? '🇪🇸 ES' : lang === 'th' ? '🇹🇭 TH' : '🌍 EN';
+  // ドロップダウンを閉じる
+  document.getElementById('langSwitcher').classList.remove('open');
+  applyLang();
+  renderHistory();
+}
+
+function applyLang() {
+  const L = t();
+  document.documentElement.lang = currentLang;
+  document.title = L.title;
+  document.querySelector('.title-main .title-main-text').textContent = L.title.replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}⤴]+$/u, '').trimEnd();
+  document.querySelector('.title-sub').textContent = L.subtitle;
+  document.querySelector('#cardAction .card-placeholder').textContent = L.placeholder1;
+  document.querySelector('#cardAction .card-label').textContent = L.cardLabel1;
+  document.querySelector('#cardPraise .card-placeholder').textContent = L.placeholder2;
+  document.querySelector('#cardPraise .card-label').textContent = L.cardLabel2;
+  document.querySelector('.bridge-main').textContent = L.bridgeMain;
+  document.querySelector('.bridge-sub').textContent = L.bridgeSub;
+  document.getElementById('btnLabel').textContent = step === 1 ? L.btnPraise : (step === 2 ? L.btnAgain : L.btnPull);
+  document.querySelector('.hint').innerHTML = L.hint;
+  document.querySelector('.share-label').textContent = L.shareLabel;
+  document.querySelector('.btn-screenshot').textContent = L.btnScreenshot;
+  document.querySelector('.copy-btn').textContent = L.btnCopy;
+  document.querySelector('#historyToggle span:first-child').textContent = L.historyToggle;
+  document.getElementById('tabAll').textContent = L.tabAll;
+  document.getElementById('tabHall').textContent = L.tabHall;
+  document.querySelector('.history-clear-btn').textContent = L.btnClear;
+  document.getElementById('otherAppsLabel').textContent = L.otherAppsLabel;
+  document.getElementById('installToggleLabel').textContent = L.installLabel;
+  document.getElementById('installAndroidBtn').textContent = L.installAndroid;
+  // インストール手順
+  if (document.getElementById('installAndroidTitle')) document.getElementById('installAndroidTitle').textContent = L.installAndroidTitle;
+  if (document.getElementById('installIOSTitle')) document.getElementById('installIOSTitle').textContent = L.installIOSTitle;
+  if (document.getElementById('installManualLabelAndroid')) document.getElementById('installManualLabelAndroid').textContent = L.installManualLabelAndroid;
+  if (document.getElementById('installManualLabelIOS')) document.getElementById('installManualLabelIOS').textContent = L.installManualLabelIOS;
+  ['installStepsAndroid', 'installStepsIOS'].forEach(function(id) {
+    var ol = document.getElementById(id);
+    var steps = id === 'installStepsAndroid' ? L.installStepsAndroid : L.installStepsIOS;
+    if (ol && steps) {
+      Array.from(ol.querySelectorAll('li')).forEach(function(li, i) {
+        if (steps[i]) li.textContent = steps[i];
+      });
+    }
+  });
+  // アプリカード
+  if (L.appCards) {
+    document.querySelectorAll('[data-app-name]').forEach(function(el) {
+      var i = parseInt(el.dataset.appName, 10);
+      if (L.appCards[i]) el.innerHTML = L.appCards[i].name;
+    });
+    document.querySelectorAll('[data-app-desc]').forEach(function(el) {
+      var i = parseInt(el.dataset.appDesc, 10);
+      if (L.appCards[i]) el.innerHTML = L.appCards[i].desc;
+    });
+  }
+  document.querySelector('.ss-title .ss-title-text').textContent = L.ssTitle.replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}⤴🤣]+$/u, '').replace(/[⤴🤣]/gu, '').trimEnd();
+  document.querySelector('.ss-title .ss-title-emoji').textContent = '🤣';
+  document.querySelector('.ss-title .ss-title-arrow').textContent = '⤴';
+  document.querySelector('.ss-action-label').textContent = L.ssLabel1;
+  document.querySelector('.ss-bridge').textContent = L.ssBridge;
+  document.querySelector('.ss-praise-label').textContent = L.ssLabel2;
+  document.querySelector('.ss-tag').textContent = L.ssTag;
+  document.querySelector('.ss-hint').textContent = L.ssHint;
+  document.querySelector('.btn-close-ss').textContent = L.ssClose;
+  document.querySelector('.ig-follow-btn').childNodes[document.querySelector('.ig-follow-btn').childNodes.length - 1].textContent = ' ' + L.igFollow;
+  document.querySelector('.ig-btn').childNodes[document.querySelector('.ig-btn').childNodes.length - 1].textContent = ' ' + L.igShare;
+  // bridge（ガチャ途中の橋渡しテキスト）をリアルタイム更新
+  document.querySelector('.bridge-main').textContent = L.bridgeMain;
+  document.querySelector('.bridge-sub').textContent = L.bridgeSub;
+  // hint
+  document.querySelector('.hint').innerHTML = L.hint;
+  // counter を step に応じて更新
+  if (typeof step !== 'undefined') {
+    document.getElementById('counter').textContent =
+      step === 0 ? L.counterInit :
+      step === 1 ? L.counterWait :
+      (count <= 10 ? L.counterMsgs[Math.min(count-1,9)] : L.counterMany(count));
+    // カード表示中なら対応言語テキストに差し替え
+    if (step >= 1 && lastActionIdx >= 0) {
+      const aList = currentLang === 'ja' ? actionsJA : currentLang === 'ko' ? actionsKO : currentLang === 'tw' ? actionsZH : currentLang === 'id' ? actionsID : currentLang === 'pt' ? actionsPT : currentLang === 'fr' ? actionsFR : currentLang === 'de' ? actionsDE : currentLang === 'es' ? actionsES : currentLang === 'th' ? actionsTH : actionsEN;
+      if (aList[lastActionIdx]) document.getElementById('actionResult').textContent = aList[lastActionIdx];
+    }
+    if (step >= 2 && lastPraiseIdx >= 0) {
+      const pList = currentLang === 'ja' ? praisesJA : currentLang === 'ko' ? praisesKO : currentLang === 'tw' ? praisesZH : currentLang === 'id' ? praisesID : currentLang === 'pt' ? praisesPT : currentLang === 'fr' ? praisesFR : currentLang === 'de' ? praisesDE : currentLang === 'es' ? praisesES : currentLang === 'th' ? praisesTH : praisesEN;
+      if (pList[lastPraiseIdx]) document.getElementById('praiseResult').textContent = pList[lastPraiseIdx];
+    }
+  }
+  renderSnsButtons(currentLang);
+}
+
+const actions = actionsJA; // 後方互換（下のコードが参照）
+const praises = praisesJA;
+
+
+let count = 0;
+// 0 = 初期 / 1 = 行動を引いた（承認待ち） / 2 = 両方引いた
+let step = 0;
+// 言語切替時にカード内容を対応言語に置き換えるためインデックスを保持
+let lastActionIdx = -1;
+let lastPraiseIdx = -1;
+
+// ===== 重複なしシャッフルキュー =====
+// 直近30件かぶらない仕組み（ブラウザを閉じても継続）
+const NO_REPEAT = 30;
+// キーは t() 経由で取得するためここでは定義しない
+
+function rand(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+function makeQueue(arr) {
+  // Fisher-Yatesシャッフル
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function loadRecent(key) {
+  try { return JSON.parse(localStorage.getItem(key) || '[]'); } catch(e) { return []; }
+}
+function saveRecent(key, arr) {
+  try { localStorage.setItem(key, JSON.stringify(arr)); } catch(e) {}
+}
+
+// poolはセッション内のみ（言語ごとに管理）
+const pools = {
+  ja: { actions: [], praises: [] },
+  en: { actions: [], praises: [] },
+  ko: { actions: [], praises: [] },
+  tw: { actions: [], praises: [] },
+  id: { actions: [], praises: [] },
+  pt: { actions: [], praises: [] },
+  fr: { actions: [], praises: [] },
+  de: { actions: [], praises: [] },
+  es: { actions: [], praises: [] },
+  th: { actions: [], praises: [] }
+};
+
+function pickNext(key, source) {
+  const pool = pools[currentLang];
+  const storageKey = key === 'actions' ? t().recentKeyA : t().recentKeyP;
+  const recent = loadRecent(storageKey);
+
+  if (pool[key].length === 0) {
+    const available = source.filter(x => !recent.includes(x));
+    pool[key] = makeQueue(available.length > 0 ? available : source.slice());
+  }
+  const item = pool[key].shift();
+  recent.push(item);
+  if (recent.length > NO_REPEAT) recent.shift();
+  saveRecent(storageKey, recent);
+  // インデックスを返す（言語切替時の対応テキスト取得用）
+  const idx = (key === 'actions' ? actionsJA : praisesJA).indexOf(item) !== -1
+    ? (key === 'actions' ? actionsJA : praisesJA).indexOf(item)
+    : (key === 'actions' ? actionsKO : praisesKO).indexOf(item) !== -1
+    ? (key === 'actions' ? actionsKO : praisesKO).indexOf(item)
+    : (key === 'actions' ? actionsZH : praisesZH).indexOf(item) !== -1
+    ? (key === 'actions' ? actionsZH : praisesZH).indexOf(item)
+    : (key === 'actions' ? actionsID : praisesID).indexOf(item) !== -1
+    ? (key === 'actions' ? actionsID : praisesID).indexOf(item)
+    : (key === 'actions' ? actionsPT : praisesPT).indexOf(item) !== -1
+    ? (key === 'actions' ? actionsPT : praisesPT).indexOf(item)
+    : (key === 'actions' ? actionsFR : praisesFR).indexOf(item) !== -1
+    ? (key === 'actions' ? actionsFR : praisesFR).indexOf(item)
+    : (key === 'actions' ? actionsDE : praisesDE).indexOf(item) !== -1
+    ? (key === 'actions' ? actionsDE : praisesDE).indexOf(item)
+    : (key === 'actions' ? actionsES : praisesES).indexOf(item) !== -1
+    ? (key === 'actions' ? actionsES : praisesES).indexOf(item)
+    : (key === 'actions' ? actionsTH : praisesTH).indexOf(item) !== -1
+    ? (key === 'actions' ? actionsTH : praisesTH).indexOf(item)
+    : (key === 'actions' ? actionsEN : praisesEN).indexOf(item);
+  return { text: item, idx };
+}
+
+// ===== ヒストリー（localStorage） =====
+// 言語に関わらず共通キーで保存（JA/EN分離しない）
+const HISTORY_KEY = 'mengacha_history';
+const HISTORY_MAX = 200;
+let currentTab = 'all';
+function getHistoryKey() { return HISTORY_KEY; }
+
+// 確認ダイアログ用
+let confirmCallback = null;
+
+function showConfirm(title, desc, okLabel, cb) {
+  document.getElementById('confirmTitle').textContent = title;
+  document.getElementById('confirmDesc').textContent = desc;
+  document.getElementById('confirmOkBtn').textContent = okLabel || t().confirmDelOk;
+  document.getElementById('confirmCancelBtn').textContent = t().confirmCancel;
+  confirmCallback = cb;
+  document.getElementById('confirmOverlay').classList.add('open');
+}
+function closeConfirm() {
+  document.getElementById('confirmOverlay').classList.remove('open');
+  confirmCallback = null;
+}
+function doConfirm() {
+  if (confirmCallback) confirmCallback();
+  closeConfirm();
+}
+// オーバーレイ外クリックで閉じる
+document.getElementById('confirmOverlay').addEventListener('click', function(e){
+  if (e.target === this) closeConfirm();
+});
+
+function loadHistory() {
+  try {
+    return JSON.parse(localStorage.getItem(getHistoryKey()) || '[]');
+  } catch(e) { return []; }
+}
+
+function saveHistory(list) {
+  try { localStorage.setItem(getHistoryKey(), JSON.stringify(list)); } catch(e) {}
+}
+
+function addHistory(actionJA, praiseJA, actionEN, praiseEN, actionKO, praiseKO, actionZH, praiseZH, actionID, praiseID, actionPT, praisePT, actionTH, praiseTH) {
+  const list = loadHistory();
+  const now = new Date();
+  const dateStr = `${now.getFullYear()}/${String(now.getMonth()+1).padStart(2,'0')}/${String(now.getDate()).padStart(2,'0')} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+  list.unshift({ id: Date.now(), date: dateStr, actionJA, praiseJA, actionEN, praiseEN, actionKO: actionKO||actionJA, praiseKO: praiseKO||praiseJA, actionZH: actionZH||actionJA, praiseZH: praiseZH||praiseJA, actionID: actionID||actionEN, praiseID: praiseID||praiseEN, actionPT: actionPT||actionEN, praisePT: praisePT||praiseEN, actionTH: actionTH||actionEN, praiseTH: praiseTH||praiseEN, hall: false });
+  if (list.length > HISTORY_MAX) list.length = HISTORY_MAX;
+  saveHistory(list);
+  renderHistory();
+}
+
+function toggleHall(id) {
+  const list = loadHistory();
+  const item = list.find(x => x.id === id);
+  if (!item) return;
+  item.hall = !item.hall;
+  saveHistory(list);
+  renderHistory();
+}
+
+function deleteItem(id) {
+  showConfirm(
+    t().confirmDelTitle,
+    t().confirmDelDesc,
+    t().confirmDelOk,
+    () => {
+      const list = loadHistory().filter(x => x.id !== id);
+      saveHistory(list);
+      renderHistory();
+    }
+  );
+}
+
+function switchTab(tab) {
+  currentTab = tab;
+  document.getElementById('tabAll').classList.toggle('active', tab === 'all');
+  document.getElementById('tabHall').classList.toggle('active', tab === 'hall');
+  renderHistory();
+}
+
+function renderHistory() {
+  const allList = loadHistory();
+  const list = currentTab === 'hall' ? allList.filter(x => x.hall) : allList;
+  const container = document.getElementById('historyList');
+  const empty = document.getElementById('historyEmpty');
+  Array.from(container.querySelectorAll('.history-item')).forEach(el => el.remove());
+
+  if (list.length === 0) {
+    empty.style.display = '';
+    empty.textContent = currentTab === 'hall' ? t().emptyHall : t().emptyAll;
+    return;
+  }
+  empty.style.display = 'none';
+  list.forEach(item => {
+    // 古いデータ（idなし）の互換性
+    if (!item.id) item.id = Math.random();
+    // 旧形式（action/praise のみ）との後方互換
+    const actionText = currentLang === 'en'
+      ? (item.actionEN || item.action || '')
+      : currentLang === 'ko'
+      ? (item.actionKO || item.actionJA || item.action || '')
+      : currentLang === 'tw'
+      ? (item.actionZH || item.actionJA || item.action || '')
+      : currentLang === 'id'
+      ? (item.actionID || item.actionEN || item.action || '')
+      : currentLang === 'pt'
+      ? (item.actionPT || item.actionEN || item.action || '')
+      : currentLang === 'th'
+      ? (item.actionTH || item.actionEN || item.action || '')
+      : (item.actionJA || item.action || '');
+    const praiseText = currentLang === 'en'
+      ? (item.praiseEN || item.praise || '')
+      : currentLang === 'ko'
+      ? (item.praiseKO || item.praiseJA || item.praise || '')
+      : currentLang === 'tw'
+      ? (item.praiseZH || item.praiseJA || item.praise || '')
+      : currentLang === 'id'
+      ? (item.praiseID || item.praiseEN || item.praise || '')
+      : currentLang === 'pt'
+      ? (item.praisePT || item.praiseEN || item.praise || '')
+      : currentLang === 'th'
+      ? (item.praiseTH || item.praiseEN || item.praise || '')
+      : (item.praiseJA || item.praise || '');
+    const el = document.createElement('div');
+    el.className = 'history-item' + (item.hall ? ' hall-of-fame' : '');
+    const hallLabel = item.hall ? t().hallOn : t().hallOff;
+    el.innerHTML = `
+      <div class="history-item-date">${item.hall ? '⭐ ' : ''}${item.date}</div>
+      <div class="history-item-action">✦ ${actionText}</div>
+      <div class="history-item-praise">★ ${praiseText}</div>
+      <div class="history-item-btns">
+        <button class="history-btn history-btn-hall${item.hall ? ' hof-active' : ''}" onclick="toggleHall(${item.id})">${hallLabel}</button>
+        <button class="history-btn history-btn-del" onclick="deleteItem(${item.id})">${t().btnDel}</button>
+      </div>
+    `;
+    container.appendChild(el);
+  });
+}
+
+function clearHistory() {
+  const list = loadHistory();
+  if (list.length === 0) return;
+  showConfirm(
+    t().confirmClearTitle,
+    t().confirmClearDesc(list.length),
+    t().confirmClearOk,
+    () => {
+      saveHistory([]);
+      renderHistory();
+    }
+  );
+}
+
+// ページ読み込み時にヒストリーをカウントに反映
+(function initCount(){
+  const list = loadHistory();
+  count = list.length;
+})();
+
+// ページ読み込み時は常に日本語で開始（言語切替は手動のみ）
+(function initLang(){
+  document.getElementById('btnJA').classList.add('active');
+  document.getElementById('btnEN').classList.remove('active');
+  document.getElementById('btnKO').classList.remove('active');
+  document.getElementById('btnTW').classList.remove('active');
+  document.getElementById('btnID').classList.remove('active');
+  document.getElementById('btnPT').classList.remove('active');
+  document.getElementById('btnFR').classList.remove('active');
+  document.getElementById('btnDE').classList.remove('active');
+  document.getElementById('btnES').classList.remove('active');
+  document.getElementById('btnTH').classList.remove('active');
+  // applyLang は不要（HTMLが既に日本語）
+  renderSnsButtons('ja');
+})();
+
+function pullGacha() {
+  const btn = document.getElementById('btnGacha');
+  const btnLabel = document.getElementById('btnLabel');
+  const btnEmoji = document.getElementById('btnEmoji');
+
+  btn.classList.remove('shake');
+  void btn.offsetWidth;
+  btn.classList.add('shake');
+
+  if (step === 0 || step === 2) {
+    // ===== 1回目：小さな行動を引く =====
+    const cardAction = document.getElementById('cardAction');
+    const cardPraise = document.getElementById('cardPraise');
+
+    // 承認カードをリセット
+    cardPraise.classList.remove('visible');
+    document.getElementById('bridge').classList.remove('visible');
+    document.getElementById('praiseResult').textContent = '—';
+    // シェアエリアを隠す
+    document.getElementById('shareArea').classList.remove('visible');
+
+    setTimeout(() => {
+      const actionResult = pickNext('actions', getActions());
+      document.getElementById('actionResult').textContent = actionResult.text;
+      lastActionIdx = actionResult.idx;
+      cardAction.classList.add('visible');
+      document.getElementById('bridge').classList.add('visible');
+      launchConfetti(12);
+      step = 1;
+      btn.classList.add('step2');
+      btnEmoji.textContent = '🌟';
+      btnLabel.textContent = t().btnPraise;
+      document.getElementById('counter').textContent = t().counterWait;
+    }, 300);
+
+  } else {
+    // ===== 2回目：大きな承認を引く =====
+    const cardPraise = document.getElementById('cardPraise');
+
+    setTimeout(() => {
+      const praiseResult = pickNext('praises', getPraises());
+      const praiseText = praiseResult.text;
+      lastPraiseIdx = praiseResult.idx;
+      document.getElementById('praiseResult').textContent = praiseText;
+      cardPraise.classList.add('visible');
+      launchConfetti(36);
+      count++;
+      step = 2;
+
+      const actionText = document.getElementById('actionResult').textContent;
+      // 全言語テキストを保存（インデックスから取得）
+      const aJA = lastActionIdx >= 0 ? actionsJA[lastActionIdx] : actionText;
+      const aEN = lastActionIdx >= 0 ? actionsEN[lastActionIdx] : actionText;
+      const aKO = lastActionIdx >= 0 ? actionsKO[lastActionIdx] : actionText;
+      const aZH = lastActionIdx >= 0 ? actionsZH[lastActionIdx] : actionText;
+      const aID = lastActionIdx >= 0 ? actionsID[lastActionIdx] : actionText;
+      const aPT = lastActionIdx >= 0 ? actionsPT[lastActionIdx] : actionText;
+      const aTH = lastActionIdx >= 0 ? actionsTH[lastActionIdx] : actionText;
+      const pJA = lastPraiseIdx >= 0 ? praisesJA[lastPraiseIdx] : praiseText;
+      const pEN = lastPraiseIdx >= 0 ? praisesEN[lastPraiseIdx] : praiseText;
+      const pKO = lastPraiseIdx >= 0 ? praisesKO[lastPraiseIdx] : praiseText;
+      const pZH = lastPraiseIdx >= 0 ? praisesZH[lastPraiseIdx] : praiseText;
+      const pID = lastPraiseIdx >= 0 ? praisesID[lastPraiseIdx] : praiseText;
+      const pPT = lastPraiseIdx >= 0 ? praisesPT[lastPraiseIdx] : praiseText;
+      const pTH = lastPraiseIdx >= 0 ? praisesTH[lastPraiseIdx] : praiseText;
+      addHistory(aJA, pJA, aEN, pEN, aKO, pKO, aZH, pZH, aID, pID, aPT, pPT, aTH, pTH);
+
+      btn.classList.remove('step2');
+      btnEmoji.textContent = '🎲';
+      btnLabel.textContent = t().btnAgain;
+      const msgs = t().counterMsgs;
+      document.getElementById('counter').textContent = count <= 10 ? msgs[Math.min(count-1,9)] : t().counterMany(count);
+
+      // シェアエリアを表示
+      document.getElementById('shareArea').classList.add('visible');
+    }, 300);
+  }
+}
+
+// --- シェア用テキスト生成 ---
+let lastAction = '';
+let lastPraise = '';
+
+function makeShareText() {
+  const action = document.getElementById('actionResult').textContent;
+  const praise  = document.getElementById('praiseResult').textContent;
+  return t().shareText(action, praise);
+}
+
+function shareWhatsApp() {
+  const text = encodeURIComponent(makeShareText());
+  window.open('https://wa.me/?text=' + text, '_blank');
+}
+
+function shareKakao() {
+  const text = encodeURIComponent(makeShareText());
+  const url = encodeURIComponent(location.href);
+  window.open('https://sharer.kakao.com/talk/friends/picker/link?app_key=KAKAO_APP_KEY&lang=ko&os_type=web&url=' + url, '_blank', 'width=400,height=500');
+  // KakaoTalk Web Share fallback: copy text
+  navigator.clipboard.writeText(makeShareText()).catch(function(){});
+}
+
+function shareX() {
+  const text = encodeURIComponent(makeShareText());
+  window.open('https://twitter.com/intent/tweet?text=' + text, '_blank');
+}
+
+function shareThreads() {
+  const text = encodeURIComponent(makeShareText());
+  window.open('https://www.threads.net/intent/post?text=' + text, '_blank');
+}
+
+function shareFacebook() {
+  const url = encodeURIComponent(location.href);
+  window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, '_blank', 'width=600,height=400');
+}
+
+function shareLINE() {
+  const text = encodeURIComponent(makeShareText());
+  window.open('https://line.me/R/msg/text/?' + text, '_blank');
+}
+
+function copyText() {
+  navigator.clipboard.writeText(makeShareText()).then(() => {
+    alert(t().copyOk);
+  }).catch(() => {
+    alert(makeShareText());
+  });
+}
+
+// --- スクショモード ---
+function enterScreenshot() {
+  document.getElementById('ssActionText').textContent = document.getElementById('actionResult').textContent;
+  document.getElementById('ssPraiseText').textContent = document.getElementById('praiseResult').textContent;
+  // スクショカードのテキストも更新
+  document.querySelector('.ss-title .ss-title-text').textContent = t().ssTitle.replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}⤴🤣]+$/u, '').replace(/[⤴🤣]/gu, '').trimEnd();
+  document.querySelector('.ss-title .ss-title-emoji').textContent = '🤣';
+  document.querySelector('.ss-title .ss-title-arrow').textContent = '⤴';
+  document.querySelector('.ss-action-label').textContent = t().ssLabel1;
+  document.querySelector('.ss-bridge').textContent = t().ssBridge;
+  document.querySelector('.ss-praise-label').textContent = t().ssLabel2;
+  document.querySelector('.ss-tag').textContent = t().ssTag;
+  document.querySelector('.ss-hint').textContent = t().ssHint;
+  document.querySelector('.btn-close-ss').textContent = t().ssClose;
+  // オーバーレイ内の言語ボタンを現在の言語に合わせる
+  document.getElementById('ssLangTriggerLabel').textContent = currentLang === 'ja' ? '🇯🇵 JP' : currentLang === 'ko' ? '🇰🇷 KO' : currentLang === 'tw' ? '🇹🇼 繁中' : currentLang === 'id' ? '🇮🇩 ID' : currentLang === 'pt' ? '🇧🇷 PT' : currentLang === 'fr' ? '🇫🇷 FR' : currentLang === 'de' ? '🇩🇪 DE' : currentLang === 'es' ? '🇪🇸 ES' : currentLang === 'th' ? '🇹🇭 TH' : '🌍 EN';
+  document.getElementById('ssBtnJA').classList.toggle('active', currentLang === 'ja');
+  document.getElementById('ssBtnEN').classList.toggle('active', currentLang === 'en');
+  document.getElementById('ssBtnKO').classList.toggle('active', currentLang === 'ko');
+  document.getElementById('ssBtnTW').classList.toggle('active', currentLang === 'tw');
+  document.getElementById('ssBtnID').classList.toggle('active', currentLang === 'id');
+  document.getElementById('ssBtnPT').classList.toggle('active', currentLang === 'pt');
+  document.getElementById('ssBtnFR').classList.toggle('active', currentLang === 'fr');
+  document.getElementById('ssBtnDE').classList.toggle('active', currentLang === 'de');
+  document.getElementById('ssBtnES').classList.toggle('active', currentLang === 'es');
+  document.getElementById('ssBtnTH').classList.toggle('active', currentLang === 'th');
+  // SNSボタンを現在の言語に同期
+  renderSnsButtons(currentLang);
+  document.getElementById('screenshotOverlay').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function toggleSsLangDropdown() {
+  document.getElementById('ssLangSwitcher').classList.toggle('open');
+}
+// オーバーレイ内ドロップダウン外クリックで閉じる
+document.addEventListener('click', function(e) {
+  const sw = document.getElementById('ssLangSwitcher');
+  if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+});
+
+function setLangFromSS(lang) {
+  // メインの言語切替を呼び出す
+  setLang(lang);
+  // オーバーレイが開いている場合はオーバーレイのテキストも更新
+  if (document.getElementById('screenshotOverlay').style.display !== 'none') {
+    // カードのテキストも対応言語に差し替え
+    if (lastActionIdx >= 0) {
+      const aList = lang === 'ja' ? actionsJA : lang === 'ko' ? actionsKO : lang === 'tw' ? actionsZH : lang === 'id' ? actionsID : lang === 'pt' ? actionsPT : lang === 'fr' ? actionsFR : lang === 'de' ? actionsDE : lang === 'es' ? actionsES : lang === 'th' ? actionsTH : actionsEN;
+      if (aList[lastActionIdx]) {
+        document.getElementById('ssActionText').textContent = aList[lastActionIdx];
+      }
+    }
+    if (lastPraiseIdx >= 0) {
+      const pList = lang === 'ja' ? praisesJA : lang === 'ko' ? praisesKO : lang === 'tw' ? praisesZH : lang === 'id' ? praisesID : lang === 'pt' ? praisesPT : lang === 'fr' ? praisesFR : lang === 'de' ? praisesDE : lang === 'es' ? praisesES : lang === 'th' ? praisesTH : praisesEN;
+      if (pList[lastPraiseIdx]) {
+        document.getElementById('ssPraiseText').textContent = pList[lastPraiseIdx];
+      }
+    }
+    // オーバーレイラベル更新
+    document.getElementById('ssLangTriggerLabel').textContent = lang === 'ja' ? '🇯🇵 JP' : lang === 'ko' ? '🇰🇷 KO' : lang === 'tw' ? '🇹🇼 繁中' : lang === 'id' ? '🇮🇩 ID' : lang === 'pt' ? '🇧🇷 PT' : lang === 'fr' ? '🇫🇷 FR' : lang === 'de' ? '🇩🇪 DE' : lang === 'es' ? '🇪🇸 ES' : lang === 'th' ? '🇹🇭 TH' : '🌍 EN';
+    document.getElementById('ssBtnJA').classList.toggle('active', lang === 'ja');
+    document.getElementById('ssBtnEN').classList.toggle('active', lang === 'en');
+    document.getElementById('ssBtnKO').classList.toggle('active', lang === 'ko');
+    document.getElementById('ssBtnTW').classList.toggle('active', lang === 'tw');
+    document.getElementById('ssBtnID').classList.toggle('active', lang === 'id');
+    document.getElementById('ssBtnPT').classList.toggle('active', lang === 'pt');
+    document.getElementById('ssBtnFR').classList.toggle('active', lang === 'fr');
+    document.getElementById('ssBtnDE').classList.toggle('active', lang === 'de');
+    document.getElementById('ssBtnES').classList.toggle('active', lang === 'es');
+    document.getElementById('ssBtnTH').classList.toggle('active', lang === 'th');
+  }
+  document.getElementById('ssLangSwitcher').classList.remove('open');
+}
+
+function exitScreenshot() {
+  document.getElementById('screenshotOverlay').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+function openInstagram() {
+  navigator.clipboard.writeText(makeShareText()).then(function() {
+    alert(t().igAlert);
+  }).catch(function() {
+    alert(t().igAlert);
+  });
+  window.open('https://www.instagram.com/', '_blank');
+}
+
+function launchConfetti(n) {
+  const c = document.getElementById('confetti');
+  const colors = ['#ff6eb4','#ffe066','#7efff5','#b388ff','#ff9a3c','#80ffb4'];
+  for (let i = 0; i < n; i++) {
+    const el = document.createElement('div');
+    el.className = 'conf';
+    el.style.cssText = `
+      left: ${Math.random()*100}%;
+      top: ${-8 - Math.random()*10}%;
+      background: ${rand(colors)};
+      width: ${6+Math.random()*8}px;
+      height: ${6+Math.random()*8}px;
+      border-radius: ${Math.random()>0.5?'50%':'3px'};
+      --dur: ${1.2+Math.random()*1.2}s;
+      --rot: ${360+Math.random()*360}deg;
+      animation-delay: ${Math.random()*0.5}s;
+    `;
+    c.appendChild(el);
+    setTimeout(() => el.remove(), 2800);
+  }
+}
+
+// ── ヒストリー アコーディオン ──
+(function(){
+  var historyToggle = document.getElementById('historyToggle');
+  var historyBody   = document.getElementById('historyBody');
+  if(historyToggle && historyBody){
+    historyToggle.addEventListener('click', function(){
+      var isOpen = historyBody.classList.toggle('open');
+      historyToggle.classList.toggle('open', isOpen);
+      if(isOpen) renderHistory(); // 開くたびに最新を描画
+    });
+  }
+  // 初期描画
+  renderHistory();
+})();
+
+// ── 他のアプリ アコーディオン ──
+(function(){
+  var otherAppsToggle = document.getElementById('otherAppsToggle');
+  var otherAppsBody   = document.getElementById('otherAppsBody');
+  if(otherAppsToggle && otherAppsBody){
+    otherAppsToggle.addEventListener('click', function(){
+      var isOpen = otherAppsBody.classList.toggle('open');
+      otherAppsToggle.classList.toggle('open', isOpen);
+    });
+  }
+})();
+
+
+(function(){
+  const s = document.getElementById('stars');
+  for(let i=0;i<80;i++){
+    const el=document.createElement('div');
+    el.className='star';
+    const sz=0.8+Math.random()*2;
+    el.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;--d:${2+Math.random()*4}s;--delay:${Math.random()*5}s`;
+    s.appendChild(el);
+  }
+})();
+
+// blobs
+(function(){
+  const b=document.getElementById('blobs');
+  const blobData=[
+    {w:400,h:380,l:'-80px',t:'-60px',bg:'#ff6eb4',d:'16s',tx:'60px',ty:'40px'},
+    {w:350,h:350,l:'60%',t:'50%',bg:'#7b38ff',d:'20s',tx:'-50px',ty:'-60px'},
+    {w:300,h:280,l:'20%',t:'70%',bg:'#00c8d7',d:'12s',tx:'40px',ty:'-30px'},
+  ];
+  blobData.forEach(bd=>{
+    const el=document.createElement('div');
+    el.className='blob';
+    el.style.cssText=`width:${bd.w}px;height:${bd.h}px;left:${bd.l};top:${bd.t};background:${bd.bg};--bd:${bd.d};--tx:${bd.tx};--ty:${bd.ty}`;
+    b.appendChild(el);
+  });
+})();
+
+// ── PWA Install Accordion ──
+(function(){
+  var deferredPrompt = null;
+  var installAndroidBtn = document.getElementById('installAndroidBtn');
+
+  // beforeinstallprompt をキャッチ（Android Chrome）
+  window.addEventListener('beforeinstallprompt', function(e){
+    e.preventDefault();
+    deferredPrompt = e;
+    if(installAndroidBtn){
+      installAndroidBtn.disabled = false;
+      installAndroidBtn.classList.remove('installed');
+    }
+  });
+
+  // インストール完了イベント
+  window.addEventListener('appinstalled', function(){
+    deferredPrompt = null;
+    if(installAndroidBtn){
+      installAndroidBtn.textContent = t().installDone;
+      installAndroidBtn.disabled = true;
+      installAndroidBtn.classList.add('installed');
+    }
+  });
+
+  // Androidボタン押下
+  if(installAndroidBtn){
+    installAndroidBtn.disabled = true;
+    installAndroidBtn.addEventListener('click', function(){
+      if(!deferredPrompt) return;
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(function(result){
+        if(result.outcome === 'accepted'){
+          deferredPrompt = null;
+        }
+      });
+    });
+  }
+
+  // アコーディオン開閉
+  var installToggle = document.getElementById('installToggle');
+  var installBody   = document.getElementById('installBody');
+  if(installToggle && installBody){
+    installToggle.addEventListener('click', function(){
+      var isOpen = installBody.classList.toggle('open');
+      installToggle.classList.toggle('open', isOpen);
+    });
+  }
+})();
+</script>
+</body>
+</html>
