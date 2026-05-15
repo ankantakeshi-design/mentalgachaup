@@ -1,0 +1,2164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>メンタルサプリ救世主！？メンタルガチャあげ🤣⤴｜小さな行動 × 大きな承認</title>
+
+<!-- Basic -->
+<meta name="description" content="メンタルサプリ救世主！？ガチャを引くだけでえらい。小さな行動を引いて、大きな承認を受け取ろう。無料・日本語英語対応のメンタルケアアプリ。">
+<meta name="keywords" content="メンタルケア,承認,自己肯定感,ガチャ,メンタルトレーニング,小さな行動,無料アプリ,メンタルヘルス">
+<meta name="author" content="Takechan">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0d0a1a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="メンタルガチャあげ">
+<meta name="application-name" content="メンタルガチャあげ">
+
+<!-- OGP -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="メンタルサプリ救世主！？メンタルガチャあげ🤣⤴｜小さな行動 × 大きな承認">
+<meta property="og:description" content="ガチャを引くだけでえらい。小さな行動を引いて、大きな承認を受け取ろう。無料・日英対応のメンタルケアアプリ。">
+<meta property="og:url" content="https://mentalgachaup.pages.dev/">
+<meta property="og:site_name" content="メンタルガチャあげ">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://mentalgachaup.pages.dev/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="メンタルガチャあげ🤣⤴ — 小さな行動 × 大きな承認">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="メンタルサプリ救世主！？メンタルガチャあげ🤣⤴｜小さな行動 × 大きな承認">
+<meta name="twitter:description" content="ガチャを引くだけでえらい。小さな行動を引いて、大きな承認を受け取ろう。無料・日英対応。">
+<meta name="twitter:image" content="https://mentalgachaup.pages.dev/ogp.png">
+<meta name="twitter:image:alt" content="メンタルガチャあげ🤣⤴">
+<meta name="twitter:url" content="https://mentalgachaup.pages.dev/">
+
+<!-- Canonical -->
+<link rel="canonical" href="https://mentalgachaup.pages.dev/">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=DotGothic16&display=swap');
+
+  :root {
+    --bg: #0d0a1a;
+    --card-bg: #1a1530;
+    --accent1: #ff6eb4;
+    --accent2: #ffe066;
+    --accent3: #7efff5;
+    --accent4: #b388ff;
+    --text: #fff8f0;
+    --subtle: #a899c8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    background: var(--bg);
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  /* starfield */
+  .stars { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+  .star {
+    position: absolute; border-radius: 50%; background: #fff;
+    animation: twinkle var(--d, 3s) ease-in-out infinite var(--delay, 0s);
+  }
+  @keyframes twinkle {
+    0%,100% { opacity: 0.1; transform: scale(1); }
+    50%      { opacity: 0.9; transform: scale(1.4); }
+  }
+
+  /* floating blobs */
+  .blob {
+    position: fixed; border-radius: 50%; filter: blur(80px);
+    opacity: 0.18; pointer-events: none;
+    animation: drift var(--bd, 14s) ease-in-out infinite alternate; z-index: 0;
+  }
+  @keyframes drift {
+    from { transform: translate(0,0) scale(1); }
+    to   { transform: translate(var(--tx,40px), var(--ty,30px)) scale(1.15); }
+  }
+
+  .wrap {
+    position: relative; z-index: 1;
+    display: flex; flex-direction: column; align-items: center;
+    gap: clamp(14px, 2.5vh, 24px);
+    padding: clamp(64px, 9vh, 80px) 20px clamp(40px, 6vh, 60px);
+    width: 100%; max-width: 480px;
+  }
+
+  .title { text-align: center; line-height: 1.2; }
+  .title-main {
+    font-size: clamp(1.3rem, 5vw, 2rem);
+    font-weight: 900; letter-spacing: -0.01em;
+    filter: drop-shadow(0 0 18px rgba(255,110,180,0.5));
+  }
+  .title-main-text {
+    background: linear-gradient(135deg, var(--accent1), var(--accent2), var(--accent3));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .title-main-emoji {
+    -webkit-text-fill-color: initial;
+    background: none;
+  }
+  .title-main-arrow {
+    -webkit-text-fill-color: #ff2222;
+    color: #ff2222;
+    background: none;
+    font-weight: 900;
+  }
+  .title-sub {
+    font-size: 0.82rem; color: var(--subtle); margin-top: 4px;
+    font-family: 'DotGothic16', monospace; letter-spacing: 0.05em;
+  }
+
+  /* ===== 結果カードエリア ===== */
+  .cards-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .result-card {
+    width: 100%;
+    background: var(--card-bg);
+    border-radius: 20px;
+    border: 1.5px solid rgba(255,255,255,0.08);
+    padding: 18px 22px;
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.06);
+    /* 初期状態：非表示 */
+    opacity: 0; transform: translateY(16px) scale(0.96);
+    transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.34,1.56,0.64,1);
+    pointer-events: none;
+    min-height: 80px;
+    justify-content: center;
+  }
+  .result-card.visible {
+    opacity: 1; transform: translateY(0) scale(1); pointer-events: auto;
+  }
+  .result-card.delay { transition-delay: 0.14s; }
+
+  /* カード内：プレースホルダー（まだ引いてない） */
+  .card-placeholder {
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.72rem;
+    color: var(--subtle);
+    letter-spacing: 0.12em;
+    opacity: 1;
+    /* カードが visible になったら消える */
+    transition: opacity 0.2s;
+  }
+  .result-card.visible .card-placeholder { display: none; }
+
+  .card-inner {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .result-card.visible .card-inner { display: flex; }
+
+  .card-label {
+    font-size: 0.68rem;
+    font-family: 'DotGothic16', monospace;
+    color: var(--subtle);
+    letter-spacing: 0.15em;
+  }
+
+  /* 小さな行動カード */
+  .card-action-box {
+    background: linear-gradient(135deg, rgba(255,110,180,0.12), rgba(179,136,255,0.12));
+    border: 1px solid rgba(255,110,180,0.25);
+    border-radius: 14px;
+    padding: 12px 18px;
+    width: 100%; text-align: center;
+  }
+  .card-action-text {
+    font-size: clamp(0.95rem, 4vw, 1.25rem);
+    font-weight: 700; color: var(--text); line-height: 1.4;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* ===== 橋渡しテキスト ===== */
+  .bridge {
+    text-align: center;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transform: scale(0.8) rotate(-3deg);
+    transition: opacity 0.4s ease 0.1s, transform 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.1s, max-height 0.4s ease 0.05s, padding 0.3s ease;
+    pointer-events: none;
+    line-height: 1.4;
+  }
+  .bridge.visible {
+    opacity: 1;
+    max-height: 120px;
+    padding: 6px 0;
+    transform: scale(1) rotate(0deg);
+  }
+  .bridge-main {
+    font-size: clamp(1rem, 4.5vw, 1.3rem);
+    font-weight: 900;
+    color: var(--accent3);
+    text-shadow: 0 0 16px rgba(126,255,245,0.6), 0 0 32px rgba(126,255,245,0.3);
+    letter-spacing: 0.04em;
+    display: block;
+  }
+  .bridge-sub {
+    font-size: clamp(0.72rem, 3vw, 0.85rem);
+    font-family: 'DotGothic16', monospace;
+    color: var(--subtle);
+    letter-spacing: 0.12em;
+    display: block;
+    margin-top: 3px;
+  }
+
+  /* 大きな承認カード */
+  .card-praise-box {
+    background: linear-gradient(135deg, rgba(255,224,102,0.12), rgba(126,255,245,0.1));
+    border: 1px solid rgba(255,224,102,0.28);
+    border-radius: 14px;
+    padding: 12px 18px;
+    width: 100%; text-align: center;
+  }
+  .card-praise-text {
+    font-size: clamp(1rem, 5vw, 2rem);
+    font-weight: 900; color: var(--accent2); line-height: 1.25;
+    text-shadow: 0 0 28px rgba(255,224,102,0.7), 0 0 60px rgba(255,224,102,0.3);
+    letter-spacing: 0.03em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* ===== ボタン ===== */
+  .btn-gacha {
+    display: flex; align-items: center; gap: 10px;
+    background: linear-gradient(135deg, var(--accent1), var(--accent4));
+    color: #fff; border: none; border-radius: 100px;
+    padding: clamp(10px, 1.8vh, 16px) 36px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 1.05rem; font-weight: 900; cursor: pointer;
+    box-shadow: 0 4px 24px rgba(255,110,180,0.45);
+    transition: transform 0.15s, box-shadow 0.15s, background 0.3s;
+    letter-spacing: 0.05em;
+    position: relative; overflow: hidden;
+  }
+  .btn-gacha::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.25), transparent);
+    border-radius: inherit;
+  }
+  /* step2（承認待ち）は黄色グラデに */
+  .btn-gacha.step2 {
+    background: linear-gradient(135deg, var(--accent2), var(--accent3));
+    color: #1a1530;
+    box-shadow: 0 4px 24px rgba(255,224,102,0.5);
+  }
+  .btn-gacha.step2 .btn-emoji { filter: none; }
+
+  .btn-gacha:hover  { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(255,110,180,0.55); }
+  .btn-gacha.step2:hover { box-shadow: 0 8px 32px rgba(255,224,102,0.6); }
+  .btn-gacha:active { transform: translateY(1px) scale(0.97); }
+  .btn-gacha.shake  { animation: shake 0.45s ease; }
+  @keyframes shake {
+    0%  { transform: rotate(0deg); }
+    15% { transform: rotate(-6deg) scale(1.05); }
+    35% { transform: rotate(5deg) scale(1.07); }
+    55% { transform: rotate(-4deg) scale(1.04); }
+    75% { transform: rotate(3deg) scale(1.02); }
+    100%{ transform: rotate(0deg) scale(1); }
+  }
+
+  /* counter */
+  .counter {
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.75rem; color: var(--subtle); letter-spacing: 0.1em;
+  }
+
+  /* confetti */
+  .confetti-container {
+    position: fixed; inset: 0; pointer-events: none; z-index: 100; overflow: hidden;
+  }
+  .conf {
+    position: absolute; width: 8px; height: 8px; border-radius: 2px;
+    animation: conffall var(--dur, 1.4s) ease-in forwards; opacity: 0;
+  }
+  @keyframes conffall {
+    0%   { opacity: 1; transform: translateY(-20px) rotate(0deg); }
+    100% { opacity: 0; transform: translateY(110vh) rotate(var(--rot, 540deg)); }
+  }
+
+  .hint {
+    font-size: 0.72rem; color: var(--subtle);
+    text-align: center; line-height: 1.6; max-width: 300px;
+  }
+
+  /* ===== シェアエリア ===== */
+  .share-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.5s ease;
+    pointer-events: none;
+  }
+  .share-area.visible {
+    opacity: 1;
+    max-height: 300px;
+    pointer-events: auto;
+  }
+  .share-label {
+    font-size: 0.72rem;
+    font-family: 'DotGothic16', monospace;
+    color: var(--subtle);
+    letter-spacing: 0.12em;
+  }
+  .sns-btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .sns-btn {
+    width: 48px; height: 48px;
+    border: none; border-radius: 12px;
+    font-size: 1.1rem; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 900;
+  }
+  .sns-btn:hover { transform: translateY(-3px) scale(1.08); }
+  .sns-btn:active { transform: scale(0.9); }
+  .x-btn       { background: #000; color: #fff; font-size: 1.2rem; }
+  .threads-btn { background: #000; color: #fff; font-size: 1.3rem; }
+  .fb-btn      { background: #1877F2; color: #fff; font-size: 1.3rem; }
+  .line-btn    { background: #06C755; color: #fff; font-size: 0.7rem; letter-spacing: -0.5px; }
+  .copy-btn {
+    background: rgba(179,136,255,0.12);
+    color: var(--accent4);
+    border: 1.5px solid rgba(179,136,255,0.35);
+    border-radius: 12px;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 320px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .copy-btn:hover { background: rgba(179,136,255,0.22); transform: translateY(-1px); }
+
+  .btn-screenshot {
+    background: linear-gradient(135deg, rgba(126,255,245,0.12), rgba(126,255,245,0.05));
+    color: var(--accent3);
+    border: 1.5px solid rgba(126,255,245,0.35);
+    font-size: 0.88rem;
+    padding: 10px 22px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    letter-spacing: 0.04em;
+  }
+  .btn-screenshot:hover { transform: translateY(-2px); border-color: rgba(126,255,245,0.7); }
+
+  /* ===== スクショオーバーレイ ===== */
+  .screenshot-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    z-index: 9999;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 16px 32px;
+    gap: 14px;
+  }
+  .ss-card {
+    background: var(--card-bg);
+    border: 2px solid var(--accent1);
+    border-radius: 20px;
+    padding: 20px 18px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 0 40px rgba(255,110,180,0.25), inset 0 0 30px rgba(255,110,180,0.06);
+    text-align: center;
+  }
+  .ss-title {
+    font-size: 1rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--accent1), var(--accent2), var(--accent3));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .ss-action-label {
+    font-size: 0.65rem;
+    font-family: 'DotGothic16', monospace;
+    color: var(--subtle);
+    letter-spacing: 0.15em;
+    margin-bottom: 6px;
+  }
+  .ss-action-text {
+    font-size: clamp(0.95rem, 3.5vw, 1.2rem);
+    font-weight: 700;
+    color: var(--text);
+    background: linear-gradient(135deg, rgba(255,110,180,0.12), rgba(179,136,255,0.12));
+    border: 1px solid rgba(255,110,180,0.25);
+    border-radius: 12px;
+    padding: 10px 16px;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .ss-bridge {
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: var(--accent3);
+    text-shadow: 0 0 12px rgba(126,255,245,0.5);
+    display: block;
+    margin: 4px 0;
+    letter-spacing: 0.04em;
+  }
+  .ss-praise-label {
+    font-size: 0.65rem;
+    font-family: 'DotGothic16', monospace;
+    color: var(--subtle);
+    letter-spacing: 0.15em;
+    margin-bottom: 6px;
+    margin-top: 6px;
+  }
+  .ss-praise-text {
+    font-size: clamp(1.1rem, 5.5vw, 1.9rem);
+    font-weight: 900;
+    color: var(--accent2);
+    text-shadow: 0 0 24px rgba(255,224,102,0.6);
+    display: block;
+    background: linear-gradient(135deg, rgba(255,224,102,0.12), rgba(126,255,245,0.1));
+    border: 1px solid rgba(255,224,102,0.28);
+    border-radius: 12px;
+    padding: 12px 16px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .ss-tag {
+    font-size: 0.68rem;
+    font-family: 'DotGothic16', monospace;
+    color: var(--subtle);
+    margin-top: 10px;
+    display: block;
+    letter-spacing: 0.1em;
+  }
+  .ss-hint {
+    font-size: 0.88rem;
+    color: var(--accent3);
+    background: rgba(126,255,245,0.07);
+    border: 2px dashed rgba(126,255,245,0.3);
+    border-radius: 12px;
+    padding: 10px 16px;
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+    animation: blink 1.5s infinite alternate;
+  }
+  @keyframes blink {
+    from { opacity: 0.6; }
+    to   { opacity: 1; }
+  }
+  .ss-sns-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 320px;
+  }
+  .ss-sns-row { display: flex; gap: 10px; justify-content: center; }
+  .btn-close-ss {
+    background: rgba(107,95,138,0.2);
+    color: var(--accent4);
+    border: 1.5px solid var(--subtle);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 12px 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-close-ss:hover { background: rgba(107,95,138,0.35); }
+  .ig-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white; border: none; border-radius: 20px;
+    padding: 10px 22px; width: 100%;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700; font-size: 0.9rem; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .ig-btn:hover { transform: scale(1.03); }
+  .ig-btn:active { transform: scale(0.96); }
+
+  /* ── PWA Install Accordion ── */
+  .install-section {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .install-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    border-top: 1px solid rgba(126,255,245,0.1);
+    border-bottom: 1px solid rgba(126,255,245,0.1);
+    color: rgba(180,165,210,0.95);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    padding: 12px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: color 0.3s;
+  }
+  .install-toggle:hover { color: var(--accent3); }
+  .install-toggle-arrow {
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    font-size: 9px;
+    opacity: 0.8;
+  }
+  .install-toggle.open .install-toggle-arrow { transform: rotate(180deg); }
+  .install-body {
+    display: none;
+    padding: 16px 0 8px;
+  }
+  .install-body.open { display: block; }
+  .install-os-section { margin-bottom: 20px; }
+  .install-os-title {
+    font-family: 'DotGothic16', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    color: var(--subtle);
+    text-align: center;
+    margin-bottom: 12px;
+    opacity: 1;
+  }
+  .install-add-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(126,255,245,0.08), rgba(126,255,245,0.04));
+    border: 1px solid rgba(126,255,245,0.3);
+    color: var(--accent3);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    padding: 14px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+  .install-add-btn:hover {
+    background: linear-gradient(135deg, rgba(126,255,245,0.15), rgba(126,255,245,0.08));
+    border-color: rgba(126,255,245,0.55);
+  }
+  .install-add-btn:disabled,
+  .install-add-btn.installed {
+    opacity: 0.45;
+    cursor: default;
+    border-color: rgba(126,255,245,0.15);
+  }
+  .install-manual {
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(126,255,245,0.08);
+    border-radius: 12px;
+    padding: 12px 14px;
+  }
+  .install-manual-label {
+    font-family: 'DotGothic16', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: rgba(180,165,210,0.95);
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .install-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: step;
+  }
+  .install-steps li {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 12px;
+    color: rgba(180,165,210,0.95);
+    line-height: 1.7;
+    padding: 4px 0 4px 20px;
+    position: relative;
+    counter-increment: step;
+  }
+  .install-steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    color: var(--subtle);
+    font-family: 'DotGothic16', monospace;
+    font-size: 11px;
+  }
+
+  /* ─── 他のアプリ アコーディオン ─── */
+  .other-apps-section {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .other-apps-section::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(126,255,245,0.2), transparent);
+    margin-bottom: 0;
+  }
+  .other-apps-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    border-top: 1px solid rgba(126,255,245,0.12);
+    border-bottom: 1px solid rgba(126,255,245,0.12);
+    color: var(--subtle);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    padding: 13px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: color 0.3s;
+  }
+  .other-apps-toggle:hover { color: var(--accent3); }
+  .other-apps-toggle-arrow {
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    font-style: normal;
+    font-size: 10px;
+    opacity: 0.85;
+  }
+  .other-apps-toggle.open .other-apps-toggle-arrow { transform: rotate(180deg); }
+  .other-apps-body { display: none; padding: 20px 0 4px; }
+  .other-apps-body.open { display: block; }
+  .app-card-grid { display: flex; flex-direction: column; gap: 10px; }
+  .app-card {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 16px; border-radius: 14px;
+    text-decoration: none; transition: all 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .app-card::before {
+    content: ''; position: absolute; inset: 0;
+    opacity: 0; transition: opacity 0.3s;
+    background: rgba(255,255,255,0.04);
+  }
+  .app-card:hover::before { opacity: 1; }
+  .app-card:hover { transform: translateX(3px); }
+  .app-card-emoji { font-size: 1.4rem; flex-shrink: 0; line-height: 1; }
+  .app-card-text { flex: 1; min-width: 0; }
+  .app-card-name {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 0.82rem; font-weight: 700;
+    letter-spacing: 0.04em; margin-bottom: 2px;
+    white-space: normal; line-height: 1.4;
+  }
+  .app-card-desc {
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.7rem; opacity: 0.9;
+    letter-spacing: 0.04em; white-space: normal; line-height: 1.4;
+  }
+  .app-card-arrow { font-size: 0.7rem; opacity: 0.7; flex-shrink: 0; transition: opacity 0.3s; }
+  .app-card:hover .app-card-arrow { opacity: 1; }
+
+  /* ── Instagram フォローセクション ── */
+  .ig-follow-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .ig-follow-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(45deg, rgba(240,148,51,0.18), rgba(220,39,67,0.15), rgba(188,24,136,0.18));
+    color: rgba(255,180,160,0.85);
+    border: 1px solid rgba(220,39,67,0.25);
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 13px 28px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 0.88rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    box-shadow: 0 4px 14px rgba(220,39,67,0.1);
+  }
+  .ig-follow-btn:hover {
+    background: linear-gradient(45deg, rgba(240,148,51,0.28), rgba(220,39,67,0.24), rgba(188,24,136,0.28));
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 22px rgba(220,39,67,0.2);
+  }
+  .ig-follow-btn:active { transform: scale(0.96); }
+
+  /* ===== ヒストリーエリア ===== */
+  .history-section {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  .history-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    border-top: 1px solid rgba(255,110,180,0.1);
+    border-bottom: 1px solid rgba(255,110,180,0.1);
+    color: var(--subtle);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    padding: 13px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: color 0.3s;
+  }
+  .history-toggle:hover { color: var(--accent1); }
+  .history-toggle-arrow {
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    font-style: normal;
+    font-size: 10px;
+    opacity: 0.85;
+  }
+  .history-toggle.open .history-toggle-arrow { transform: rotate(180deg); }
+  .history-body { display: none; padding: 14px 0 6px; }
+  .history-body.open { display: block; }
+  .history-clear-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  .history-clear-btn {
+    background: none;
+    border: 1px solid rgba(107,95,138,0.4);
+    color: var(--subtle);
+    font-family: 'DotGothic16', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .history-clear-btn:hover { color: var(--accent1); border-color: var(--accent1); }
+  .history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 320px;
+    overflow-y: auto;
+    padding-right: 2px;
+  }
+  .history-list::-webkit-scrollbar { width: 3px; }
+  .history-list::-webkit-scrollbar-thumb { background: rgba(255,110,180,0.3); border-radius: 4px; }
+  /* ヒストリー タブ */
+  .history-tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .history-tab {
+    flex: 1;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--subtle);
+    font-family: 'DotGothic16', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 7px 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .history-tab.active {
+    background: rgba(255,110,180,0.15);
+    border-color: var(--accent1);
+    color: var(--accent1);
+  }
+  .history-tab.tab-hall.active {
+    background: rgba(255,224,102,0.15);
+    border-color: var(--accent2);
+    color: var(--accent2);
+  }
+  .history-tab:hover:not(.active) { border-color: rgba(255,255,255,0.3); color: var(--text); }
+
+  .history-item {
+    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+  }
+  .history-item.hall-of-fame {
+    background: rgba(255,224,102,0.06);
+    border-color: rgba(255,224,102,0.25);
+  }
+  .history-item-date {
+    font-family: 'DotGothic16', monospace;
+    font-size: 9px;
+    color: var(--subtle);
+    opacity: 0.9;
+    letter-spacing: 0.08em;
+  }
+  .history-item-action {
+    font-size: 0.8rem;
+    color: var(--accent1);
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .history-item-praise {
+    font-size: 0.78rem;
+    color: var(--accent2);
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  /* アクションボタン行 */
+  .history-item-btns {
+    display: flex;
+    gap: 6px;
+    margin-top: 4px;
+    justify-content: flex-end;
+  }
+  .history-btn {
+    background: none;
+    border: none;
+    font-family: 'DotGothic16', monospace;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    padding: 3px 9px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.18s;
+  }
+  .history-btn-hall {
+    border: 1px solid rgba(255,224,102,0.35);
+    color: rgba(255,224,102,0.7);
+  }
+  .history-btn-hall:hover { background: rgba(255,224,102,0.12); color: var(--accent2); border-color: var(--accent2); }
+  .history-btn-hall.hof-active {
+    background: rgba(255,224,102,0.18);
+    border-color: var(--accent2);
+    color: var(--accent2);
+  }
+  .history-btn-del {
+    border: 1px solid rgba(107,95,138,0.3);
+    color: rgba(180,165,210,0.85);
+  }
+  .history-btn-del:hover { background: rgba(255,80,80,0.1); color: #ff8888; border-color: rgba(255,80,80,0.4); }
+
+  .history-empty {
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.72rem;
+    color: var(--subtle);
+    text-align: center;
+    opacity: 0.85;
+    padding: 16px 0;
+    letter-spacing: 0.1em;
+  }
+
+  /* 確認ダイアログ */
+  .confirm-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(13,10,26,0.85);
+    backdrop-filter: blur(4px);
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .confirm-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .confirm-box {
+    background: var(--card-bg);
+    border: 1.5px solid rgba(255,80,80,0.35);
+    border-radius: 20px;
+    padding: 28px 24px 20px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+    transform: scale(0.9);
+    transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1);
+  }
+  .confirm-overlay.open .confirm-box { transform: scale(1); }
+  .confirm-title {
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .confirm-desc {
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.72rem;
+    color: var(--subtle);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+  }
+  .confirm-btns {
+    display: flex;
+    gap: 10px;
+  }
+  .confirm-btn {
+    flex: 1;
+    border: none;
+    border-radius: 50px;
+    padding: 11px 8px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: transform 0.15s, opacity 0.15s;
+  }
+  .confirm-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+  .confirm-btn:active { transform: scale(0.96); }
+  .confirm-btn-cancel {
+    background: rgba(107,95,138,0.2);
+    color: var(--subtle);
+    border: 1px solid rgba(107,95,138,0.35);
+  }
+  .confirm-btn-ok {
+    background: linear-gradient(135deg, #ff5555, #cc2244);
+    color: #fff;
+  }
+
+  /* ===== 言語切替ボタン ===== */
+  .lang-switcher {
+    position: relative;
+    z-index: 200;
+  }
+  .lang-trigger {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(26,21,48,0.85);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50px;
+    padding: 5px 12px 5px 10px;
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    color: var(--text);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    transition: border-color 0.2s;
+    white-space: nowrap;
+  }
+  .lang-trigger:hover { border-color: rgba(255,110,180,0.4); }
+  .lang-trigger-arrow {
+    font-size: 0.55rem;
+    opacity: 0.85;
+    transition: transform 0.25s ease;
+  }
+  .lang-switcher.open .lang-trigger-arrow { transform: rotate(180deg); }
+  .lang-dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    background: rgba(26,21,48,0.97);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 14px;
+    padding: 4px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    backdrop-filter: blur(12px);
+    min-width: 110px;
+    opacity: 0;
+    transform: translateY(-6px) scale(0.96);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.34,1.56,0.64,1);
+  }
+  .lang-switcher.open .lang-dropdown {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+  .lang-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-family: 'DotGothic16', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    color: var(--subtle);
+    transition: background 0.15s, color 0.15s;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .lang-option:hover { background: rgba(255,255,255,0.06); color: var(--text); }
+  .lang-option.active {
+    background: linear-gradient(135deg, rgba(255,110,180,0.2), rgba(179,136,255,0.2));
+    color: #fff;
+  }
+  .lang-option-check { font-size: 0.65rem; opacity: 0; margin-left: auto; }
+  .lang-option.active .lang-option-check { opacity: 1; }
+
+  /* 各カード固有の色 */
+  .app-card-fire {
+    background: linear-gradient(135deg,rgba(255,110,50,0.12),rgba(255,80,20,0.08));
+    border: 1px solid rgba(255,110,50,0.3); color: #ffb090;
+  }
+  .app-card-omikuji {
+    background: linear-gradient(135deg,rgba(30,120,255,0.1),rgba(20,80,200,0.08));
+    border: 1px solid rgba(80,150,255,0.25); color: #90c0ff;
+  }
+  .app-card-open {
+    background: linear-gradient(135deg,rgba(30,200,80,0.1),rgba(20,150,50,0.08));
+    border: 1px solid rgba(60,200,80,0.25); color: #90e8a0;
+  }
+  .app-card-zange {
+    background: linear-gradient(135deg,rgba(179,136,255,0.12),rgba(120,80,220,0.08));
+    border: 1px solid rgba(179,136,255,0.3); color: #c8a0ff;
+  }
+  .app-card-senryu {
+    background: linear-gradient(135deg,rgba(255,224,102,0.1),rgba(220,180,20,0.08));
+    border: 1px solid rgba(255,224,102,0.28); color: #f0d870;
+  }
+  .app-card-gacha {
+    background: linear-gradient(135deg,rgba(126,255,245,0.1),rgba(80,220,210,0.08));
+    border: 1px solid rgba(126,255,245,0.25); color: #7efff5;
+  }
+</style>
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+<div id="blobs"></div>
+<div class="confetti-container" id="confetti"></div>
+
+<!-- 言語切替ドロップダウン（右上固定） -->
+<div class="lang-switcher" id="langSwitcher" style="position:fixed;top:14px;right:16px;z-index:1000;">
+  <button class="lang-trigger" id="langTrigger" onclick="toggleLangDropdown()">
+    <span id="langTriggerLabel">🇯🇵 JP</span>
+    <span class="lang-trigger-arrow">▼</span>
+  </button>
+  <div class="lang-dropdown" id="langDropdown">
+    <button class="lang-option active" id="btnJA" onclick="setLang('ja')">
+      🇯🇵 JP <span class="lang-option-check">✓</span>
+    </button>
+    <button class="lang-option" id="btnEN" onclick="setLang('en')">
+      🌍 EN <span class="lang-option-check">✓</span>
+    </button>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="title">
+    <div class="title-main"><span class="title-main-text">メンタル ガチャあげ</span><span class="title-main-emoji">🤣</span><span class="title-main-arrow">⤴</span></div>
+    <div class="title-sub">小さな行動 × 大きな承認</div>
+  </div>
+
+  <!-- ボタンの上に2つのカード -->
+  <div class="cards-area">
+
+    <!-- カード1：小さな行動 -->
+    <div class="result-card" id="cardAction">
+      <span class="card-placeholder">… 1回目を引こう</span>
+      <div class="card-inner">
+        <div class="card-label">✦ 小さな行動 ✦</div>
+        <div class="card-action-box">
+          <div class="card-action-text" id="actionResult">—</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 橋渡し -->
+    <div class="bridge" id="bridge">
+      <span class="bridge-main">いよっ！そんなあなたは！</span>
+      <span class="bridge-sub">↓ 大きな承認をどうぞ ↓</span>
+    </div>
+
+    <!-- カード2：大きな承認 -->
+    <div class="result-card delay" id="cardPraise">
+      <span class="card-placeholder">… 2回目を引こう</span>
+      <div class="card-inner">
+        <div class="card-label">★ 大きな承認 ★</div>
+        <div class="card-praise-box">
+          <div class="card-praise-text" id="praiseResult">—</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ガチャボタン -->
+  <button class="btn-gacha" id="btnGacha" onclick="pullGacha()">
+    <span class="btn-emoji" id="btnEmoji">🎲</span>
+    <span id="btnLabel">ガチャを引く</span>
+  </button>
+
+  <div class="counter" id="counter">まだ引いてないよ〜</div>
+
+  <div class="hint">ボタンを押すだけ。<br>ガチャを引くだけでえらい。</div>
+
+  <!-- シェアエリア（両方引いた後に表示） -->
+  <div class="share-area" id="shareArea">
+    <button class="btn-screenshot" onclick="enterScreenshot()">📸 スクショ用画面を開く</button>
+    <div class="share-label">📣 テキストでシェアする</div>
+    <div class="sns-btns">
+      <button class="sns-btn x-btn"       onclick="shareX()"        title="Xでシェア">𝕏</button>
+      <button class="sns-btn threads-btn"  onclick="shareThreads()"  title="Threadsでシェア">T</button>
+      <button class="sns-btn fb-btn"       onclick="shareFacebook()" title="Facebookでシェア">f</button>
+      <button class="sns-btn line-btn"     onclick="shareLINE()"     title="LINEでシェア">LINE</button>
+    </div>
+    <button class="copy-btn" onclick="copyText()">📋 テキストをコピー</button>
+  </div>
+
+  <!-- ヒストリー -->
+  <div class="history-section" id="historySection">
+    <button class="history-toggle" id="historyToggle">
+      <span>📖 これまでのガチャ履歴</span>
+      <span class="history-toggle-arrow">▼</span>
+    </button>
+    <div class="history-body" id="historyBody">
+      <div class="history-tabs">
+        <button class="history-tab active" id="tabAll" onclick="switchTab('all')">📖 すべて</button>
+        <button class="history-tab tab-hall" id="tabHall" onclick="switchTab('hall')">⭐ 殿堂入り</button>
+      </div>
+      <div class="history-clear-row">
+        <button class="history-clear-btn" onclick="clearHistory()">🗑 履歴をリセット</button>
+      </div>
+      <div class="history-list" id="historyList">
+        <div class="history-empty" id="historyEmpty">まだ履歴がないよ〜</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 他の無料アプリ アコーディオン -->
+  <div class="other-apps-section">
+    <button class="other-apps-toggle" id="otherAppsToggle">
+      <span id="otherAppsLabel">その他の無料アプリを見てみる</span>
+      <span class="other-apps-toggle-arrow">▼</span>
+    </button>
+    <div class="other-apps-body" id="otherAppsBody">
+      <div class="app-card-grid">
+        <a class="app-card app-card-open" href="https://sintaichoseijyuku.pages.dev/" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">💃</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="0">心体調整塾 ホームページ</div>
+            <div class="app-card-desc" data-app-desc="0">Mind &amp; Body Balance Training</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-senryu" href="https://lit.link/aitakeshi" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">🙋</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="1">アプリ全部まとめはこちら</div>
+            <div class="app-card-desc" data-app-desc="1">（日本語）</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-fire" href="https://warainpic.pages.dev" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">ꉂ🤣</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="2">バカウケ５Ｗ１Ｈ</div>
+            <div class="app-card-desc" data-app-desc="2">笑いのオリンピック🏅（日本語）</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-senryu" href="https://bakaukesenryu.pages.dev" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">🎋</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="3">バカウケ川柳</div>
+            <div class="app-card-desc" data-app-desc="3">爆笑575ガチャꉂ🤣𐤔（日本語）</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-omikuji" href="https://kamimikuji.pages.dev" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">🎋</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="4">火水おみくじ</div>
+            <div class="app-card-desc" data-app-desc="4">自分らしく生きやすく👍</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-zange" href="https://zangeforgive.pages.dev" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">🕯️</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="5">ZANGE 懺悔</div>
+            <div class="app-card-desc" data-app-desc="5">自分を許して軽くなる🕯*ﾟ</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-open" href="https://openhearttraining.pages.dev" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">☯️</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="6">素直力トレーニング</div>
+            <div class="app-card-desc" data-app-desc="6">人生を好転させる☯️</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-omikuji" href="https://balancetraning.pages.dev/" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">⚖️</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="7">言葉とメンタルのバランストレーニング</div>
+            <div class="app-card-desc" data-app-desc="7">バランストレーニング⚖️</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+        <a class="app-card app-card-fire" href="https://kamisindan.pages.dev" target="_blank" rel="noopener noreferrer">
+          <span class="app-card-emoji">🔥☔</span>
+          <span class="app-card-text">
+            <div class="app-card-name" data-app-name="8">火水診断</div>
+            <div class="app-card-desc" data-app-desc="8">12タイプ・キャラクター✏💃</div>
+          </span>
+          <span class="app-card-arrow">▶</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PWA Install Accordion ── -->
+  <div class="install-section" id="installSection">
+    <button class="install-toggle" id="installToggle">
+      <span id="installToggleLabel">📲 アプリをインストールする</span>
+      <span class="install-toggle-arrow">▼</span>
+    </button>
+    <div class="install-body" id="installBody">
+      <!-- Android -->
+      <div class="install-os-section">
+        <div class="install-os-title" id="installAndroidTitle">Android</div>
+        <button class="install-add-btn" id="installAndroidBtn">＋ ホーム画面に追加</button>
+        <div class="install-manual">
+          <div class="install-manual-label" id="installManualLabelAndroid">手動で追加する方法</div>
+          <ol class="install-steps" id="installStepsAndroid">
+            <li>Chrome でこのページを開く</li>
+            <li>右上のメニュー（⋮）をタップ</li>
+            <li>「ホーム画面に追加」を選択</li>
+            <li>「追加」をタップして完了</li>
+          </ol>
+        </div>
+      </div>
+      <!-- iOS -->
+      <div class="install-os-section">
+        <div class="install-os-title" id="installIOSTitle">iPhone / iPad (Safari)</div>
+        <div class="install-manual">
+          <div class="install-manual-label" id="installManualLabelIOS">Safariから追加する方法</div>
+          <ol class="install-steps" id="installStepsIOS">
+            <li>Safari でこのページを開く</li>
+            <li>下部の共有ボタン（□↑）をタップ</li>
+            <li>「ホーム画面に追加」を選択</li>
+            <li>「追加」をタップして完了</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Instagram フォロー ── -->
+  <div class="ig-follow-section">
+    <a class="ig-follow-btn" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="flex-shrink:0"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      Instagramをフォローする
+    </a>
+  </div>
+
+</div>
+
+<!-- スクショ用オーバーレイ -->
+<div class="screenshot-overlay" id="screenshotOverlay" style="display:none">
+  <!-- オーバーレイ内言語切替（右上固定） -->
+  <div class="lang-switcher" id="ssLangSwitcher" style="position:fixed;top:12px;right:16px;z-index:10001;">
+    <button class="lang-trigger" id="ssLangTrigger" onclick="toggleSsLangDropdown()">
+      <span id="ssLangTriggerLabel">🇯🇵 JP</span>
+      <span class="lang-trigger-arrow">▼</span>
+    </button>
+    <div class="lang-dropdown" id="ssLangDropdown">
+      <button class="lang-option" id="ssBtnJA" onclick="setLangFromSS('ja')">
+        🇯🇵 JP <span class="lang-option-check">✓</span>
+      </button>
+      <button class="lang-option" id="ssBtnEN" onclick="setLangFromSS('en')">
+        🌍 EN <span class="lang-option-check">✓</span>
+      </button>
+    </div>
+  </div>
+  <div class="ss-card" id="ssCard">
+    <span class="ss-title">メンタル ガチャあげ🤣⤴</span>
+    <div class="ss-action-label">✦ 小さな行動 ✦</div>
+    <span class="ss-action-text" id="ssActionText">—</span>
+    <span class="ss-bridge">いよっ！そんなあなたは！</span>
+    <div class="ss-praise-label">★ 大きな承認 ★</div>
+    <span class="ss-praise-text" id="ssPraiseText">—</span>
+    <span class="ss-tag">#メンタルガチャあげ</span>
+  </div>
+  <div class="ss-hint">↑ この画面をスクショしてね！📸</div>
+  <div class="ss-sns-btns">
+    <div class="ss-sns-row">
+      <button class="sns-btn x-btn"       onclick="shareX()"        title="Xでシェア">𝕏</button>
+      <button class="sns-btn threads-btn"  onclick="shareThreads()"  title="Threadsでシェア">T</button>
+      <button class="sns-btn fb-btn"       onclick="shareFacebook()" title="Facebookでシェア">f</button>
+      <button class="sns-btn line-btn"     onclick="shareLINE()"     title="LINEでシェア">LINE</button>
+    </div>
+    <button class="ig-btn" onclick="openInstagram()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="white" style="vertical-align:middle;margin-right:6px"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      Instagramで自慢する
+    </button>
+  </div>
+  <button class="btn-close-ss" onclick="exitScreenshot()">✕ 閉じる</button>
+</div>
+
+<!-- 確認ダイアログ -->
+<div class="confirm-overlay" id="confirmOverlay">
+  <div class="confirm-box">
+    <div class="confirm-title" id="confirmTitle">本当に削除しますか？</div>
+    <div class="confirm-desc" id="confirmDesc">この操作は元に戻せません</div>
+    <div class="confirm-btns">
+      <button class="confirm-btn confirm-btn-cancel" id="confirmCancelBtn" onclick="closeConfirm()">やめる</button>
+      <button class="confirm-btn confirm-btn-ok" id="confirmOkBtn" onclick="doConfirm()">消す</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== 言語データ =====
+const LANG_KEY = 'mengacha_lang';
+let currentLang = 'ja';
+
+const i18n = {
+  ja: {
+    title: 'メンタル ガチャあげ🤣⤴',
+    subtitle: '小さな行動 × 大きな承認',
+    placeholder1: '… 1回目を引こう',
+    placeholder2: '… 2回目を引こう',
+    cardLabel1: '✦ 小さな行動 ✦',
+    cardLabel2: '★ 大きな承認 ★',
+    bridgeMain: 'いよっ！そんなあなたは！',
+    bridgeSub: '↓ 大きな承認をどうぞ ↓',
+    btnPull: 'ガチャを引く',
+    btnPraise: '承認を受け取る',
+    btnAgain: 'もう一回引く',
+    counterInit: 'まだ引いてないよ〜',
+    counterWait: '承認も受け取ってね〜！',
+    counterMsgs: ['1セット！えらい！','2セット！すごい！','3回！天才！','何回引いてもえらい','もう優勝確定','止まらんね〜','あなた強すぎる','記録更新中','伝説ガチャ師','無限に大丈夫'],
+    counterMany: n => `${n}セット引いた！もはや神`,
+    hint: 'ボタンを押すだけ。<br>ガチャを引くだけでえらい。',
+    shareLabel: '📣 テキストでシェアする',
+    btnScreenshot: '📸 スクショ用画面を開く',
+    btnCopy: '📋 テキストをコピー',
+    historyToggle: '📖 これまでのガチャ履歴',
+    tabAll: '📖 すべて',
+    tabHall: '⭐ 殿堂入り',
+    btnClear: '🗑 履歴をリセット',
+    emptyAll: 'まだ履歴がないよ〜',
+    emptyHall: '⭐ 殿堂入りがまだないよ〜',
+    hallOn: '⭐ 殿堂入り中',
+    hallOff: '☆ 殿堂入り',
+    btnDel: '🗑 削除',
+    confirmDelTitle: '本当に消しますか？',
+    confirmDelDesc: 'この履歴は元に戻せません',
+    confirmDelOk: '消す',
+    confirmClearTitle: '全履歴を消しますか？',
+    confirmClearDesc: n => `${n}件すべて削除されます\n（殿堂入りも含む）`,
+    confirmClearOk: '全部消す',
+    confirmCancel: 'やめる',
+    otherAppsLabel: 'その他の無料アプリを見てみる',
+    installLabel: '📲 アプリをインストールする',
+    installAndroid: '＋ ホーム画面に追加',
+    installDone: '✓ インストール済み',
+    installAndroidTitle: 'Android',
+    installIOSTitle: 'iPhone / iPad (Safari)',
+    installManualLabelAndroid: '手動で追加する方法',
+    installManualLabelIOS: 'Safariから追加する方法',
+    installStepsAndroid: ['Chrome でこのページを開く','右上のメニュー（⋮）をタップ','「ホーム画面に追加」を選択','「追加」をタップして完了'],
+    installStepsIOS: ['Safari でこのページを開く','下部の共有ボタン（□↑）をタップ','「ホーム画面に追加」を選択','「追加」をタップして完了'],
+    ssTitle: 'メンタル ガチャあげ🤣⤴',
+    ssLabel1: '✦ 小さな行動 ✦',
+    ssBridge: 'いよっ！そんなあなたは！',
+    ssLabel2: '★ 大きな承認 ★',
+    ssTag: '#メンタルガチャあげ',
+    ssHint: '↑ この画面をスクショしてね！📸',
+    ssClose: '✕ 閉じる',
+    igFollow: 'Instagramをフォローする',
+    igShare: 'Instagramで自慢する',
+    fbAlert: 'Facebookシェアはリンクのみ対応です。',
+    igAlert: 'スクショを保存してからInstagramに投稿してね📸',
+    copyOk: '📋 コピーしました！どこでも貼り付けて自慢しよう！',
+    shareText: (a, p) => `🎲 メンタル ガチャあげ🤣⤴\n\n✦ 小さな行動 ✦\n${a}\n\n★ 大きな承認 ★\n${p}\n\n#メンタルガチャあげ`,
+    recentKeyA: 'mengacha_recent_actions',
+    recentKeyP: 'mengacha_recent_praises',
+    historyKey: 'mengacha_history',
+    appCards: [
+      { name: '心体調整塾 ホームページ', desc: 'Mind &amp; Body Balance Training' },
+      { name: 'アプリ全部まとめはこちら', desc: '（日本語）' },
+      { name: 'バカウケ５Ｗ１Ｈ', desc: '笑いのオリンピック🏅（日本語）' },
+      { name: 'バカウケ川柳', desc: '爆笑575ガチャꉂ🤣𐤔（日本語）' },
+      { name: '火水おみくじ', desc: '自分らしく生きやすく👍' },
+      { name: 'ZANGE 懺悔', desc: '自分を許して軽くなる🕯*ﾟ' },
+      { name: '素直力トレーニング', desc: '人生を好転させる☯️' },
+      { name: '言葉とメンタルのバランストレーニング', desc: 'バランストレーニング⚖️' },
+      { name: '火水診断', desc: '12タイプ・キャラクター✏💃' },
+    ],
+  },
+  en: {
+    title: 'Mental Gacha Up ⤴',
+    subtitle: 'Small Actions × Big Praise',
+    placeholder1: '… Pull round 1',
+    placeholder2: '… Pull round 2',
+    cardLabel1: '✦ Small Action ✦',
+    cardLabel2: '★ Big Praise ★',
+    bridgeMain: 'Hey! That means you are!',
+    bridgeSub: '↓ Receive your Big Praise ↓',
+    btnPull: 'Pull the Gacha',
+    btnPraise: 'Receive Your Praise',
+    btnAgain: 'Pull Again',
+    counterInit: "You haven't pulled yet~",
+    counterWait: 'Receive your praise too~!',
+    counterMsgs: ['1 set! Amazing!','2 sets! Incredible!','3 times! Genius!','However many — you\'re great','Victory is yours','You can\'t stop~','You\'re too powerful','Breaking records','Legendary Gacha Master','Infinitely okay'],
+    counterMany: n => `${n} sets pulled! You're basically a god`,
+    hint: 'Just press the button.<br>Pulling the gacha already makes you amazing.',
+    shareLabel: '📣 Share as Text',
+    btnScreenshot: '📸 Open Screenshot View',
+    btnCopy: '📋 Copy Text',
+    historyToggle: '📖 Gacha History',
+    tabAll: '📖 All',
+    tabHall: '⭐ Hall of Fame',
+    btnClear: '🗑 Clear History',
+    emptyAll: 'No history yet~',
+    emptyHall: '⭐ No Hall of Fame entries yet~',
+    hallOn: '⭐ In Hall of Fame',
+    hallOff: '☆ Add to Hall of Fame',
+    btnDel: '🗑 Delete',
+    confirmDelTitle: 'Are you sure?',
+    confirmDelDesc: 'This history entry cannot be restored',
+    confirmDelOk: 'Delete',
+    confirmClearTitle: 'Clear all history?',
+    confirmClearDesc: n => `All ${n} entries will be deleted\n(including Hall of Fame)`,
+    confirmClearOk: 'Clear All',
+    confirmCancel: 'Cancel',
+    otherAppsLabel: 'See Other Free Apps',
+    installLabel: '📲 Install the App',
+    installAndroid: '＋ Add to Home Screen',
+    installDone: '✓ Installed',
+    installAndroidTitle: 'Android',
+    installIOSTitle: 'iPhone / iPad (Safari)',
+    installManualLabelAndroid: 'How to add manually',
+    installManualLabelIOS: 'How to add from Safari',
+    installStepsAndroid: ['Open this page in Chrome','Tap the menu (⋮) in the top right','Select "Add to Home screen"','Tap "Add" to finish'],
+    installStepsIOS: ['Open this page in Safari','Tap the Share button (□↑) at the bottom','Select "Add to Home Screen"','Tap "Add" to finish'],
+    ssTitle: 'Mental Gacha Up ⤴',
+    ssLabel1: '✦ Small Action ✦',
+    ssBridge: 'Hey! That means you are!',
+    ssLabel2: '★ Big Praise ★',
+    ssTag: '#MentalGachaUp',
+    ssHint: '↑ Take a screenshot of this! 📸',
+    ssClose: '✕ Close',
+    igFollow: 'Follow on Instagram',
+    igShare: 'Brag on Instagram',
+    fbAlert: 'Facebook sharing supports links only.',
+    igAlert: 'Save the screenshot first, then post it on Instagram 📸',
+    copyOk: '📋 Copied! Paste it anywhere to share!',
+    shareText: (a, p) => `🎲 Mental Gacha Up ⤴\n\n✦ Small Action ✦\n${a}\n\n★ Big Praise ★\n${p}\n\n#MentalGachaUp`,
+    recentKeyA: 'mengacha_en_recent_actions',
+    recentKeyP: 'mengacha_en_recent_praises',
+    historyKey: 'mengacha_en_history',
+    appCards: [
+      { name: 'Mind &amp; Body Balance Training — Website', desc: 'sintaichouseijuku.pages.dev' },
+      { name: 'All Apps List', desc: '(Japanese) lit.link/aitakeshi' },
+      { name: 'Hilarious 5W1H', desc: 'Comedy Olympics 🏅 (Japanese)' },
+      { name: 'Hilarious Senryu', desc: 'Laugh-out-loud 5-7-5 Gacha 🤣 (Japanese)' },
+      { name: 'Fire-Water Omikuji', desc: 'Live more like yourself 👍' },
+      { name: 'ZANGE — Confession', desc: 'Forgive yourself &amp; feel lighter 🕯' },
+      { name: 'Honesty Training', desc: 'Turn your life around ☯️' },
+      { name: 'Words &amp; Mental Balance Training', desc: 'Balance Training ⚖️' },
+      { name: 'Fire-Water Diagnosis', desc: '12 personality types ✏💃' },
+    ],
+  }
+};
+
+const actionsJA = ["水飲めた","布団から出れた","カーテン開けた","深呼吸した","顔洗えた","歯みがきした","靴はけた","外みれた","空みた","起きれた","横になれた","ご飯食べた","お茶いれた","お風呂はいれた","シャンプーした","着替えた","洗濯まわせた","ゴミ捨てれた","コンビニ行けた","スーパー行けた","返信できた","スタンプ返せた","電話でれた","メール開けた","通知みれた","SNS閉じれた","アプリ消せた","ちょっと休めた","5分だけ動けた","座れた","立てた","歩けた","ストレッチした","笑えた","泣けた","イライラ気づけた","寝坊した","生き延びた","今日きた","朝むかえた","夜までこれた","天気感じた","音楽きいた","窓あけた","電気つけた","充電できた","トイレ行けた","ごはん温めた","冷蔵庫あけた","ベッド整えた","靴そろえた","ティッシュ捨てた","髪とかせた","爪みた","予定みれた","時計みた","財布確認した","水道ひねった","コップ洗えた","皿うごかせた","ドア開けた","一言しゃべれた","あくびした","まばたきした","力ぬけた","休もうと思えた","無理に笑わんかった","断れた","好き選べた","嫌って思えた","のんびりした","ぼーっとできた","イス座れた","静かにできた","眠れた","起きなおせた","日光あびた","お湯つかえた","呼吸しとる","お腹すいた","甘いもの食べた","片づけ1個した","画面閉じた","目休めた","なんとかした","ここ来れた","ボタン押せた","読めた","見つけれた","思い出せた","忘れれた","あきらめれた","助け求めれた","誰か思い出した","自分気づけた","ちょっと安心した","今日終われそう","今ここおる","存在しとる","なんか生きとる"];
+const actionsEN = ["Drank water","Got out of bed","Opened the curtains","Took a deep breath","Washed my face","Brushed my teeth","Put on shoes","Looked outside","Looked at the sky","Woke up","Laid down","Ate food","Made tea","Took a shower","Washed my hair","Changed clothes","Did laundry","Took out trash","Went to the store","Went grocery shopping","Replied to a message","Sent a sticker reply","Answered the phone","Opened an email","Checked notifications","Closed social media","Deleted an app","Took a little break","Moved for 5 minutes","Sat down","Stood up","Walked around","Did stretching","Laughed","Cried","Noticed my irritation","Overslept","Survived today","Made it to today","Saw the morning","Reached the night","Felt the weather","Listened to music","Opened the window","Turned on the lights","Charged my device","Went to the bathroom","Heated up food","Opened the fridge","Fixed the bed","Organized shoes","Threw away tissues","Brushed my hair","Looked at my nails","Checked my schedule","Looked at the clock","Checked my wallet","Turned on the faucet","Washed a cup","Moved the dishes","Opened the door","Said one sentence","Yawned","Blinked","Relaxed a little","Thought about resting","Didn't force a smile","Said no","Chose what I like","Realized I dislike something","Took it easy","Zoned out","Sat in a chair","Enjoyed some quiet","Slept","Got back up again","Got some sunlight","Used warm water","Still breathing","Felt hungry","Ate something sweet","Cleaned one thing","Closed the screen","Rested my eyes","Somehow managed","Made it here","Pressed the button","Read something","Found something","Remembered something","Forgot something","Gave up on something","Asked for help","Thought about someone","Noticed myself","Felt a little relieved","Might finish today okay","I am here right now","I exist","Somehow still alive"];
+
+const praisesJA = ["納豆大臣に任命","エリンギ界の希望","今月の主役級たまご","ついに伝説の布団使い","国家レベルでえらい","世界ねこ会議が拍手","その動き、国が守る","人類、あなたを採用","本日のラッコ代表","宇宙から感謝状届いた","野生のカリスマ発見","今日の生存、Sランク","情緒オリンピック優勝","ゆるみ界の四皇","スーパー安心タイム突入","布団界のレジェンド","心が「助かる〜」言うとる","世界が静かにうなずいた","伝説の水分補給士","深呼吸の王あらわる","おにぎり界がざわついとる","その返信、文化遺産","風呂キャンセル界を卒業","本日のえらい侍","あなた保護指定です","今の、かなり徳積んだ","空気が「いいね」押した","布団からの独立成功","世界がちょっと明るくなった","かなり上級人類","あなた税込価格です","今日の情緒、金賞受賞","全国の観葉植物が応援中","ついに本気出したな","存在にBGM流れとる","今ならラスボス倒せる","神々の会議で話題に","おでん界のプリンス","メンタル保護区域です","今月の安心感担当","世界線、ニッコニコ","やさしさ偏差値たかい","今日の空、あなた寄り","眠気マスター認定","その一歩、文明レベル","龍神たちも休憩した","情緒にボーナス入った","人類の癒し枠","スーパー布団チャンピオン","その感じ、かなり合法","ゆるキャラ国家代表","世界が保湿された","あなた、今日あたり強い","全米がなんか安心した","いのち使いうますぎ","生存演出うますぎる","今日のあなた、SSR","空間の治安よくなった","その行動、教科書載る","情緒が拍手しよる","かなりナウい","今日のラーメンも喜ぶ","銀河えらい協会認定","世界がちょっと甘くなった","布団税免除です","その休憩、プロ仕様","宇宙のWi-Fiつながった","安心感、カンスト","国家予算級の価値","その存在、反則級","あなた、今日のビタミン","会場がざわついてます","メンタル界の秘宝","深夜テンション神認定","人類のバグ技","かなりいい感じの生物","スーパーよか人タイム","本日の平和賞","その空気、炊きたて","全方向からえらい","心がもちもちしとる","今のあなた、光属性","生き方に余白がある","ゆるみ力、高すぎ注意","あなた概念、好き","その感じ、売り切れ中","世界がそっと保存した","本日の安心素材","やる気ないのにえらい","かなり人間うまい","今日のMISO SOUP賞","いま観葉植物が泣いた","あなた、空気清浄機？","存在がふわふわしとる","心に加湿器ついとる","本日のほっこり枠","宇宙船の船長向き","今日もギリ天才","世界にちょうどいい","あなた味、出すぎとる"];
+const praisesEN = ["LEGALLY IMPORTANT HUMAN","CHOSEN BY THE MUSHROOM COUNCIL","MAIN CHARACTER ENERGY","BED WIZARD ASCENDED","NATIONALLY CERTIFIED LEGEND","THE CAT COUNCIL APPROVES","GOVERNMENT PROTECTED BEHAVIOR","HUMANITY ACCEPTS YOU","OFFICIAL OTTER REPRESENTATIVE","THE UNIVERSE SENT THANK YOU MAIL","WILD CHARISMA DETECTED","SURVIVAL RANK: S","EMOTIONAL OLYMPICS CHAMPION","EMPEROR OF CHILLING","MAXIMUM COMFORT MODE ACTIVATED","BED REALM LEGEND","YOUR HEART FEELS SAVED","THE WORLD NODDED QUIETLY","HYDRATION MASTER UNLOCKED","KING OF DEEP BREATHS","THE RICE BALL COMMUNITY IS SHAKING","THAT REPLY BELONGS IN A MUSEUM","SHOWER AVOIDANCE ARC ENDED","HONORABLE HUMAN OF THE DAY","PROTECTED SPECIES STATUS GRANTED","MASSIVE GOOD KARMA GAINED","THE AIR ITSELF HIT LIKE","SUCCESSFULLY ESCAPED THE BED","THE WORLD GOT SLIGHTLY BRIGHTER","ADVANCED LEVEL HUMAN","PRICE INCLUDES TAX AND GREATNESS","GOLD MEDAL IN EMOTIONS","HOUSEPLANTS ARE ROOTING FOR YOU","YOU FINALLY USED 1% OF YOUR POWER","YOUR EXISTENCE HAS BACKGROUND MUSIC","FINAL BOSS DEFEAT POSSIBLE TODAY","THE GODS ARE DISCUSSING YOU","PRINCE OF HOT POT ENERGY","MENTAL SAFETY ZONE ACTIVATED","MONTHLY COMFORT CHAMPION","TIMELINE STATUS: HAPPY","KINDNESS LEVEL OVERPOWERED","TODAY'S SKY SUPPORTS YOU","CERTIFIED SLEEPINESS MASTER","THAT STEP CHANGED CIVILIZATION","EVEN THE DRAGONS TOOK A BREAK","BONUS EMOTIONS ACQUIRED","HUMANITY'S COMFORT CHARACTER","SUPREME BED CHAMPION","THAT VIBE IS LEGALLY SAFE","NATIONAL MASCOT ENERGY","THE WORLD FEELS MOISTURIZED","YOU FEEL STRANGELY POWERFUL TODAY","AMERICA SOMEHOW FEELS RELIEVED","MASTERFUL LIFE USAGE","SURVIVAL PRESENTATION: 10/10","TODAY YOU ARE SSR TIER","THE ROOM FEELS SAFER NOW","THAT ACTION BELONGS IN TEXTBOOKS","YOUR EMOTIONS ARE APPLAUDING","EXTREMELY 2000s COOL","EVEN THE RAMEN IS HAPPY TODAY","CERTIFIED BY THE GALAXY PRAISE ASSOCIATION","THE WORLD TASTES SWEETER NOW","BED TAX EXEMPTION GRANTED","PROFESSIONAL LEVEL RESTING","COSMIC WIFI CONNECTED","COMFORT LEVEL MAXED OUT","WORTH NATIONAL TREASURE MONEY","YOUR EXISTENCE IS OVERPOWERED","YOU ARE TODAY'S VITAMIN","THE CROWD IS LOSING IT","RARE TREASURE OF THE MENTAL REALM","LATE NIGHT ENERGY GOD APPROVED","HUMANITY FOUND A GLITCH","HIGH QUALITY LIFE FORM","SUPER GOOD HUMAN MODE","PEACE PRIZE WINNER OF THE DAY","YOUR VIBE FEELS FRESHLY COOKED","PRAISED FROM ALL DIRECTIONS","YOUR HEART FEELS EXTRA SQUISHY","LIGHT ATTRIBUTE ACTIVATED","YOUR LIFE HAS NICE SPACING","WARNING: CHILL POWER TOO HIGH","WE LOVE YOUR ENTIRE CONCEPT","THAT VIBE IS SOLD OUT","THE UNIVERSE SAVED YOUR PROGRESS","TODAY'S PREMIUM COMFORT MATERIAL","NO MOTIVATION YET STILL LEGENDARY","ELITE HUMAN PERFORMANCE","MISO SOUP AWARD WINNER","A HOUSEPLANT JUST CRIED WITH JOY","ARE YOU AN AIR PURIFIER?","YOUR EXISTENCE FEELS FLUFFY","YOUR HEART HAS A HUMIDIFIER","OFFICIAL COZY PERSON OF THE DAY","QUALIFIED TO CAPTAIN A SPACESHIP","BARELY FUNCTIONING GENIUS","PERFECTLY SHAPED FOR THIS WORLD","TOO MUCH FLAVOR. ABSOLUTELY INCREDIBLE"];
+
+// 現在の言語のデータを返す
+function getActions() { return currentLang === 'ja' ? actionsJA : actionsEN; }
+function getPraises() { return currentLang === 'ja' ? praisesJA : praisesEN; }
+function t() { return i18n[currentLang]; }
+
+// ===== 言語切替 =====
+function toggleLangDropdown() {
+  document.getElementById('langSwitcher').classList.toggle('open');
+}
+// ドロップダウン外クリックで閉じる
+document.addEventListener('click', function(e) {
+  const sw = document.getElementById('langSwitcher');
+  if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+});
+
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem(LANG_KEY, lang);
+  document.getElementById('btnJA').classList.toggle('active', lang === 'ja');
+  document.getElementById('btnEN').classList.toggle('active', lang === 'en');
+  // トリガーラベル更新
+  document.getElementById('langTriggerLabel').textContent = lang === 'ja' ? '🇯🇵 JP' : '🌍 EN';
+  // ドロップダウンを閉じる
+  document.getElementById('langSwitcher').classList.remove('open');
+  applyLang();
+  renderHistory();
+}
+
+function applyLang() {
+  const L = t();
+  document.documentElement.lang = currentLang;
+  document.title = L.title;
+  document.querySelector('.title-main .title-main-text').textContent = L.title.replace(/[\u{1F000}-\u{1FFFF}\u{2600}-\u{27BF}⤴]+$/u, '').trimEnd();
+  document.querySelector('.title-sub').textContent = L.subtitle;
+  document.querySelector('#cardAction .card-placeholder').textContent = L.placeholder1;
+  document.querySelector('#cardAction .card-label').textContent = L.cardLabel1;
+  document.querySelector('#cardPraise .card-placeholder').textContent = L.placeholder2;
+  document.querySelector('#cardPraise .card-label').textContent = L.cardLabel2;
+  document.querySelector('.bridge-main').textContent = L.bridgeMain;
+  document.querySelector('.bridge-sub').textContent = L.bridgeSub;
+  document.getElementById('btnLabel').textContent = step === 1 ? L.btnPraise : (step === 2 ? L.btnAgain : L.btnPull);
+  document.querySelector('.hint').innerHTML = L.hint;
+  document.querySelector('.share-label').textContent = L.shareLabel;
+  document.querySelector('.btn-screenshot').textContent = L.btnScreenshot;
+  document.querySelector('.copy-btn').textContent = L.btnCopy;
+  document.querySelector('#historyToggle span:first-child').textContent = L.historyToggle;
+  document.getElementById('tabAll').textContent = L.tabAll;
+  document.getElementById('tabHall').textContent = L.tabHall;
+  document.querySelector('.history-clear-btn').textContent = L.btnClear;
+  document.getElementById('otherAppsLabel').textContent = L.otherAppsLabel;
+  document.getElementById('installToggleLabel').textContent = L.installLabel;
+  document.getElementById('installAndroidBtn').textContent = L.installAndroid;
+  // インストール手順
+  if (document.getElementById('installAndroidTitle')) document.getElementById('installAndroidTitle').textContent = L.installAndroidTitle;
+  if (document.getElementById('installIOSTitle')) document.getElementById('installIOSTitle').textContent = L.installIOSTitle;
+  if (document.getElementById('installManualLabelAndroid')) document.getElementById('installManualLabelAndroid').textContent = L.installManualLabelAndroid;
+  if (document.getElementById('installManualLabelIOS')) document.getElementById('installManualLabelIOS').textContent = L.installManualLabelIOS;
+  ['installStepsAndroid', 'installStepsIOS'].forEach(function(id) {
+    var ol = document.getElementById(id);
+    var steps = id === 'installStepsAndroid' ? L.installStepsAndroid : L.installStepsIOS;
+    if (ol && steps) {
+      Array.from(ol.querySelectorAll('li')).forEach(function(li, i) {
+        if (steps[i]) li.textContent = steps[i];
+      });
+    }
+  });
+  // アプリカード
+  if (L.appCards) {
+    document.querySelectorAll('[data-app-name]').forEach(function(el) {
+      var i = parseInt(el.dataset.appName, 10);
+      if (L.appCards[i]) el.innerHTML = L.appCards[i].name;
+    });
+    document.querySelectorAll('[data-app-desc]').forEach(function(el) {
+      var i = parseInt(el.dataset.appDesc, 10);
+      if (L.appCards[i]) el.innerHTML = L.appCards[i].desc;
+    });
+  }
+  document.querySelector('.ss-title').textContent = L.ssTitle;
+  document.querySelector('.ss-action-label').textContent = L.ssLabel1;
+  document.querySelector('.ss-bridge').textContent = L.ssBridge;
+  document.querySelector('.ss-praise-label').textContent = L.ssLabel2;
+  document.querySelector('.ss-tag').textContent = L.ssTag;
+  document.querySelector('.ss-hint').textContent = L.ssHint;
+  document.querySelector('.btn-close-ss').textContent = L.ssClose;
+  document.querySelector('.ig-follow-btn').childNodes[document.querySelector('.ig-follow-btn').childNodes.length - 1].textContent = ' ' + L.igFollow;
+  document.querySelector('.ig-btn').childNodes[document.querySelector('.ig-btn').childNodes.length - 1].textContent = ' ' + L.igShare;
+  // bridge（ガチャ途中の橋渡しテキスト）をリアルタイム更新
+  document.querySelector('.bridge-main').textContent = L.bridgeMain;
+  document.querySelector('.bridge-sub').textContent = L.bridgeSub;
+  // hint
+  document.querySelector('.hint').innerHTML = L.hint;
+  // counter を step に応じて更新
+  if (typeof step !== 'undefined') {
+    document.getElementById('counter').textContent =
+      step === 0 ? L.counterInit :
+      step === 1 ? L.counterWait :
+      (count <= 10 ? L.counterMsgs[Math.min(count-1,9)] : L.counterMany(count));
+    // カード表示中なら対応言語テキストに差し替え
+    if (step >= 1 && lastActionIdx >= 0) {
+      const aList = currentLang === 'ja' ? actionsJA : actionsEN;
+      if (aList[lastActionIdx]) document.getElementById('actionResult').textContent = aList[lastActionIdx];
+    }
+    if (step >= 2 && lastPraiseIdx >= 0) {
+      const pList = currentLang === 'ja' ? praisesJA : praisesEN;
+      if (pList[lastPraiseIdx]) document.getElementById('praiseResult').textContent = pList[lastPraiseIdx];
+    }
+  }
+}
+
+const actions = actionsJA; // 後方互換（下のコードが参照）
+const praises = praisesJA;
+
+
+let count = 0;
+// 0 = 初期 / 1 = 行動を引いた（承認待ち） / 2 = 両方引いた
+let step = 0;
+// 言語切替時にカード内容を対応言語に置き換えるためインデックスを保持
+let lastActionIdx = -1;
+let lastPraiseIdx = -1;
+
+// ===== 重複なしシャッフルキュー =====
+// 直近30件かぶらない仕組み（ブラウザを閉じても継続）
+const NO_REPEAT = 30;
+// キーは t() 経由で取得するためここでは定義しない
+
+function rand(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+function makeQueue(arr) {
+  // Fisher-Yatesシャッフル
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function loadRecent(key) {
+  try { return JSON.parse(localStorage.getItem(key) || '[]'); } catch(e) { return []; }
+}
+function saveRecent(key, arr) {
+  try { localStorage.setItem(key, JSON.stringify(arr)); } catch(e) {}
+}
+
+// poolはセッション内のみ（言語ごとに管理）
+const pools = {
+  ja: { actions: [], praises: [] },
+  en: { actions: [], praises: [] }
+};
+
+function pickNext(key, source) {
+  const pool = pools[currentLang];
+  const storageKey = key === 'actions' ? t().recentKeyA : t().recentKeyP;
+  const recent = loadRecent(storageKey);
+
+  if (pool[key].length === 0) {
+    const available = source.filter(x => !recent.includes(x));
+    pool[key] = makeQueue(available.length > 0 ? available : source.slice());
+  }
+  const item = pool[key].shift();
+  recent.push(item);
+  if (recent.length > NO_REPEAT) recent.shift();
+  saveRecent(storageKey, recent);
+  // インデックスを返す（言語切替時の対応テキスト取得用）
+  const idx = (key === 'actions' ? actionsJA : praisesJA).indexOf(item) !== -1
+    ? (key === 'actions' ? actionsJA : praisesJA).indexOf(item)
+    : (key === 'actions' ? actionsEN : praisesEN).indexOf(item);
+  return { text: item, idx };
+}
+
+// ===== ヒストリー（localStorage） =====
+// 言語に関わらず共通キーで保存（JA/EN分離しない）
+const HISTORY_KEY = 'mengacha_history';
+const HISTORY_MAX = 200;
+let currentTab = 'all';
+function getHistoryKey() { return HISTORY_KEY; }
+
+// 確認ダイアログ用
+let confirmCallback = null;
+
+function showConfirm(title, desc, okLabel, cb) {
+  document.getElementById('confirmTitle').textContent = title;
+  document.getElementById('confirmDesc').textContent = desc;
+  document.getElementById('confirmOkBtn').textContent = okLabel || t().confirmDelOk;
+  document.getElementById('confirmCancelBtn').textContent = t().confirmCancel;
+  confirmCallback = cb;
+  document.getElementById('confirmOverlay').classList.add('open');
+}
+function closeConfirm() {
+  document.getElementById('confirmOverlay').classList.remove('open');
+  confirmCallback = null;
+}
+function doConfirm() {
+  if (confirmCallback) confirmCallback();
+  closeConfirm();
+}
+// オーバーレイ外クリックで閉じる
+document.getElementById('confirmOverlay').addEventListener('click', function(e){
+  if (e.target === this) closeConfirm();
+});
+
+function loadHistory() {
+  try {
+    return JSON.parse(localStorage.getItem(getHistoryKey()) || '[]');
+  } catch(e) { return []; }
+}
+
+function saveHistory(list) {
+  try { localStorage.setItem(getHistoryKey(), JSON.stringify(list)); } catch(e) {}
+}
+
+function addHistory(actionJA, praiseJA, actionEN, praiseEN) {
+  const list = loadHistory();
+  const now = new Date();
+  const dateStr = `${now.getFullYear()}/${String(now.getMonth()+1).padStart(2,'0')}/${String(now.getDate()).padStart(2,'0')} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+  list.unshift({ id: Date.now(), date: dateStr, actionJA, praiseJA, actionEN, praiseEN, hall: false });
+  if (list.length > HISTORY_MAX) list.length = HISTORY_MAX;
+  saveHistory(list);
+  renderHistory();
+}
+
+function toggleHall(id) {
+  const list = loadHistory();
+  const item = list.find(x => x.id === id);
+  if (!item) return;
+  item.hall = !item.hall;
+  saveHistory(list);
+  renderHistory();
+}
+
+function deleteItem(id) {
+  showConfirm(
+    t().confirmDelTitle,
+    t().confirmDelDesc,
+    t().confirmDelOk,
+    () => {
+      const list = loadHistory().filter(x => x.id !== id);
+      saveHistory(list);
+      renderHistory();
+    }
+  );
+}
+
+function switchTab(tab) {
+  currentTab = tab;
+  document.getElementById('tabAll').classList.toggle('active', tab === 'all');
+  document.getElementById('tabHall').classList.toggle('active', tab === 'hall');
+  renderHistory();
+}
+
+function renderHistory() {
+  const allList = loadHistory();
+  const list = currentTab === 'hall' ? allList.filter(x => x.hall) : allList;
+  const container = document.getElementById('historyList');
+  const empty = document.getElementById('historyEmpty');
+  Array.from(container.querySelectorAll('.history-item')).forEach(el => el.remove());
+
+  if (list.length === 0) {
+    empty.style.display = '';
+    empty.textContent = currentTab === 'hall' ? t().emptyHall : t().emptyAll;
+    return;
+  }
+  empty.style.display = 'none';
+  list.forEach(item => {
+    // 古いデータ（idなし）の互換性
+    if (!item.id) item.id = Math.random();
+    // 旧形式（action/praise のみ）との後方互換
+    const actionText = currentLang === 'en'
+      ? (item.actionEN || item.action || '')
+      : (item.actionJA || item.action || '');
+    const praiseText = currentLang === 'en'
+      ? (item.praiseEN || item.praise || '')
+      : (item.praiseJA || item.praise || '');
+    const el = document.createElement('div');
+    el.className = 'history-item' + (item.hall ? ' hall-of-fame' : '');
+    const hallLabel = item.hall ? t().hallOn : t().hallOff;
+    el.innerHTML = `
+      <div class="history-item-date">${item.hall ? '⭐ ' : ''}${item.date}</div>
+      <div class="history-item-action">✦ ${actionText}</div>
+      <div class="history-item-praise">★ ${praiseText}</div>
+      <div class="history-item-btns">
+        <button class="history-btn history-btn-hall${item.hall ? ' hof-active' : ''}" onclick="toggleHall(${item.id})">${hallLabel}</button>
+        <button class="history-btn history-btn-del" onclick="deleteItem(${item.id})">${t().btnDel}</button>
+      </div>
+    `;
+    container.appendChild(el);
+  });
+}
+
+function clearHistory() {
+  const list = loadHistory();
+  if (list.length === 0) return;
+  showConfirm(
+    t().confirmClearTitle,
+    t().confirmClearDesc(list.length),
+    t().confirmClearOk,
+    () => {
+      saveHistory([]);
+      renderHistory();
+    }
+  );
+}
+
+// ページ読み込み時にヒストリーをカウントに反映
+(function initCount(){
+  const list = loadHistory();
+  count = list.length;
+})();
+
+// ページ読み込み時は常に日本語で開始（言語切替は手動のみ）
+(function initLang(){
+  document.getElementById('btnJA').classList.add('active');
+  document.getElementById('btnEN').classList.remove('active');
+  // applyLang は不要（HTMLが既に日本語）
+})();
+
+function pullGacha() {
+  const btn = document.getElementById('btnGacha');
+  const btnLabel = document.getElementById('btnLabel');
+  const btnEmoji = document.getElementById('btnEmoji');
+
+  btn.classList.remove('shake');
+  void btn.offsetWidth;
+  btn.classList.add('shake');
+
+  if (step === 0 || step === 2) {
+    // ===== 1回目：小さな行動を引く =====
+    const cardAction = document.getElementById('cardAction');
+    const cardPraise = document.getElementById('cardPraise');
+
+    // 承認カードをリセット
+    cardPraise.classList.remove('visible');
+    document.getElementById('bridge').classList.remove('visible');
+    document.getElementById('praiseResult').textContent = '—';
+    // シェアエリアを隠す
+    document.getElementById('shareArea').classList.remove('visible');
+
+    setTimeout(() => {
+      const actionResult = pickNext('actions', getActions());
+      document.getElementById('actionResult').textContent = actionResult.text;
+      lastActionIdx = actionResult.idx;
+      cardAction.classList.add('visible');
+      document.getElementById('bridge').classList.add('visible');
+      launchConfetti(12);
+      step = 1;
+      btn.classList.add('step2');
+      btnEmoji.textContent = '🌟';
+      btnLabel.textContent = t().btnPraise;
+      document.getElementById('counter').textContent = t().counterWait;
+    }, 300);
+
+  } else {
+    // ===== 2回目：大きな承認を引く =====
+    const cardPraise = document.getElementById('cardPraise');
+
+    setTimeout(() => {
+      const praiseResult = pickNext('praises', getPraises());
+      const praiseText = praiseResult.text;
+      lastPraiseIdx = praiseResult.idx;
+      document.getElementById('praiseResult').textContent = praiseText;
+      cardPraise.classList.add('visible');
+      launchConfetti(36);
+      count++;
+      step = 2;
+
+      const actionText = document.getElementById('actionResult').textContent;
+      // 両言語テキストを保存（インデックスから取得）
+      const aJA = lastActionIdx >= 0 ? actionsJA[lastActionIdx] : actionText;
+      const aEN = lastActionIdx >= 0 ? actionsEN[lastActionIdx] : actionText;
+      const pJA = lastPraiseIdx >= 0 ? praisesJA[lastPraiseIdx] : praiseText;
+      const pEN = lastPraiseIdx >= 0 ? praisesEN[lastPraiseIdx] : praiseText;
+      addHistory(aJA, pJA, aEN, pEN);
+
+      btn.classList.remove('step2');
+      btnEmoji.textContent = '🎲';
+      btnLabel.textContent = t().btnAgain;
+      const msgs = t().counterMsgs;
+      document.getElementById('counter').textContent = count <= 10 ? msgs[Math.min(count-1,9)] : t().counterMany(count);
+
+      // シェアエリアを表示
+      document.getElementById('shareArea').classList.add('visible');
+    }, 300);
+  }
+}
+
+// --- シェア用テキスト生成 ---
+let lastAction = '';
+let lastPraise = '';
+
+function makeShareText() {
+  const action = document.getElementById('actionResult').textContent;
+  const praise  = document.getElementById('praiseResult').textContent;
+  return t().shareText(action, praise);
+}
+
+function shareX() {
+  const text = encodeURIComponent(makeShareText());
+  window.open('https://twitter.com/intent/tweet?text=' + text, '_blank');
+}
+
+function shareThreads() {
+  const text = encodeURIComponent(makeShareText());
+  window.open('https://www.threads.net/intent/post?text=' + text, '_blank');
+}
+
+function shareFacebook() {
+  alert(t().fbAlert);
+}
+
+function shareLINE() {
+  const text = encodeURIComponent(makeShareText());
+  window.open('https://line.me/R/msg/text/?' + text, '_blank');
+}
+
+function copyText() {
+  navigator.clipboard.writeText(makeShareText()).then(() => {
+    alert(t().copyOk);
+  }).catch(() => {
+    alert(makeShareText());
+  });
+}
+
+// --- スクショモード ---
+function enterScreenshot() {
+  document.getElementById('ssActionText').textContent = document.getElementById('actionResult').textContent;
+  document.getElementById('ssPraiseText').textContent = document.getElementById('praiseResult').textContent;
+  // スクショカードのテキストも更新
+  document.querySelector('.ss-title').textContent = t().ssTitle;
+  document.querySelector('.ss-action-label').textContent = t().ssLabel1;
+  document.querySelector('.ss-bridge').textContent = t().ssBridge;
+  document.querySelector('.ss-praise-label').textContent = t().ssLabel2;
+  document.querySelector('.ss-tag').textContent = t().ssTag;
+  document.querySelector('.ss-hint').textContent = t().ssHint;
+  document.querySelector('.btn-close-ss').textContent = t().ssClose;
+  // オーバーレイ内の言語ボタンを現在の言語に合わせる
+  document.getElementById('ssLangTriggerLabel').textContent = currentLang === 'ja' ? '🇯🇵 JP' : '🌍 EN';
+  document.getElementById('ssBtnJA').classList.toggle('active', currentLang === 'ja');
+  document.getElementById('ssBtnEN').classList.toggle('active', currentLang === 'en');
+  document.getElementById('screenshotOverlay').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function toggleSsLangDropdown() {
+  document.getElementById('ssLangSwitcher').classList.toggle('open');
+}
+// オーバーレイ内ドロップダウン外クリックで閉じる
+document.addEventListener('click', function(e) {
+  const sw = document.getElementById('ssLangSwitcher');
+  if (sw && !sw.contains(e.target)) sw.classList.remove('open');
+});
+
+function setLangFromSS(lang) {
+  // メインの言語切替を呼び出す
+  setLang(lang);
+  // オーバーレイが開いている場合はオーバーレイのテキストも更新
+  if (document.getElementById('screenshotOverlay').style.display !== 'none') {
+    // カードのテキストも対応言語に差し替え
+    if (lastActionIdx >= 0) {
+      const aList = lang === 'ja' ? actionsJA : actionsEN;
+      if (aList[lastActionIdx]) {
+        document.getElementById('ssActionText').textContent = aList[lastActionIdx];
+      }
+    }
+    if (lastPraiseIdx >= 0) {
+      const pList = lang === 'ja' ? praisesJA : praisesEN;
+      if (pList[lastPraiseIdx]) {
+        document.getElementById('ssPraiseText').textContent = pList[lastPraiseIdx];
+      }
+    }
+    // オーバーレイラベル更新
+    document.getElementById('ssLangTriggerLabel').textContent = lang === 'ja' ? '🇯🇵 JP' : '🌍 EN';
+    document.getElementById('ssBtnJA').classList.toggle('active', lang === 'ja');
+    document.getElementById('ssBtnEN').classList.toggle('active', lang === 'en');
+  }
+  document.getElementById('ssLangSwitcher').classList.remove('open');
+}
+
+function exitScreenshot() {
+  document.getElementById('screenshotOverlay').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+function openInstagram() {
+  alert(t().igAlert);
+}
+
+function launchConfetti(n) {
+  const c = document.getElementById('confetti');
+  const colors = ['#ff6eb4','#ffe066','#7efff5','#b388ff','#ff9a3c','#80ffb4'];
+  for (let i = 0; i < n; i++) {
+    const el = document.createElement('div');
+    el.className = 'conf';
+    el.style.cssText = `
+      left: ${Math.random()*100}%;
+      top: ${-8 - Math.random()*10}%;
+      background: ${rand(colors)};
+      width: ${6+Math.random()*8}px;
+      height: ${6+Math.random()*8}px;
+      border-radius: ${Math.random()>0.5?'50%':'3px'};
+      --dur: ${1.2+Math.random()*1.2}s;
+      --rot: ${360+Math.random()*360}deg;
+      animation-delay: ${Math.random()*0.5}s;
+    `;
+    c.appendChild(el);
+    setTimeout(() => el.remove(), 2800);
+  }
+}
+
+// ── ヒストリー アコーディオン ──
+(function(){
+  var historyToggle = document.getElementById('historyToggle');
+  var historyBody   = document.getElementById('historyBody');
+  if(historyToggle && historyBody){
+    historyToggle.addEventListener('click', function(){
+      var isOpen = historyBody.classList.toggle('open');
+      historyToggle.classList.toggle('open', isOpen);
+      if(isOpen) renderHistory(); // 開くたびに最新を描画
+    });
+  }
+  // 初期描画
+  renderHistory();
+})();
+
+// ── 他のアプリ アコーディオン ──
+(function(){
+  var otherAppsToggle = document.getElementById('otherAppsToggle');
+  var otherAppsBody   = document.getElementById('otherAppsBody');
+  if(otherAppsToggle && otherAppsBody){
+    otherAppsToggle.addEventListener('click', function(){
+      var isOpen = otherAppsBody.classList.toggle('open');
+      otherAppsToggle.classList.toggle('open', isOpen);
+    });
+  }
+})();
+
+
+(function(){
+  const s = document.getElementById('stars');
+  for(let i=0;i<80;i++){
+    const el=document.createElement('div');
+    el.className='star';
+    const sz=0.8+Math.random()*2;
+    el.style.cssText=`width:${sz}px;height:${sz}px;left:${Math.random()*100}%;top:${Math.random()*100}%;--d:${2+Math.random()*4}s;--delay:${Math.random()*5}s`;
+    s.appendChild(el);
+  }
+})();
+
+// blobs
+(function(){
+  const b=document.getElementById('blobs');
+  const blobData=[
+    {w:400,h:380,l:'-80px',t:'-60px',bg:'#ff6eb4',d:'16s',tx:'60px',ty:'40px'},
+    {w:350,h:350,l:'60%',t:'50%',bg:'#7b38ff',d:'20s',tx:'-50px',ty:'-60px'},
+    {w:300,h:280,l:'20%',t:'70%',bg:'#00c8d7',d:'12s',tx:'40px',ty:'-30px'},
+  ];
+  blobData.forEach(bd=>{
+    const el=document.createElement('div');
+    el.className='blob';
+    el.style.cssText=`width:${bd.w}px;height:${bd.h}px;left:${bd.l};top:${bd.t};background:${bd.bg};--bd:${bd.d};--tx:${bd.tx};--ty:${bd.ty}`;
+    b.appendChild(el);
+  });
+})();
+
+// ── PWA Install Accordion ──
+(function(){
+  var deferredPrompt = null;
+  var installAndroidBtn = document.getElementById('installAndroidBtn');
+
+  // beforeinstallprompt をキャッチ（Android Chrome）
+  window.addEventListener('beforeinstallprompt', function(e){
+    e.preventDefault();
+    deferredPrompt = e;
+    if(installAndroidBtn){
+      installAndroidBtn.disabled = false;
+      installAndroidBtn.classList.remove('installed');
+    }
+  });
+
+  // インストール完了イベント
+  window.addEventListener('appinstalled', function(){
+    deferredPrompt = null;
+    if(installAndroidBtn){
+      installAndroidBtn.textContent = t().installDone;
+      installAndroidBtn.disabled = true;
+      installAndroidBtn.classList.add('installed');
+    }
+  });
+
+  // Androidボタン押下
+  if(installAndroidBtn){
+    installAndroidBtn.disabled = true;
+    installAndroidBtn.addEventListener('click', function(){
+      if(!deferredPrompt) return;
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(function(result){
+        if(result.outcome === 'accepted'){
+          deferredPrompt = null;
+        }
+      });
+    });
+  }
+
+  // アコーディオン開閉
+  var installToggle = document.getElementById('installToggle');
+  var installBody   = document.getElementById('installBody');
+  if(installToggle && installBody){
+    installToggle.addEventListener('click', function(){
+      var isOpen = installBody.classList.toggle('open');
+      installToggle.classList.toggle('open', isOpen);
+    });
+  }
+})();
+</script>
+</body>
+</html>
