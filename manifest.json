@@ -1,0 +1,23 @@
+{
+  "name": "Gachup",
+  "short_name": "Gachup",
+  "description": "メンタルサプリ救世主！？メンタルガチャあげ — 小さな行動 × 大きな承認",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0a1a",
+  "theme_color": "#0d0a1a",
+  "icons": [
+    {
+      "src": "/192mg.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/512mg.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
